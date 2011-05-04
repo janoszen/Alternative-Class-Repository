@@ -6,6 +6,10 @@ namespace PHP\OS;
 
 /**
  * This class indicates, that a fork has failed.
+ *
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
  */
 class ForkFailed extends \PHP\OS\Exception {
 	function __construct(\PHP\Lang\ErrorException $e) {

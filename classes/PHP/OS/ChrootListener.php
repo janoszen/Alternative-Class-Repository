@@ -7,6 +7,10 @@ namespace PHP\OS;
 /**
  * Describes a class as a potential receiver for events related to process
  * forks.
+ *
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
  */
 interface ChrootListener {
 	/**

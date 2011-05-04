@@ -6,17 +6,68 @@ namespace PHP\OS;
 \ClassLoader::import('PHP\IO\*');
 \ClassLoader::import('PHP\OS\*');
 
+/**
+ * This is a daemonizing toolkit for classes, that implement PHP\OS\Daemon.
+ * It tries to follow best practices to date as far as PHP allows them.
+ *
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
+ */
 class DaemonContext {
+	/**
+	 * The current working directory. This directory is chdir()-ed into AFTER
+	 * the chroot() has occured.
+	 * @var \PHP\IO\File
+	 */
 	protected $workingDir;
+	/**
+	 * This is the UID the application should switch to.
+	 * @var int
+	 */
 	protected $uid;
+	/**
+	 * This is the GID the application should switch to.
+	 * @var int
+	 */
 	protected $gid;
+	/**
+	 * This is the directory the application should chroot into. Please note,
+	 * that if no PHP interpreter is provided within the chroot, errors may
+	 * occur with specific PHP features.
+	 * @var \PHP\IO\File
+	 */
 	protected $chroot;
+	/**
+	 * This is an internal variable to hold the new STDIN file descriptor
+	 * @var resource
+	 * @internal
+	 */
 	protected $stdin;
+	/**
+	 * This is an internal variable to hold the new STDOUT file descriptor
+	 * @var resource
+	 * @internal
+	 */
 	protected $stdout;
+	/**
+	 * This is an internal variable to hold the new STDERR file descriptor
+	 * @var resource
+	 * @internal
+	 */
 	protected $stderr;
 
+	/**
+	 * Application has loaded successfully and most presumably is able to run.
+	 */
 	const STARTUP_OK = 0;
+	/**
+	 * Application startup has failed. See logs for details.
+	 */
 	const STARTUP_FAILED = 1;
+	/**
+	 * Application startup has been interrupted by for eg. Ctrl+C
+	 */
 	const STARTUP_INTERRUPTED = 2;
 
 	function __construct() {
@@ -26,17 +77,36 @@ class DaemonContext {
 		$this->chroot = new \PHP\IO\File('/');
 	}
 
+	/**
+	 * Set the current working directory for the application. This directory
+	 * is chdir()-ed into after chroot().
+	 * @param \PHP\IO\File $workingDir
+	 * @throws \PHP\Lang\ValueError if the directory doesn't exist.
+	 * @return \PHP\OS\DaemonContext
+	 */
 	function setWorkingDir(\PHP\IO\File $workingDir) {
 		if (!$workingDir->isDirectory()) {
 			throw new \PHP\Lang\ValueError($workingDir->getPath(), 'existing directory');
 		}
 		$this->workingDir = $workingDir;
+		return $this;
 	}
 
+	/**
+	 * Returns the specified CWD.
+	 * @return \PHP\IO\File
+	 */
 	function getWorkingDir() {
 		return $this->workingDir;
 	}
 
+	/**
+	 * Set the UID for the application.
+	 * @param int $uid
+	 * @throws \PHP\Lang\TypeError if the UID is not an integer
+	 * @throws \PHP\Lang\ValueError if the UID is not positive
+	 * @return \PHP\OS\DaemonContext
+	 */
 	function setUid($uid) {
 		if (!\is_int($uid)) {
 			throw new \PHP\Lang\TypeError($uid, 'integer');
@@ -45,12 +115,24 @@ class DaemonContext {
 			throw new \PHP\Lang\ValueError($uid, 'positive integer');
 		}
 		$this->uid = $uid;
+		return $this;
 	}
 
+	/**
+	 * Returns the UID the application is supposed to run under.
+	 * @return int
+	 */
 	function getUid() {
 		return $this->uid;
 	}
 
+	/**
+	 * Set the GID for the application.
+	 * @param int $uid
+	 * @throws \PHP\Lang\TypeError if the GID is not an integer
+	 * @throws \PHP\Lang\ValueError if the GID is not positive
+	 * @return \PHP\OS\DaemonContext
+	 */
 	function setGid($gid) {
 		if (!\is_int($gid)) {
 			throw new \PHP\Lang\TypeError($gid, 'integer');
@@ -59,32 +141,59 @@ class DaemonContext {
 			throw new \PHP\Lang\ValueError($gid, 'positive integer');
 		}
 		$this->gid = $gid;
+		return $this;
 	}
 
+	/**
+	 * Returns the GID the application is supposed to run under.
+	 * @return int
+	 */
 	function getGid() {
 		return $this->gid;
 	}
 
+	/**
+	 * Set the chroot() directory
+	 * @param \PHP\IO\File $chroot
+	 * @throws \PHP\Lang\ValueError if the directory provided does not exist.
+	 * @return \PHP\OS\DaemonContext
+	 */
 	function setChroot(\PHP\IO\File $chroot) {
 		if (!$chroot->isDirectory()) {
 			throw new \PHP\Lang\ValueError($chroot->getPath(), 'existing directory');
 		}
 		$this->chroot = $chroot;
+		return $this;
 	}
 
+	/**
+	 * Return the chroot() directory
+	 * @return \PHP\IO\File
+	 */
 	function getChroot() {
 		return $this->chroot;
 	}
 
+	/**
+	 * Output handler function stub.
+	 * @todo implement this function to do something sensible.
+	 * @param string $output
+	 */
 	function outputHandler($output) {
 	}
 
+	/**
+	 * Run an application as a daemon. Will either return as parent or child.
+	 * If it returns as parent, the startup status is returned.
+	 * @param \PHP\OS\Daemon $daemon
+	 * @return int
+	 */
 	function runAsDaemon(Daemon $daemon) {
-		Signal::block(array(Signal::SIGUSR2, Signal::SIGCLD, Signal::SIGINT,
-			Signal::SIGTERM));
+		Signal::block(new \PHP\Util\Collection(array(Signal::SIGUSR2,
+			Signal::SIGCLD, Signal::SIGINT, Signal::SIGTERM)));
 		$pid = Process::fork();
 		if ($pid == 0) {
-			Signal::replaceBlockMask(array());
+			Signal::replaceBlockMask(new \PHP\Util\Collection(array()));
 			$daemon->load();
 
 			if ($this->chroot->getAbsolutePath() != '/') {
@@ -211,9 +320,10 @@ class DaemonContext {
 			\ob_end_flush();
 			return $result;
 		} else if ($pid > 0) {
-			$signal = Signal::wait(array(Signal::SIGUSR2, Signal::SIGCLD,
-				Signal::SIGINT, Signal::SIGTERM));
-			Signal::replaceBlockMask(array());
+			$signal = Signal::wait(new \PHP\Util\Collection(array(
+				Signal::SIGUSR2, Signal::SIGCLD, Signal::SIGINT,
+				Signal::SIGTERM)));
+			Signal::replaceBlockMask(new \PHP\Util\Collection(array()));
 			switch ($signal) {
 				case Signal::SIGTERM:
 				case Signal::SIGINT:

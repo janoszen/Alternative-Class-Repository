@@ -37,8 +37,9 @@ if (isset($baseclass)) {
  * for autoloading can use ClassLoader::registerAutoload() to enable this
  * functionality.
  *
- * @todo wildcard namespace declarations currently don't work. This needs to be
- *	fixed.
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
  */
 class ClassLoader {
 	/**

@@ -5,6 +5,13 @@ namespace PHP\OS;
 \ClassLoader::import('PHP\OS\*');
 \ClassLoader::import('PHP\Util\Collection');
 
+/**
+ * This class contains all process-related functionality.
+ *
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
+ */
 class Process {
 	/**
 	 * A Collection of listeners for fork events.
@@ -23,6 +30,7 @@ class Process {
 	 * facilitate reconnect needs of specific classes.
 	 * 
 	 * @param ForkListener $listener
+	 * @return \PHP\OS\Process
 	 */
 	public static function setForkListener(ForkListener $listener) {
 		if (!self::$forklisteners) {
@@ -31,22 +39,26 @@ class Process {
 		if (!self::$forklisteners->contains($listener)) {
 			self::$forklisteners->add($listener);
 		}
+		return $this;
 	}
 
 	/**
 	 * Remove a ForkListener from the listener collection.
 	 * @param ForkListener $listener
+	 * @return \PHP\OS\Process
 	 */
 	public static function removeForkListener(ForkListener $listener) {
 		if (self::$forklisteners) {
 			self::$forklisteners->remove($listener);
 		}
+		return $this;
 	}
 
 	/**
 	 * Set a class as a listener for chroot events.
 	 *
 	 * @param ChrootListener $listener
+	 * @return \PHP\OS\Process
 	 */
 	public static function setChrootListener(ChrootListener $listener) {
 		if (!self::$chrootlisteners) {
@@ -55,16 +67,19 @@ class Process {
 		if (!self::$chrootlisteners->contains($listener)) {
 			self::$chrootlisteners->add($listener);
 		}
+		return $this;
 	}
 
 	/**
 	 * Remove a ChrootListener from the listener collection.
 	 * @param ChrootListener $listener
+	 * @return \PHP\OS\Process
 	 */
 	public static function removeChrootListener(ChrootListener $listener) {
 		if (self::$chrootlisteners) {
 			self::$chrootlisteners->remove($listener);
 		}
+		return $this;
 	}
 
 	/**
@@ -155,7 +170,6 @@ class Process {
 	 * handler.
 	 *
 	 * @param bool $blocking default false
-	 *
 	 * @return \PHP\Util\Collection of \PHP\OS\ProcessExitInformation
 	 */
 	public static function handleChildTerminations($blocking = false) {
@@ -184,6 +198,9 @@ class Process {
 	 * working state.
 	 *
 	 * @param \PHP\IO\File $directory
+	 * @throws \PHP\Lang\ValueError if the directory doesn't exist.
+	 * @throws \PHP\OS\ChrootFailed if the chroot() call failed
+	 * @return \PHP\OS\Process
 	 */
 	public static function chroot(\PHP\IO\File $directory) {
 		if (!$directory->isDirectory()) {
@@ -222,8 +239,17 @@ class Process {
 				$listener->afterChroot($directory);
 			}
 		}
+		return $this;
 	}
 
+	/**
+	 * Set the user ID of the current process
+	 * @param int $uid
+	 * @throws \PHP\Lang\TypeError if the UID is not an integer
+	 * @throws \PHP\Lang\ValueError if the UID is not a positive integer
+	 * @throws \PHP\OS\SetUIDFailed if the setuid call failed
+	 * @return \PHP\OS\Process
+	 */
 	public function setuid($uid) {
 		if (!is_int($uid)) {
 			throw new \PHP\Lang\TypeError($uid, "integer");
@@ -234,5 +260,27 @@ class Process {
 		if (!\posix_setuid($uid)) {
 			throw new \PHP\OS\SetUIDFailed($uid);
 		}
+		return $this;
+	}
+
+	/**
+	 * Set the group ID of the current process
+	 * @param int $gid
+	 * @throws \PHP\Lang\TypeError if the GID is not an integer
+	 * @throws \PHP\Lang\ValueError if the GID is not a positive integer
+	 * @throws \PHP\OS\SetUIDFailed if the setgid call failed
+	 * @return \PHP\OS\Process
+	 */
+	public function setgid($gid) {
+		if (!is_int($gid)) {
+			throw new \PHP\Lang\TypeError($gid, "integer");
+		}
+		if ($gid<0) {
+			throw new \PHP\Lang\ValueError($gid, "positive integer");
+		}
+		if (!\posix_setgid($gid)) {
+			throw new \PHP\OS\SetGIDFailed($gid);
+		}
+		return $this;
 	}
 }

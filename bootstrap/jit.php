@@ -3,6 +3,10 @@
 /**
  * This is the daemon initialization class, which runs the basic initialization.
  * Once init is complete, it hands over control to the configured application.
+ *
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
  */
 class Init {
 	/**

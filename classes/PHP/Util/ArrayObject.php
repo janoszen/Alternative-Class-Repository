@@ -8,6 +8,9 @@ namespace PHP\Util;
  * likely not prevail if parts are reimplemented in C.
  *
  * @internal
+ * @author Janos Pasztor <janos@janoszen.hu>
+ * @copyright Janos Pasztor (c) 2011
+ * @license http://creativecommons.org/licenses/BSD/
  */
 abstract class ArrayObject implements \Iterator, \ArrayAccess, \Countable, \Serializable {
 	/**
