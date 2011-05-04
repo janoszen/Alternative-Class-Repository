@@ -56,7 +56,7 @@ class Random {
 		}
 		$string = '';
 		while (\strlen($string) < $length) {
-			$string = \uniqid('', true);
+			$string .= \uniqid('', true);
 		}
 		return \substr($string, 0, $length);
 	}
