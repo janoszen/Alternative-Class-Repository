@@ -5,21 +5,25 @@
  */
 
 /**
- * This code should be in a static constructor.
+ * This code should be in a static constructor. Wait... we don't have static
+ * constuctors in PHP!
  */
-$basefiles = array(
-	'ClassLoaderException.php',
-	'ClassLoaderCallbackInterface.php',
+$baseclasses = array(
+	'ClassLoaderException',
+	'ClassLoaderCallbackInterface',
 );
-foreach ($basefiles as $file) {
-	$file = __DIR__ . DIRECTORY_SEPARATOR . $file;
+foreach ($baseclasses as $baseclass) {
+	$file = __DIR__ . DIRECTORY_SEPARATOR . $baseclass;
 	if (!\file_exists($file) || !include($file)) {
-		die('Fatal error: failed to load ClassLoaderCallbackInterface');
+		die('Fatal error: failed to load ' . $baseclass);
 	}
 }
-unset($basefiles);
+unset($baseclasses);
 if (isset($file)) {
 	unset($file);
+}
+if (isset($baseclass)) {
+	unset($baseclass);
 }
 /**
  * End of static constructor code.
