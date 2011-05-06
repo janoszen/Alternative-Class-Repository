@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+@author Janos Pasztor <janos@janoszen.hu>
+@copyright Janos Pasztor (c) 2011
+@license http://creativecommons.org/licenses/BSD/
+-->
+<project name="ACR" default="build" basedir=".">
+	<description>
+		Runs documentation tools on the framework.
+	</description>
+
+	<taskdef name="phpmd" classname="org.phpmd.ant.PHPMDTask"
+		classpath="${basedir}/util/ant-phpmd-0.1.0.jar" />
+	<taskdef name="doxygen" classname="org.doxygen.tools.DoxygenTask"
+		classpath="${basedir}/util/ant_doxygen.jar" />
+	<property environment="env" />
+	<macrodef name="pearexec" description="Run a PEAR installed executable, eg. phpunit">
+		<attribute name="scriptname" />
+		<attribute name="parameters" default="" />
+		<attribute name="failonerror" default="true" />
+
+		<sequential>
+			<exec executable="${env.PHP_PEAR_PHP_BIN}" dir="${basedir}" failonerror="@{failonerror}">
+				<arg line="&quot;${env.PHP_PEAR_SYSCONF_DIR}/@{scriptname}&quot;" />
+				<arg line="@{parameters}" />
+			</exec>
+		</sequential>
+	</macrodef>
+
+	<target name="build" description="Runs documentation tools on the framework.">
+		<sequential>
+			<antcall target="phpunit" />
+			<antcall target="pdepend" />
+			<antcall target="doxygen" />
+			<antcall target="phpcs" />
+			<antcall target="phpmd" />
+		</sequential>
+	</target>
+
+	<target name="phpunit" description="Run PHPUnit on project">
+		<pearexec scriptname="phpunit" parameters="
+			--bootstrap ${basedir}/bootstrap/unittest.php
+			--log-junit ${basedir}/docs/phpunit/junit.xml
+			--coverage-clover ${basedir}/docs/phpunit/coverage.xml
+			--coverage-html ${basedir}/docs/phpunit/coverage.html
+			${basedir}/tests/" />
+	</target>
+
+	<target name="pdepend" description="Run PDepend on project">
+		<pearexec scriptname="pdepend" parameters="
+			--jdepend-chart=${basedir}/docs/pdepend/chart.svg
+			--overview-pyramid=${basedir}/docs/pdepend/pyramid.svg
+			--jdepend-xml=${basedir}/docs/pdepend/jdepend.xml
+			--summary-xml=${basedir}/docs/pdepend/summary.xml
+			${basedir}/classes/" />
+	</target>
+
+	<target name="phpcs" description="Run PHPCS on project">
+		<pearexec scriptname="phpcs" failonerror="false" parameters="
+			--report=full
+			--report-file=${basedir}/docs/phpcs/full.txt
+			--encoding=UTF-8
+			${basedir}/classes/" />
+		<pearexec scriptname="phpcs" failonerror="false" parameters="
+			--report=xml
+			--report-file=${basedir}/docs/phpcs/report.xml
+			--encoding=UTF-8
+			${basedir}/classes/" />
+		<pearexec scriptname="phpcs" failonerror="false" parameters="
+			--report=summary
+			--report-file=${basedir}/docs/phpcs/summary.txt
+			--encoding=UTF-8
+			${basedir}/classes/" />
+	</target>
+
+	<target name="doxygen" description="Generate documentation with Doxygen">
+		<doxygen>
+			<property name="DOXYFILE_ENCODING" value="UTF-8" />
+			<property name="PROJECT_NAME" value="${ant.project.name}" />
+			<property name="PROJECT_NUMBER" value="" />
+			<property name="OUTPUT_DIRECTORY" value="${basedir}/docs/doxygen" />
+			<property name="CREATE_SUBDIRS" value="NO" />
+			<property name="OUTPUT_LANGUAGE" value="English" />
+			<property name="BRIEF_MEMBER_DESC" value="YES" />
+			<property name="REPEAT_BRIEF" value="YES" />
+			<property name="ABBREVIATE_BRIEF" value="&quot;The $name class&quot;
+				 &quot;The $name widget&quot;
+				 &quot;The $name file&quot;
+				 is
+				 provides
+				 specifies
+				 contains
+				 represents
+				 a
+				 an
+				 the" />
+			<property name="ALWAYS_DETAILED_SEC" value="NO" />
+			<property name="INLINE_INHERITED_MEMB" value="NO" />
+			<property name="FULL_PATH_NAMES" value="YES" />
+			<property name="STRIP_FROM_PATH" value="" />
+			<property name="STRIP_FROM_INC_PATH" value="" />
+			<property name="SHORT_NAMES" value="NO" />
+			<property name="JAVADOC_AUTOBRIEF" value="NO" />
+			<property name="QT_AUTOBRIEF" value="NO" />
+			<property name="MULTILINE_CPP_IS_BRIEF" value="NO" />
+			<property name="INHERIT_DOCS" value="YES" />
+			<property name="SEPARATE_MEMBER_PAGES" value="NO" />
+			<property name="TAB_SIZE" value="8" />
+			<property name="ALIASES" value="" />
+			<property name="OPTIMIZE_OUTPUT_FOR_C" value="NO" />
+			<property name="OPTIMIZE_OUTPUT_JAVA" value="YES" />
+			<property name="OPTIMIZE_FOR_FORTRAN" value="NO" />
+			<property name="OPTIMIZE_OUTPUT_VHDL" value="NO" />
+			<property name="EXTENSION_MAPPING" value="" />
+			<property name="BUILTIN_STL_SUPPORT" value="NO" />
+			<property name="CPP_CLI_SUPPORT" value="NO" />
+			<property name="SIP_SUPPORT" value="NO" />
+			<property name="IDL_PROPERTY_SUPPORT" value="YES" />
+			<property name="DISTRIBUTE_GROUP_DOC" value="NO" />
+			<property name="SUBGROUPING" value="YES" />
+			<property name="TYPEDEF_HIDES_STRUCT" value="NO" />
+			<property name="SYMBOL_CACHE_SIZE" value="0" />
+			<property name="EXTRACT_ALL" value="NO" />
+			<property name="EXTRACT_PRIVATE" value="NO" />
+			<property name="EXTRACT_STATIC" value="NO" />
+			<property name="EXTRACT_LOCAL_CLASSES" value="YES" />
+			<property name="EXTRACT_LOCAL_METHODS" value="NO" />
+			<property name="EXTRACT_ANON_NSPACES" value="NO" />
+			<property name="HIDE_UNDOC_MEMBERS" value="NO" />
+			<property name="HIDE_UNDOC_CLASSES" value="NO" />
+			<property name="HIDE_FRIEND_COMPOUNDS" value="NO" />
+			<property name="HIDE_IN_BODY_DOCS" value="NO" />
+			<property name="INTERNAL_DOCS" value="NO" />
+			<property name="CASE_SENSE_NAMES" value="NO" />
+			<property name="HIDE_SCOPE_NAMES" value="NO" />
+			<property name="SHOW_INCLUDE_FILES" value="YES" />
+			<property name="FORCE_LOCAL_INCLUDES" value="NO" />
+			<property name="INLINE_INFO" value="YES" />
+			<property name="SORT_MEMBER_DOCS" value="YES" />
+			<property name="SORT_BRIEF_DOCS" value="NO" />
+			<property name="SORT_MEMBERS_CTORS_1ST" value="NO" />
+			<property name="SORT_GROUP_NAMES" value="NO" />
+			<property name="SORT_BY_SCOPE_NAME" value="NO" />
+			<property name="GENERATE_TODOLIST" value="YES" />
+			<property name="GENERATE_TESTLIST" value="YES" />
+			<property name="GENERATE_BUGLIST" value="YES" />
+			<property name="GENERATE_DEPRECATEDLIST" value="YES" />
+			<property name="ENABLED_SECTIONS" value="" />
+			<property name="MAX_INITIALIZER_LINES" value="30" />
+			<property name="SHOW_USED_FILES" value="YES" />
+			<property name="SHOW_DIRECTORIES" value="NO" />
+			<property name="SHOW_FILES" value="YES" />
+			<property name="SHOW_NAMESPACES" value="YES" />
+			<property name="FILE_VERSION_FILTER" value="" />
+			<property name="LAYOUT_FILE" value="" />
+			<property name="QUIET" value="NO" />
+			<property name="WARNINGS" value="YES" />
+			<property name="WARN_IF_UNDOCUMENTED" value="YES" />
+			<property name="WARN_IF_DOC_ERROR" value="YES" />
+			<property name="WARN_NO_PARAMDOC" value="NO" />
+			<property name="WARN_FORMAT" value="$file:$line: $text" />
+			<property name="WARN_LOGFILE" value="" />
+			<property name="INPUT" value="${basedir}/classes" />
+			<property name="INPUT_ENCODING" value="UTF-8" />
+			<property name="FILE_PATTERNS" value="*.php" />
+			<property name="RECURSIVE" value="YES" />
+			<property name="EXCLUDE" value="" />
+			<property name="EXCLUDE_SYMLINKS" value="NO" />
+			<property name="EXCLUDE_PATTERNS" value="" />
+			<property name="EXCLUDE_SYMBOLS" value="" />
+			<property name="EXAMPLE_PATH" value="" />
+			<property name="EXAMPLE_PATTERNS" value="*" />
+			<property name="EXAMPLE_RECURSIVE" value="NO" />
+			<property name="IMAGE_PATH" value="" />
+			<property name="INPUT_FILTER" value="" />
+			<property name="FILTER_PATTERNS" value="" />
+			<property name="FILTER_SOURCE_FILES" value="NO" />
+			<property name="SOURCE_BROWSER" value="YES" />
+			<property name="INLINE_SOURCES" value="YES" />
+			<property name="STRIP_CODE_COMMENTS" value="YES" />
+			<property name="REFERENCED_BY_RELATION" value="NO" />
+			<property name="REFERENCES_RELATION" value="NO" />
+			<property name="REFERENCES_LINK_SOURCE" value="YES" />
+			<property name="USE_HTAGS" value="NO" />
+			<property name="VERBATIM_HEADERS" value="YES" />
+			<property name="ALPHABETICAL_INDEX" value="YES" />
+			<property name="COLS_IN_ALPHA_INDEX" value="5" />
+			<property name="IGNORE_PREFIX" value="" />
+			<property name="GENERATE_HTML" value="YES" />
+			<property name="HTML_OUTPUT" value="html" />
+			<property name="HTML_FILE_EXTENSION" value=".html" />
+			<property name="HTML_HEADER" value="" />
+			<property name="HTML_FOOTER" value="" />
+			<property name="HTML_STYLESHEET" value="" />
+			<property name="HTML_COLORSTYLE_HUE" value="220" />
+			<property name="HTML_COLORSTYLE_SAT" value="96" />
+			<property name="HTML_COLORSTYLE_GAMMA" value="80" />
+			<property name="HTML_TIMESTAMP" value="YES" />
+			<property name="HTML_ALIGN_MEMBERS" value="YES" />
+			<property name="HTML_DYNAMIC_SECTIONS" value="NO" />
+			<property name="GENERATE_DOCSET" value="NO" />
+			<property name="DOCSET_FEEDNAME" value="Doxygen generated docs" />
+			<property name="DOCSET_BUNDLE_ID" value="org.doxygen.Project" />
+			<property name="DOCSET_PUBLISHER_ID" value="org.doxygen.Publisher" />
+			<property name="DOCSET_PUBLISHER_NAME" value="Publisher" />
+			<property name="GENERATE_HTMLHELP" value="NO" />
+			<property name="CHM_FILE" value="" />
+			<property name="HHC_LOCATION" value="" />
+			<property name="GENERATE_CHI" value="NO" />
+			<property name="CHM_INDEX_ENCODING" value="" />
+			<property name="BINARY_TOC" value="NO" />
+			<property name="TOC_EXPAND" value="NO" />
+			<property name="GENERATE_QHP" value="NO" />
+			<property name="QCH_FILE" value="" />
+			<property name="QHP_NAMESPACE" value="org.doxygen.Project" />
+			<property name="QHP_VIRTUAL_FOLDER" value="doc" />
+			<property name="QHP_CUST_FILTER_NAME" value="" />
+			<property name="QHP_CUST_FILTER_ATTRS" value="" />
+			<property name="QHP_SECT_FILTER_ATTRS" value="" />
+			<property name="QHG_LOCATION" value="" />
+			<property name="GENERATE_ECLIPSEHELP" value="NO" />
+			<property name="ECLIPSE_DOC_ID" value="org.doxygen.Project" />
+			<property name="DISABLE_INDEX" value="NO" />
+			<property name="ENUM_VALUES_PER_LINE" value="4" />
+			<property name="GENERATE_TREEVIEW" value="NO" />
+			<property name="USE_INLINE_TREES" value="NO" />
+			<property name="TREEVIEW_WIDTH" value="250" />
+			<property name="EXT_LINKS_IN_WINDOW" value="NO" />
+			<property name="FORMULA_FONTSIZE" value="10" />
+			<property name="FORMULA_TRANSPARENT" value="YES" />
+			<property name="USE_MATHJAX" value="NO" />
+			<property name="MATHJAX_RELPATH" value="http://www.mathjax.org/mathjax" />
+			<property name="SEARCHENGINE" value="YES" />
+			<property name="SERVER_BASED_SEARCH" value="NO" />
+			<property name="GENERATE_LATEX" value="NO" />
+			<property name="LATEX_OUTPUT" value="latex" />
+			<property name="LATEX_CMD_NAME" value="latex" />
+			<property name="MAKEINDEX_CMD_NAME" value="makeindex" />
+			<property name="COMPACT_LATEX" value="NO" />
+			<property name="PAPER_TYPE" value="a4" />
+			<property name="EXTRA_PACKAGES" value="" />
+			<property name="LATEX_HEADER" value="" />
+			<property name="PDF_HYPERLINKS" value="YES" />
+			<property name="USE_PDFLATEX" value="YES" />
+			<property name="LATEX_BATCHMODE" value="NO" />
+			<property name="LATEX_HIDE_INDICES" value="NO" />
+			<property name="LATEX_SOURCE_CODE" value="NO" />
+			<property name="GENERATE_RTF" value="NO" />
+			<property name="RTF_OUTPUT" value="rtf" />
+			<property name="COMPACT_RTF" value="NO" />
+			<property name="RTF_HYPERLINKS" value="NO" />
+			<property name="RTF_STYLESHEET_FILE" value="" />
+			<property name="RTF_EXTENSIONS_FILE" value="" />
+			<property name="GENERATE_MAN" value="NO" />
+			<property name="MAN_OUTPUT" value="man" />
+			<property name="MAN_EXTENSION" value=".3" />
+			<property name="MAN_LINKS" value="NO" />
+			<property name="GENERATE_XML" value="NO" />
+			<property name="XML_OUTPUT" value="xml" />
+			<property name="XML_SCHEMA" value="" />
+			<property name="XML_DTD" value="" />
+			<property name="XML_PROGRAMLISTING" value="YES" />
+			<property name="GENERATE_AUTOGEN_DEF" value="NO" />
+			<property name="GENERATE_PERLMOD" value="NO" />
+			<property name="PERLMOD_LATEX" value="NO" />
+			<property name="PERLMOD_PRETTY" value="YES" />
+			<property name="PERLMOD_MAKEVAR_PREFIX" value="" />
+			<property name="ENABLE_PREPROCESSING" value="YES" />
+			<property name="MACRO_EXPANSION" value="NO" />
+			<property name="EXPAND_ONLY_PREDEF" value="NO" />
+			<property name="SEARCH_INCLUDES" value="YES" />
+			<property name="INCLUDE_PATH" value="" />
+			<property name="INCLUDE_FILE_PATTERNS" value="" />
+			<property name="PREDEFINED" value="" />
+			<property name="EXPAND_AS_DEFINED" value="" />
+			<property name="SKIP_FUNCTION_MACROS" value="YES" />
+			<property name="TAGFILES" value="" />
+			<property name="GENERATE_TAGFILE" value="" />
+			<property name="ALLEXTERNALS" value="NO" />
+			<property name="EXTERNAL_GROUPS" value="YES" />
+			<property name="PERL_PATH" value="/usr/bin/perl" />
+			<property name="CLASS_DIAGRAMS" value="YES" />
+			<property name="MSCGEN_PATH" value="" />
+			<property name="HIDE_UNDOC_RELATIONS" value="YES" />
+			<property name="HAVE_DOT" value="NO" />
+			<property name="DOT_NUM_THREADS" value="0" />
+			<property name="DOT_FONTNAME" value="FreeSans.ttf" />
+			<property name="DOT_FONTSIZE" value="10" />
+			<property name="DOT_FONTPATH" value="" />
+			<property name="CLASS_GRAPH" value="YES" />
+			<property name="COLLABORATION_GRAPH" value="YES" />
+			<property name="GROUP_GRAPHS" value="YES" />
+			<property name="UML_LOOK" value="NO" />
+			<property name="TEMPLATE_RELATIONS" value="NO" />
+			<property name="INCLUDE_GRAPH" value="YES" />
+			<property name="INCLUDED_BY_GRAPH" value="YES" />
+			<property name="CALL_GRAPH" value="NO" />
+			<property name="CALLER_GRAPH" value="NO" />
+			<property name="GRAPHICAL_HIERARCHY" value="YES" />
+			<property name="DIRECTORY_GRAPH" value="YES" />
+			<property name="DOT_IMAGE_FORMAT" value="png" />
+			<property name="DOT_PATH" value="" />
+			<property name="DOTFILE_DIRS" value="" />
+			<property name="MSCFILE_DIRS" value="" />
+			<property name="DOT_GRAPH_MAX_NODES" value="50" />
+			<property name="MAX_DOT_GRAPH_DEPTH" value="0" />
+			<property name="DOT_TRANSPARENT" value="NO" />
+			<property name="DOT_MULTI_TARGETS" value="NO" />
+			<property name="GENERATE_LEGEND" value="YES" />
+			<property name="DOT_CLEANUP" value="YES" />
+		</doxygen>
+	</target>
+
+	<target name="phpmd" description="Generate PHP MD report">
+		<pearexec scriptname="phpmd" failonerror="false"
+			parameters="${basedir}/classes/ xml
+			codesize,design,naming --reportfile ${basedir}/docs/phpmd/report.xml" />
+		<pearexec scriptname="phpmd" failonerror="false"
+			parameters="${basedir}/classes/ html
+			codesize,design,naming --reportfile ${basedir}/docs/phpmd/report.html" />
+		<pearexec scriptname="phpmd" failonerror="false"
+			parameters="${basedir}/classes/ text
+			codesize,design,naming --reportfile ${basedir}/docs/phpmd/report.txt" />
+	</target>
+</project>
