@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="+global">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>2</Ce>
+        <A>0.25</A>
+        <I>1</I>
+        <D>0.25</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoader.php">ClassLoader</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoaderException.php">ClassLoaderException</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoaderCallbackInterface.php">ClassLoaderCallbackInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>+core</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="PHP\IO">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>0.5</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\File.php">File</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\FileNotFoundException.php">FileNotFoundException</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\IOException.php">IOException</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>PHP\Lang</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>PHP\OS</Package>
+      </UsedBy>
+    </Package>
+    <Package name="PHP\Lang">
+      <Stats>
+        <TotalClasses>9</TotalClasses>
+        <ConcreteClasses>8</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>4</Ca>
+        <Ce>2</Ce>
+        <A>0.11111111111111</A>
+        <I>0.33333333333333</I>
+        <D>0.55555555555556</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Exception.php">Exception</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\IndexOutOfBoundsException.php">IndexOutOfBoundsException</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Math.php">Math</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\NotImplementedException.php">NotImplementedException</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\NullPointerException.php">NullPointerException</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\TypeError.php">TypeError</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\ValueError.php">ValueError</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Comparable.php">Comparable</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>PHP\Util</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>PHP\IO</Package>
+        <Package>PHP\OS</Package>
+        <Package>PHP\Util</Package>
+        <Package>PHPx\HTTP</Package>
+      </UsedBy>
+    </Package>
+    <Package name="PHP\OS">
+      <Stats>
+        <TotalClasses>12</TotalClasses>
+        <ConcreteClasses>9</ConcreteClasses>
+        <AbstractClasses>3</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>3</Ce>
+        <A>0.25</A>
+        <I>1</I>
+        <D>0.25</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ChrootFailed.php">ChrootFailed</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php">DaemonContext</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Exception.php">Exception</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ForkFailed.php">ForkFailed</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php">Process</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ProcessExitInformation.php">ProcessExitInformation</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\SetGIDFailed.php">SetGIDFailed</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\SetUIDFailed.php">SetUIDFailed</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Signal.php">Signal</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ChrootListener.php">ChrootListener</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Daemon.php">Daemon</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ForkListener.php">ForkListener</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>PHP\IO</Package>
+        <Package>PHP\Lang</Package>
+        <Package>PHP\Util</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="PHP\Util">
+      <Stats>
+        <TotalClasses>5</TotalClasses>
+        <ConcreteClasses>4</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>2</Ca>
+        <Ce>2</Ce>
+        <A>0.2</A>
+        <I>0.5</I>
+        <D>0.3</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Collection.php">Collection</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Map.php">Map</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Random.php">Random</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\ArrayObject.php">ArrayObject</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>PHP\Lang</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>PHP\Lang</Package>
+        <Package>PHP\OS</Package>
+      </UsedBy>
+    </Package>
+    <Package name="PHPx\HTTP">
+      <Stats>
+        <TotalClasses>9</TotalClasses>
+        <ConcreteClasses>7</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0.22222222222222</A>
+        <I>1</I>
+        <D>0.22222222222222</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPClient.php">HTTPClient</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPHeader.php">HTTPHeader</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPMethod.php">HTTPMethod</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPRequest.php">HTTPRequest</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPResponse.php">HTTPResponse</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPStatus.php">HTTPStatus</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPVersion.php">HTTPVersion</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPResponder.php">HTTPResponder</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPServer.php">HTTPServer</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>PHP\Lang</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="PHPx\MIME">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>0</Ce>
+        <A>0</A>
+        <I>0</I>
+        <D>1</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\MIME\MIMEDocument.php">MIMEDocument</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\MIME\MIMEPart.php">MIMEPart</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon/>
+      <UsedBy/>
+    </Package>
+  </Packages>
+  <Cycles>
+    <Package Name="PHP\IO">
+      <Package>PHP\IO</Package>
+      <Package>PHP\Lang</Package>
+      <Package>PHP\Util</Package>
+      <Package>PHP\Lang</Package>
+    </Package>
+    <Package Name="PHP\Lang">
+      <Package>PHP\Lang</Package>
+      <Package>PHP\Util</Package>
+      <Package>PHP\Lang</Package>
+    </Package>
+    <Package Name="PHP\OS">
+      <Package>PHP\OS</Package>
+      <Package>PHP\IO</Package>
+      <Package>PHP\Lang</Package>
+      <Package>PHP\Util</Package>
+      <Package>PHP\Lang</Package>
+    </Package>
+    <Package Name="PHP\Util">
+      <Package>PHP\Util</Package>
+      <Package>PHP\Lang</Package>
+      <Package>PHP\Util</Package>
+    </Package>
+    <Package Name="PHPx\HTTP">
+      <Package>PHPx\HTTP</Package>
+      <Package>PHP\Lang</Package>
+      <Package>PHP\Util</Package>
+      <Package>PHP\Lang</Package>
+    </Package>
+  </Cycles>
+</PDepend>
