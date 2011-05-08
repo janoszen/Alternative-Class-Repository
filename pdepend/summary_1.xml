@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2011-05-06T21:51:57" pdepend="0.10.0RC3" ahh="0.31818181818182" andc="0.36842105263158" calls="256" ccn="329" ccn2="340" cloc="1636" clsa="3" clsc="33" eloc="1425" fanout="131" leafs="30" lloc="915" loc="3387" maxDIT="4" ncloc="1751" noc="36" nof="0" noi="5" nom="162" nop="7" roots="3">
+  <files>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoader.php" cloc="110" eloc="131" lloc="82" loc="259" ncloc="149"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoaderException.php" cloc="7" eloc="3" lloc="0" loc="12" ncloc="5"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\File.php" cloc="102" eloc="87" lloc="55" loc="211" ncloc="109"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\FileNotFoundException.php" cloc="7" eloc="8" lloc="4" loc="19" ncloc="12"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\IOException.php" cloc="7" eloc="5" lloc="2" loc="17" ncloc="10"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Exception.php" cloc="14" eloc="7" lloc="3" loc="24" ncloc="10"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\IndexOutOfBoundsException.php" cloc="12" eloc="12" lloc="6" loc="28" ncloc="16"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Math.php" cloc="131" eloc="132" lloc="89" loc="289" ncloc="158"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\NotImplementedException.php" cloc="8" eloc="16" lloc="9" loc="28" ncloc="20"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\NullPointerException.php" cloc="8" eloc="5" lloc="2" loc="18" ncloc="10"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\TypeError.php" cloc="12" eloc="21" lloc="15" loc="37" ncloc="25"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\ValueError.php" cloc="12" eloc="12" lloc="7" loc="28" ncloc="16"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ChrootFailed.php" cloc="7" eloc="8" lloc="4" loc="19" ncloc="12"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php" cloc="149" eloc="176" lloc="126" loc="349" ncloc="200"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Exception.php" cloc="7" eloc="5" lloc="2" loc="17" ncloc="10"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ForkFailed.php" cloc="7" eloc="8" lloc="4" loc="18" ncloc="11"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php" cloc="98" eloc="171" lloc="111" loc="287" ncloc="189"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ProcessExitInformation.php" cloc="73" eloc="44" lloc="31" loc="130" ncloc="57"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\SetGIDFailed.php" cloc="7" eloc="8" lloc="4" loc="19" ncloc="12"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\SetUIDFailed.php" cloc="7" eloc="8" lloc="4" loc="19" ncloc="12"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Signal.php" cloc="48" eloc="90" lloc="70" loc="149" ncloc="101"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\ArrayObject.php" cloc="169" eloc="134" lloc="86" loc="328" ncloc="159"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Collection.php" cloc="16" eloc="11" lloc="6" loc="31" ncloc="15"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Map.php" cloc="16" eloc="11" lloc="6" loc="31" ncloc="15"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Random.php" cloc="24" eloc="35" lloc="23" loc="64" ncloc="40"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPClient.php" cloc="0" eloc="18" lloc="9" loc="34" ncloc="34"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPHeader.php" cloc="0" eloc="4" lloc="1" loc="6" ncloc="6"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPMethod.php" cloc="199" eloc="30" lloc="21" loc="237" ncloc="38"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPRequest.php" cloc="0" eloc="8" lloc="3" loc="16" ncloc="16"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPResponder.php" cloc="0" eloc="32" lloc="8" loc="43" ncloc="43"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPResponse.php" cloc="0" eloc="4" lloc="1" loc="7" ncloc="7"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPServer.php" cloc="0" eloc="4" lloc="1" loc="7" ncloc="7"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPStatus.php" cloc="223" eloc="72" lloc="44" loc="307" ncloc="84"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPVersion.php" cloc="80" eloc="66" lloc="47" loc="159" ncloc="79"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\MIME\MIMEDocument.php" cloc="0" eloc="4" lloc="1" loc="7" ncloc="7"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\MIME\MIMEPart.php" cloc="0" eloc="4" lloc="1" loc="7" ncloc="7"/>
+  </files>
+  <package name="+global" cr="0.15" noc="2" nof="0" noi="1" nom="11" rcr="0.2775">
+    <class name="ClassLoader" cis="8" cloc="87" cr="0.15" csz="15" dit="0" eloc="106" impl="0" lloc="57" loc="215" ncloc="128" noam="0" nocc="0" nom="10" noom="0" rcr="0.15" vars="5" varsi="5" varsnp="0" wmc="30" wmci="30" wmcnp="23">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoader.php"/>
+      <method name="setClassPath" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+      <method name="hasLoadCallback" ccn="2" ccn2="3" cloc="0" eloc="9" lloc="3" loc="9" ncloc="9" npath="3"/>
+      <method name="callbackClass" ccn="2" ccn2="2" cloc="0" eloc="5" lloc="2" loc="5" ncloc="5" npath="2"/>
+      <method name="loadFile" ccn="4" ccn2="5" cloc="0" eloc="12" lloc="6" loc="12" ncloc="12" npath="5"/>
+      <method name="getCandidates" ccn="7" ccn2="8" cloc="0" eloc="31" lloc="16" loc="31" ncloc="31" npath="8"/>
+      <method name="import" ccn="6" ccn2="6" cloc="11" eloc="21" lloc="14" loc="34" ncloc="23" npath="18"/>
+      <method name="loadAndCreateInstance" ccn="1" ccn2="1" cloc="0" eloc="8" lloc="6" loc="8" ncloc="8" npath="1"/>
+      <method name="createInstance" ccn="1" ccn2="1" cloc="0" eloc="7" lloc="5" loc="7" ncloc="7" npath="1"/>
+      <method name="autoload" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="registerAutoload" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="ClassLoaderException" cis="0" cloc="0" cr="0.15" csz="0" dit="2" eloc="0" impl="0" lloc="0" loc="2" ncloc="2" noam="0" nocc="0" nom="0" noom="0" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\ClassLoaderException.php"/>
+    </class>
+  </package>
+  <package name="PHP\IO" cr="0.15" noc="3" nof="0" noi="0" nom="17" rcr="0.199725">
+    <class name="File" cis="16" cloc="94" cr="0.15" csz="19" dit="0" eloc="79" impl="0" lloc="34" loc="196" ncloc="102" noam="0" nocc="0" nom="16" noom="0" rcr="0.15" vars="3" varsi="3" varsnp="0" wmc="28" wmci="28" wmcnp="28">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\File.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getPathSeparator" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="createNewFile" ccn="4" ccn2="4" cloc="0" eloc="10" lloc="6" loc="10" ncloc="10" npath="4"/>
+      <method name="canRead" ccn="2" ccn2="3" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="3"/>
+      <method name="canWrite" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getAbsoluteFile" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+      <method name="getAbsolutePath" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getCanonicalFile" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getCanonicalPath" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getPath" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="isAbsolute" ccn="2" ccn2="3" cloc="0" eloc="8" lloc="3" loc="8" ncloc="8" npath="3"/>
+      <method name="isDirectory" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="isFile" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="mkdir" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="renameTo" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="__destruct" ccn="2" ccn2="2" cloc="0" eloc="5" lloc="2" loc="5" ncloc="5" npath="2"/>
+    </class>
+    <class name="FileNotFoundException" cis="1" cloc="0" cr="0.15" csz="1" dit="4" eloc="3" impl="0" lloc="1" loc="5" ncloc="5" noam="0" nocc="0" nom="1" noom="1" rcr="0.30614196428571" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\FileNotFoundException.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="IOException" cis="0" cloc="0" cr="0.2775" csz="0" dit="3" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="1" nom="0" noom="0" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\IO\IOException.php"/>
+    </class>
+  </package>
+  <package name="PHP\Lang" cr="0.5325" noc="7" nof="0" noi="1" nom="23" rcr="0.1755">
+    <class name="Exception" cis="1" cloc="7" cr="1.584375" csz="1" dit="2" eloc="3" impl="0" lloc="1" loc="12" ncloc="5" noam="1" nocc="7" nom="1" noom="0" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Exception.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="IndexOutOfBoundsException" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="7" impl="0" lloc="3" loc="14" ncloc="9" noam="0" nocc="0" nom="1" noom="1" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\IndexOutOfBoundsException.php"/>
+      <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+    </class>
+    <class name="Math" cis="17" cloc="124" cr="0.15" csz="17" dit="0" eloc="120" impl="0" lloc="63" loc="273" ncloc="149" noam="0" nocc="0" nom="17" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="40" wmci="40" wmcnp="40">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Math.php"/>
+      <method name="abs" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="acos" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="asin" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="atan" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="ceil" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="cos" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="exp" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="floor" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="log" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="max" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="min" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="pow" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="random" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="round" ccn="4" ccn2="4" cloc="0" eloc="12" lloc="7" loc="12" ncloc="12" npath="8"/>
+      <method name="sin" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="sqrt" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="tan" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+    </class>
+    <class name="NotImplementedException" cis="1" cloc="0" cr="0.15" csz="1" dit="3" eloc="11" impl="0" lloc="6" loc="13" ncloc="13" noam="0" nocc="0" nom="1" noom="1" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\NotImplementedException.php"/>
+      <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="11" lloc="6" loc="11" ncloc="11" npath="2"/>
+    </class>
+    <class name="NullPointerException" cis="0" cloc="0" cr="0.15" csz="0" dit="3" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\NullPointerException.php"/>
+    </class>
+    <class name="TypeError" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="16" impl="0" lloc="12" loc="23" ncloc="18" noam="0" nocc="0" nom="1" noom="1" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="3" wmci="1" wmcnp="3">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\TypeError.php"/>
+      <method name="__construct" ccn="3" ccn2="3" cloc="0" eloc="16" lloc="12" loc="16" ncloc="16" npath="4"/>
+    </class>
+    <class name="ValueError" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="7" impl="0" lloc="4" loc="14" ncloc="9" noam="0" nocc="0" nom="1" noom="1" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\ValueError.php"/>
+      <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="4" loc="7" ncloc="7" npath="2"/>
+    </class>
+  </package>
+  <package name="PHP\OS" cr="0.15" noc="9" nof="0" noi="3" nom="51" rcr="0.199725">
+    <class name="ChrootFailed" cis="1" cloc="0" cr="0.15" csz="1" dit="4" eloc="3" impl="0" lloc="1" loc="5" ncloc="5" noam="0" nocc="0" nom="1" noom="1" rcr="0.18903549107143" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ChrootFailed.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="DaemonContext" cis="11" cloc="141" cr="0.15" csz="18" dit="0" eloc="159" impl="0" lloc="101" loc="332" ncloc="191" noam="0" nocc="0" nom="11" noom="0" rcr="0.15" vars="7" varsi="7" varsnp="0" wmc="48" wmci="48" wmcnp="48">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="6" lloc="4" loc="6" ncloc="6" npath="1"/>
+      <method name="setWorkingDir" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="4" loc="7" ncloc="7" npath="2"/>
+      <method name="getWorkingDir" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setUid" ccn="3" ccn2="3" cloc="0" eloc="10" lloc="6" loc="10" ncloc="10" npath="4"/>
+      <method name="getUid" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setGid" ccn="3" ccn2="3" cloc="0" eloc="10" lloc="6" loc="10" ncloc="10" npath="4"/>
+      <method name="getGid" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setChroot" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="4" loc="7" ncloc="7" npath="2"/>
+      <method name="getChroot" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="outputHandler" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="2" ncloc="2" npath="1"/>
+      <method name="runAsDaemon" ccn="28" ccn2="32" cloc="44" eloc="105" lloc="73" loc="157" ncloc="113" npath="12294"/>
+    </class>
+    <class name="Exception" cis="0" cloc="0" cr="0.66" csz="0" dit="3" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="4" nom="0" noom="0" rcr="0.18369642857143" vars="0" varsi="0" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Exception.php"/>
+    </class>
+    <class name="ForkFailed" cis="1" cloc="0" cr="0.15" csz="1" dit="4" eloc="3" impl="0" lloc="1" loc="5" ncloc="5" noam="0" nocc="0" nom="1" noom="1" rcr="0.18903549107143" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ForkFailed.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="Process" cis="10" cloc="91" cr="0.15" csz="12" dit="0" eloc="163" impl="0" lloc="96" loc="272" ncloc="181" noam="0" nocc="0" nom="10" noom="0" rcr="0.15" vars="2" varsi="2" varsnp="0" wmc="52" wmci="52" wmcnp="52">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php"/>
+      <method name="setForkListener" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="removeForkListener" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="setChrootListener" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="removeChrootListener" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="fork" ccn="11" ccn2="11" cloc="0" eloc="32" lloc="20" loc="34" ncloc="34" npath="39"/>
+      <method name="waitForChild" ccn="6" ccn2="6" cloc="0" eloc="26" lloc="15" loc="26" ncloc="26" npath="20"/>
+      <method name="handleChildTerminations" ccn="3" ccn2="3" cloc="0" eloc="13" lloc="8" loc="13" ncloc="13" npath="3"/>
+      <method name="chroot" ccn="14" ccn2="14" cloc="0" eloc="38" lloc="23" loc="39" ncloc="39" npath="1296"/>
+      <method name="setuid" ccn="4" ccn2="4" cloc="0" eloc="12" lloc="7" loc="12" ncloc="12" npath="8"/>
+      <method name="setgid" ccn="4" ccn2="4" cloc="0" eloc="12" lloc="7" loc="12" ncloc="12" npath="8"/>
+    </class>
+    <class name="ProcessExitInformation" cis="10" cloc="65" cr="0.15" csz="15" dit="0" eloc="35" impl="0" lloc="15" loc="117" ncloc="52" noam="0" nocc="0" nom="10" noom="0" rcr="0.15" vars="5" varsi="5" varsnp="0" wmc="10" wmci="10" wmcnp="10">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ProcessExitInformation.php"/>
+      <method name="setPid" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="getPid" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setExited" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="hasExited" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setStopped" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="hasStoppedBySignal" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setTerminatedBySignal" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="hasTerminatedBySignal" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setSignal" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="getSignal" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="SetGIDFailed" cis="1" cloc="0" cr="0.15" csz="1" dit="4" eloc="3" impl="0" lloc="1" loc="5" ncloc="5" noam="0" nocc="0" nom="1" noom="1" rcr="0.18903549107143" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\SetGIDFailed.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="SetUIDFailed" cis="1" cloc="0" cr="0.15" csz="1" dit="4" eloc="3" impl="0" lloc="1" loc="5" ncloc="5" noam="0" nocc="0" nom="1" noom="1" rcr="0.18903549107143" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\SetUIDFailed.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="Signal" cis="5" cloc="35" cr="0.15" csz="7" dit="0" eloc="48" impl="0" lloc="25" loc="129" ncloc="94" noam="0" nocc="0" nom="7" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="15" wmci="15" wmcnp="7">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Signal.php"/>
+      <method name="send" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="validateSignals" ccn="4" ccn2="4" cloc="0" eloc="11" lloc="6" loc="11" ncloc="11" npath="5"/>
+      <method name="isBlockable" ccn="3" ccn2="4" cloc="0" eloc="10" lloc="5" loc="10" ncloc="10" npath="6"/>
+      <method name="block" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="5" ncloc="5" npath="1"/>
+      <method name="unblock" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="5" ncloc="5" npath="1"/>
+      <method name="replaceBlockMask" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="5" ncloc="5" npath="1"/>
+      <method name="wait" ccn="2" ccn2="3" cloc="0" eloc="9" lloc="4" loc="10" ncloc="10" npath="3"/>
+    </class>
+  </package>
+  <package name="PHP\Util" cr="0.15" noc="4" nof="0" noi="0" nom="26" rcr="0.252">
+    <class name="ArrayObject" cis="20" cloc="159" cr="0.405" csz="23" dit="0" eloc="128" impl="4" lloc="61" loc="314" ncloc="155" noam="0" nocc="2" nom="22" noom="0" rcr="0.66" vars="1" varsi="1" varsnp="0" wmc="38" wmci="38" wmcnp="36">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\ArrayObject.php"/>
+      <method name="keyCheck" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="typeCheck" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="count" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="offsetExists" ccn="2" ccn2="2" cloc="0" eloc="8" lloc="4" loc="8" ncloc="8" npath="2"/>
+      <method name="offsetGet" ccn="2" ccn2="2" cloc="0" eloc="8" lloc="4" loc="8" ncloc="8" npath="2"/>
+      <method name="offsetSet" ccn="2" ccn2="2" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="2"/>
+      <method name="offsetUnset" ccn="2" ccn2="2" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="2"/>
+      <method name="current" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+      <method name="key" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="next" ccn="2" ccn2="2" cloc="0" eloc="8" lloc="4" loc="8" ncloc="8" npath="2"/>
+      <method name="rewind" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+      <method name="valid" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+      <method name="serialize" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="unserialize" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="add" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="5" ncloc="5" npath="1"/>
+      <method name="addAll" ccn="3" ccn2="3" cloc="3" eloc="9" lloc="5" loc="12" ncloc="9" npath="4"/>
+      <method name="clear" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="contains" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="containsAll" ccn="3" ccn2="3" cloc="0" eloc="8" lloc="4" loc="8" ncloc="8" npath="3"/>
+      <method name="remove" ccn="2" ccn2="2" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="2"/>
+      <method name="removeAll" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="retainAll" ccn="3" ccn2="3" cloc="0" eloc="8" lloc="4" loc="8" ncloc="8" npath="3"/>
+    </class>
+    <class name="Collection" cis="0" cloc="7" cr="0.15" csz="1" dit="1" eloc="5" impl="4" lloc="2" loc="14" ncloc="7" noam="0" nocc="0" nom="1" noom="0" rcr="0.4305" vars="0" varsi="1" varsnp="0" wmc="2" wmci="38" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Collection.php"/>
+      <method name="keyCheck" ccn="2" ccn2="2" cloc="0" eloc="5" lloc="2" loc="5" ncloc="5" npath="2"/>
+    </class>
+    <class name="Map" cis="0" cloc="7" cr="0.15" csz="1" dit="1" eloc="5" impl="4" lloc="2" loc="14" ncloc="7" noam="0" nocc="0" nom="1" noom="0" rcr="0.4305" vars="0" varsi="1" varsnp="0" wmc="2" wmci="38" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Map.php"/>
+      <method name="keyCheck" ccn="2" ccn2="2" cloc="0" eloc="5" lloc="2" loc="5" ncloc="5" npath="2"/>
+    </class>
+    <class name="Random" cis="2" cloc="17" cr="0.15" csz="2" dit="0" eloc="29" impl="0" lloc="18" loc="49" ncloc="32" noam="0" nocc="0" nom="2" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="8" wmci="8" wmcnp="8">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\Random.php"/>
+      <method name="pseudoNumber" ccn="4" ccn2="4" cloc="0" eloc="16" lloc="10" loc="16" ncloc="16" npath="8"/>
+      <method name="pseudoString" ccn="4" ccn2="4" cloc="0" eloc="13" lloc="8" loc="13" ncloc="13" npath="8"/>
+    </class>
+  </package>
+  <package name="PHPx\HTTP" cr="0.15" noc="9" nof="0" noi="0" nom="34" rcr="0.199725">
+    <class name="HTTPClient" cis="6" cloc="0" cr="0.15" csz="8" dit="0" eloc="12" impl="0" lloc="0" loc="30" ncloc="30" noam="0" nocc="0" nom="6" noom="0" rcr="0.15" vars="2" varsi="2" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPClient.php"/>
+      <method name="enablePipelining" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="disablePipelining" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="togglePipelining" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="enableChunking" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="disableChunking" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="toggleChunking" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="HTTPHeader" cis="0" cloc="0" cr="0.15" csz="0" dit="0" eloc="0" impl="0" lloc="0" loc="2" ncloc="2" noam="0" nocc="0" nom="0" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPHeader.php"/>
+    </class>
+    <class name="HTTPMethod" cis="4" cloc="199" cr="0.15" csz="5" dit="0" eloc="18" impl="0" lloc="8" loc="232" ncloc="33" noam="0" nocc="0" nom="4" noom="0" rcr="0.15" vars="1" varsi="1" varsnp="0" wmc="6" wmci="6" wmcnp="6">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPMethod.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setMethod" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="getMethod" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="__toString" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="HTTPRequest" cis="2" cloc="0" cr="0.15" csz="2" dit="0" eloc="4" impl="0" lloc="0" loc="11" ncloc="11" noam="0" nocc="0" nom="2" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPRequest.php"/>
+      <method name="setHTTPVersion" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+      <method name="getHTTPVersion" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="HTTPResponder" cis="7" cloc="0" cr="0.15" csz="7" dit="0" eloc="14" impl="0" lloc="0" loc="39" ncloc="39" noam="0" nocc="0" nom="7" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPResponder.php"/>
+      <method name="onHeadersReceived" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="onChunkReceived" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="onRequestAbort" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="onRequestComplete" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="4" ncloc="4" npath="1"/>
+      <method name="onHeadersSent" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="5" ncloc="5" npath="1"/>
+      <method name="onChunkSent" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="5" ncloc="5" npath="1"/>
+      <method name="onResponseSent" ccn="1" ccn2="1" cloc="0" eloc="2" lloc="0" loc="5" ncloc="5" npath="1"/>
+    </class>
+    <class name="HTTPResponse" cis="0" cloc="0" cr="0.15" csz="0" dit="0" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPResponse.php"/>
+    </class>
+    <class name="HTTPServer" cis="0" cloc="0" cr="0.15" csz="0" dit="0" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPServer.php"/>
+    </class>
+    <class name="HTTPStatus" cis="7" cloc="218" cr="0.15" csz="10" dit="0" eloc="40" impl="0" lloc="21" loc="297" ncloc="79" noam="0" nocc="0" nom="7" noom="0" rcr="0.15" vars="3" varsi="3" varsnp="0" wmc="13" wmci="13" wmcnp="13">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPStatus.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="setStatusCode" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="getStatusCode" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setStatusText" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="getStatusText" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getSafeStatusText" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="6" loc="9" ncloc="9" npath="3"/>
+      <method name="__toString" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="HTTPVersion" cis="8" cloc="77" cr="0.15" csz="10" dit="0" eloc="56" impl="1" lloc="32" loc="149" ncloc="72" noam="0" nocc="0" nom="8" noom="0" rcr="0.2775" vars="2" varsi="2" varsnp="0" wmc="18" wmci="18" wmcnp="18">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPVersion.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="parse" ccn="3" ccn2="3" cloc="0" eloc="11" lloc="7" loc="11" ncloc="11" npath="4"/>
+      <method name="__toString" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setMajor" ccn="3" ccn2="3" cloc="0" eloc="10" lloc="6" loc="10" ncloc="10" npath="4"/>
+      <method name="getMajor" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setMinor" ccn="3" ccn2="3" cloc="0" eloc="10" lloc="6" loc="10" ncloc="10" npath="4"/>
+      <method name="getMinor" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="compareTo" ccn="5" ccn2="5" cloc="0" eloc="13" lloc="9" loc="13" ncloc="13" npath="5"/>
+    </class>
+  </package>
+  <package name="PHPx\MIME" cr="0.15" noc="2" nof="0" noi="0" nom="0" rcr="0.15">
+    <class name="MIMEDocument" cis="0" cloc="0" cr="0.15" csz="0" dit="0" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\MIME\MIMEDocument.php"/>
+    </class>
+    <class name="MIMEPart" cis="0" cloc="0" cr="0.15" csz="0" dit="0" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.15" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\MIME\MIMEPart.php"/>
+    </class>
+  </package>
+</metrics>
