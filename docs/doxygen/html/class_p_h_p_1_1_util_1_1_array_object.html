@@ -50,7 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="navpath">
     <ul>
       <li><b>PHP</b>      </li>
-      <li><b>Util</b>      </li>
+      <li><a class="el" href="namespace_p_h_p_1_1_util.html">Util</a>      </li>
       <li><a class="el" href="class_p_h_p_1_1_util_1_1_array_object.html">ArrayObject</a>      </li>
     </ul>
   </div>
@@ -111,7 +111,7 @@ Protected Attributes</h2></td></tr>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>This class implements a common array handling for  and . No other classes should implement this, because it will most likely not prevail if parts are reimplemented in C. </p>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00015">15</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00021">21</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a49f7893d28e524befeaeaca548d6d543"></a><!-- doxytag: member="PHP::Util::ArrayObject::add" ref="a49f7893d28e524befeaeaca548d6d543" args="($element)" -->
 <div class="memitem">
@@ -136,7 +136,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>self </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00220">220</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00226">226</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                               {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578">typeCheck</a>($element);
                 $this[] = $element;
@@ -177,7 +177,7 @@ Protected Attributes</h2></td></tr>
 <p><p>Add a typecheck to return in a consistent manner, if it fails.</p>
 </p>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00236">236</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00242">242</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                     {
                 <span class="keywordflow">foreach</span> ($collection as $element) {
                         $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578">typeCheck</a>($element);
@@ -205,7 +205,7 @@ Protected Attributes</h2></td></tr>
 <div class="memdoc">
 <p>Deletes all elemens. </p>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00252">252</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00258">258</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                         {
                 $this-&gt;data = array();
         }
@@ -234,7 +234,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00261">261</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00267">267</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                    {
                 <span class="keywordflow">return</span> in_array($element, $this-&gt;data);
         }
@@ -264,7 +264,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00273">273</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00279">279</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                          {
                 <span class="keywordflow">foreach</span> ($other as $element) {
                         <span class="keywordflow">if</span> (!$this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad03d816214fa91c2cfcabcadc1a9472d">contains</a>($elements)) {
@@ -292,7 +292,7 @@ Protected Attributes</h2></td></tr>
 <p>Counts the elements in this collection. Implemented as required by the Countable interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00048">48</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00054">54</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                {
                 <span class="keywordflow">return</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f">count</a>($this-&gt;data);
         }
@@ -321,7 +321,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00132">132</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00138">138</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
                 <span class="keywordflow">if</span> (!$this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a677d83bbb44299ac17a9d1cad923f898">valid</a>()) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException();
@@ -348,7 +348,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the key of the current element. Returns the key of the current <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html">Collection</a> element. Implemented as required by the Iterator interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int|string </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00146">146</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00152">152</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                              {
                 <span class="keywordflow">return</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe">key</a>($this-&gt;data);
         }
@@ -409,7 +409,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00158">158</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00164">164</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                               {
                 $current = each($this-&gt;data);
                 <span class="keywordflow">if</span> ($current === <span class="keyword">false</span>) {
@@ -450,7 +450,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00062">62</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00068">68</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                              {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a255e0f7c012f00900c81cf8d403d9f40">keyCheck</a>($offset);
                 <span class="keywordflow">if</span> (array_key_exists($offset, $this-&gt;data)) {
@@ -491,7 +491,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00081">81</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00087">87</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                           {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a255e0f7c012f00900c81cf8d403d9f40">keyCheck</a>($offset);
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99">offsetExists</a>($offset)) {
@@ -536,7 +536,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00097">97</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00103">103</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                   {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578">typeCheck</a>($value);
                 <span class="keywordflow">if</span> (\is_null($offset)) {
@@ -578,7 +578,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00115">115</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00121">121</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a255e0f7c012f00900c81cf8d403d9f40">keyCheck</a>($offset);
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99">offsetExists</a>($offset)) {
@@ -614,7 +614,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool if the data has changed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00289">289</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00295">295</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
                 $key = array_search($element, $this-&gt;data);
                 <span class="keywordflow">if</span> ($key === <span class="keyword">false</span>) {
@@ -650,7 +650,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>self </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00306">306</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00312">312</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                        {
                 <span class="keywordflow">foreach</span> ($other as $elements) {
                         $this-&gt;<span class="keyword">remove</span>($elements);
@@ -683,7 +683,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>self </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00320">320</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00326">326</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                        {
                 <span class="keywordflow">foreach</span> ($this as $key =&gt; $value) {
                         <span class="keywordflow">if</span> (!$other-&gt;contains($value)) {
@@ -711,7 +711,7 @@ Protected Attributes</h2></td></tr>
 <p>Sets the internal pointer of this collection to the first element. Implemented as required by the Iterator interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool false if the <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html">Collection</a> is empty. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00173">173</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00179">179</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                 {
                 <span class="keywordflow">if</span> (reset($this-&gt;data)) {
                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -738,7 +738,7 @@ Protected Attributes</h2></td></tr>
 <p>Serializes this <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html">Collection</a> as required by the Serializable interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00200">200</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00206">206</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                    {
                 <span class="keywordflow">return</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a55843823ca1f42a1696ba39cdbd939ca">serialize</a>($this-&gt;data);
         }
@@ -767,7 +767,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00038">38</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00044">44</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                               {
 
         }
@@ -796,7 +796,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00209">209</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00215">215</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                 {
                 $this-&gt;data = <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a9e5ab936e9c3b3d7845bc92efcda7132">unserialize</a>($serialized);
         }
@@ -819,7 +819,7 @@ Protected Attributes</h2></td></tr>
 <p>Checks if the <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html">Collection</a> internal pointer is on a valid element. Implemented as required by the Iterator interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00187">187</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00193">193</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                {
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe">key</a>() === null) {
                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -848,7 +848,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Fri May 6 2011 21:51:30 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 10:42:57 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

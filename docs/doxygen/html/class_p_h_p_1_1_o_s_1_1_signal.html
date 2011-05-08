@@ -158,7 +158,7 @@ Static Protected Member Functions</h2></td></tr>
 <p>This class contains constants and functions related to signal handling.</p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00020">20</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00026">26</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="ab37b2cc3db508fa4a4ed6f50b89af80d"></a><!-- doxytag: member="PHP::OS::Signal::block" ref="ab37b2cc3db508fa4a4ed6f50b89af80d" args="(\PHP\Util\Collection $signals)" -->
 <div class="memitem">
@@ -183,7 +183,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00103">103</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00109">109</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                    {
                 <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
                 \pcntl_sigprocmask(\SIG_BLOCK, $signals-&gt;getArrayCopy(), $oldset);
@@ -221,7 +221,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00087">87</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00093">93</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                       {
                 <span class="keywordflow">if</span> (!is_int($signal)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($signal, <span class="stringliteral">&quot;integer&quot;</span>);
@@ -258,7 +258,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00125">125</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00131">131</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                               {
                 <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
                 \pcntl_sigprocmask(\SIG_SETMASK, $signals-&gt;getArrayCopy(), $oldset);
@@ -290,7 +290,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00114">114</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00120">120</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                      {
                 <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
                 \pcntl_sigprocmask(\SIG_UNBLOCK, $signals-&gt;getArrayCopy(), $oldset);
@@ -329,7 +329,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00069">69</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00075">75</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                                 {
                 <span class="keywordflow">foreach</span> ($signals as $signal) {
                         <span class="keywordflow">if</span> (!is_int($signal)) {
@@ -385,7 +385,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="_signal_8php_source.html#l00138">138</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
+<p>Definition at line <a class="el" href="_signal_8php_source.html#l00144">144</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                          {
                 <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
                 <span class="keywordflow">if</span> ($seconds || $nanoseconds) {
@@ -416,7 +416,7 @@ Static Protected Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Fri May 6 2011 21:51:30 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 10:42:57 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>
