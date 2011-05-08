@@ -50,18 +50,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
-<a name="l00009"></a>00009 <span class="keyword">namespace </span>PHP\Util;
-<a name="l00010"></a>00010 
-<a name="l00011"></a>00011 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&quot;\PHP\Lang\*&quot;</span>);
-<a name="l00012"></a>00012 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&quot;\PHP\Util\ArrayObject&quot;</span>);
-<a name="l00013"></a>00013 
-<a name="l00023"></a><a class="code" href="class_p_h_p_1_1_util_1_1_map.html">00023</a> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_util_1_1_map.html">Map</a> <span class="keyword">extends</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html">ArrayObject</a> {
-<a name="l00031"></a><a class="code" href="class_p_h_p_1_1_util_1_1_map.html#ac2a4d1b032a8585d6e6aa483d831bb98">00031</a>         <span class="keyword">final</span> <span class="keyword">protected</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_map.html#ac2a4d1b032a8585d6e6aa483d831bb98">keyCheck</a>($offset) {
-<a name="l00032"></a>00032                 <span class="keywordflow">if</span> (!is_string($offset)) {
-<a name="l00033"></a>00033                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($offset, <span class="stringliteral">&quot;string&quot;</span>);
-<a name="l00034"></a>00034                 }
-<a name="l00035"></a>00035         }
-<a name="l00036"></a>00036 }
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 <span class="keyword">namespace </span>PHP\Util;
+<a name="l00004"></a>00004 
+<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&quot;\PHP\Lang\*&quot;</span>);
+<a name="l00006"></a>00006 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&quot;\PHP\Util\ArrayObject&quot;</span>);
+<a name="l00007"></a>00007 
+<a name="l00017"></a><a class="code" href="class_p_h_p_1_1_util_1_1_map.html">00017</a> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_util_1_1_map.html">Map</a> <span class="keyword">extends</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html">ArrayObject</a> {
+<a name="l00025"></a><a class="code" href="class_p_h_p_1_1_util_1_1_map.html#ac2a4d1b032a8585d6e6aa483d831bb98">00025</a>         <span class="keyword">final</span> <span class="keyword">protected</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_map.html#ac2a4d1b032a8585d6e6aa483d831bb98">keyCheck</a>($offset) {
+<a name="l00026"></a>00026                 <span class="keywordflow">if</span> (!is_string($offset)) {
+<a name="l00027"></a>00027                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($offset, <span class="stringliteral">&quot;string&quot;</span>);
+<a name="l00028"></a>00028                 }
+<a name="l00029"></a>00029         }
+<a name="l00030"></a>00030 }
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -78,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 10:42:55 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:15 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>
