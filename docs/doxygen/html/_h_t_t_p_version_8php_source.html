@@ -53,9 +53,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="keyword">namespace </span>PHPx\HTTP;
 <a name="l00004"></a>00004 
-<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\*&#39;</span>);
+<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\*&#39;</span>);
 <a name="l00006"></a>00006 
-<a name="l00010"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">00010</a> <span class="keyword">class </span><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a> <span class="keyword">implements</span> \PHP\Lang\Comparable {
+<a name="l00010"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">00010</a> <span class="keyword">class </span><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html" title="This object represents a HTTP version number.">HTTPVersion</a> <span class="keyword">implements</span> \PHP\Lang\Comparable {
 <a name="l00026"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a05ca5788ff355c39f6f76a7e3a9a149b">00026</a>         <span class="keyword">const</span> VERSION11 = <span class="stringliteral">&#39;1.1&#39;</span>;
 <a name="l00035"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac6e428dd07974ea2617dd5a26065d8e7">00035</a>         <span class="keyword">const</span> VERSION10 = <span class="stringliteral">&#39;1.0&#39;</span>;
 <a name="l00039"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a4c5c17d57303afc6a8cf897a0a3c7bc4">00039</a>         <span class="keyword">const</span> VERSION09 = <span class="stringliteral">&#39;0.9&#39;</span>;
@@ -63,11 +63,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00045"></a>00045         <span class="keyword">protected</span> $major;
 <a name="l00050"></a>00050         <span class="keyword">protected</span> $minor;
 <a name="l00051"></a>00051 
-<a name="l00056"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#afff346d0af44028e4ad42f46713d93d3">00056</a>         function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#afff346d0af44028e4ad42f46713d93d3">__construct</a>($version = HTTPVersion::VERSION11) {
+<a name="l00056"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#afff346d0af44028e4ad42f46713d93d3">00056</a>         function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#afff346d0af44028e4ad42f46713d93d3" title="Initialize version.">__construct</a>($version = HTTPVersion::VERSION11) {
 <a name="l00057"></a>00057                 $this-&gt;parse($version);
 <a name="l00058"></a>00058         }
 <a name="l00059"></a>00059 
-<a name="l00068"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026">00068</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026">parse</a>($version) {
+<a name="l00068"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026">00068</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026" title="Parse a version number.">parse</a>($version) {
 <a name="l00069"></a>00069                 <span class="keywordflow">if</span> (!\is_string($version)) {
 <a name="l00070"></a>00070                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($version, <span class="stringliteral">&#39;string&#39;</span>);
 <a name="l00071"></a>00071                 }
@@ -79,11 +79,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00077"></a>00077                 <span class="keywordflow">return</span> $this;
 <a name="l00078"></a>00078         }
 <a name="l00079"></a>00079 
-<a name="l00084"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a97938635ab516dbcba652bfb5c83249b">00084</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a97938635ab516dbcba652bfb5c83249b">__toString</a>() {
+<a name="l00084"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a97938635ab516dbcba652bfb5c83249b">00084</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a97938635ab516dbcba652bfb5c83249b" title="Converts the version number to a string.">__toString</a>() {
 <a name="l00085"></a>00085                 <span class="keywordflow">return</span> $this-&gt;major . <span class="charliteral">&#39;.&#39;</span> . $this-&gt;minor;
 <a name="l00086"></a>00086         }
 <a name="l00087"></a>00087 
-<a name="l00095"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0">00095</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0">setMajor</a>($version) {
+<a name="l00095"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0">00095</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0" title="Set the major version number.">setMajor</a>($version) {
 <a name="l00096"></a>00096                 <span class="keywordflow">if</span> (!is_int($version)) {
 <a name="l00097"></a>00097                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($version, <span class="stringliteral">&#39;integer&#39;</span>);
 <a name="l00098"></a>00098                 }
@@ -94,11 +94,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00103"></a>00103                 <span class="keywordflow">return</span> $this;
 <a name="l00104"></a>00104         }
 <a name="l00105"></a>00105 
-<a name="l00110"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">00110</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">getMajor</a>() {
+<a name="l00110"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">00110</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393" title="Return the major version number.">getMajor</a>() {
 <a name="l00111"></a>00111                 <span class="keywordflow">return</span> $this-&gt;major;
 <a name="l00112"></a>00112         }
 <a name="l00113"></a>00113 
-<a name="l00121"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a">00121</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a">setMinor</a>($version) {
+<a name="l00121"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a">00121</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a" title="Set the minor version number.">setMinor</a>($version) {
 <a name="l00122"></a>00122                 <span class="keywordflow">if</span> (!is_int($version)) {
 <a name="l00123"></a>00123                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($version, <span class="stringliteral">&#39;integer&#39;</span>);
 <a name="l00124"></a>00124                 }
@@ -109,18 +109,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00129"></a>00129                 <span class="keywordflow">return</span> $this;
 <a name="l00130"></a>00130         }
 <a name="l00131"></a>00131 
-<a name="l00136"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">00136</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">getMinor</a>() {
+<a name="l00136"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">00136</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06" title="Get the minor version number.">getMinor</a>() {
 <a name="l00137"></a>00137                 <span class="keywordflow">return</span> $this-&gt;minor;
 <a name="l00138"></a>00138         }
 <a name="l00139"></a>00139 
-<a name="l00145"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac91b7d1925ec09b8a569bb8a0587ea6c">00145</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac91b7d1925ec09b8a569bb8a0587ea6c">compareTo</a>(<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a> $o) {
-<a name="l00146"></a>00146                 <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">getMajor</a>() &lt; $this-&gt;getMajor()) {
+<a name="l00145"></a><a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac91b7d1925ec09b8a569bb8a0587ea6c">00145</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac91b7d1925ec09b8a569bb8a0587ea6c" title="Compare two version numbers.">compareTo</a>(<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html" title="This object represents a HTTP version number.">HTTPVersion</a> $o) {
+<a name="l00146"></a>00146                 <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393" title="Return the major version number.">getMajor</a>() &lt; $this-&gt;getMajor()) {
 <a name="l00147"></a>00147                         <span class="keywordflow">return</span> -1;
-<a name="l00148"></a>00148                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">getMajor</a>() &gt; $this-&gt;getMajor()) {
+<a name="l00148"></a>00148                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393" title="Return the major version number.">getMajor</a>() &gt; $this-&gt;getMajor()) {
 <a name="l00149"></a>00149                         <span class="keywordflow">return</span> 1;
-<a name="l00150"></a>00150                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">getMinor</a>() &lt; $this-&gt;getMinor()) {
+<a name="l00150"></a>00150                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06" title="Get the minor version number.">getMinor</a>() &lt; $this-&gt;getMinor()) {
 <a name="l00151"></a>00151                         <span class="keywordflow">return</span> -1;
-<a name="l00152"></a>00152                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">getMinor</a>() &gt; $this-&gt;getMinor()) {
+<a name="l00152"></a>00152                 } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06" title="Get the minor version number.">getMinor</a>() &gt; $this-&gt;getMinor()) {
 <a name="l00153"></a>00153                         <span class="keywordflow">return</span> 1;
 <a name="l00154"></a>00154                 } <span class="keywordflow">else</span> {
 <a name="l00155"></a>00155                         <span class="keywordflow">return</span> 0;
@@ -143,7 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:15 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

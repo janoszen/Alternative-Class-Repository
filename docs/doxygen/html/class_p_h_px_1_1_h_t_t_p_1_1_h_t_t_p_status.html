@@ -65,6 +65,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="PHPx::HTTP::HTTPStatus" -->
+<p>This class represents a HTTP status code.  
+<a href="#_details">More...</a></p>
+
 <p><a href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -86,17 +89,29 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a9f299d4af21875458d6c6f83ad7b0ba9">STATUS_CONTINUE</a> = 100</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The client SHOULD continue with its request.  <a href="#a9f299d4af21875458d6c6f83ad7b0ba9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#ad465ccb00d69e89fb4e769a175b7cd19">STATUS_SWITCHING_PROTOCOLS</a> = 101</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The server understands and is willing to comply with the client's request, via the Upgrade message header field (section 14.42), for a change in the application protocol being used on this connection.  <a href="#ad465ccb00d69e89fb4e769a175b7cd19"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a6f9711c268e732757038ef857515a3ed">STATUS_OK</a> = 200</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The request has succeeded.  <a href="#a6f9711c268e732757038ef857515a3ed"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a9fdccbbe0f542971aa162b39d3d49c54">STATUS_CREATED</a> = 201</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The request has been fulfilled and resulted in a new resource being created.  <a href="#a9fdccbbe0f542971aa162b39d3d49c54"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a85673ef8f88e57b3ce86e6996b84ed5e">STATUS_ACCEPTED</a> = 202</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The request has been accepted for processing, but the processing has not been completed.  <a href="#a85673ef8f88e57b3ce86e6996b84ed5e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a599d56c4dca2ef96d7677e0c3789c814">STATUS_NON_AUTHORITATIVE_INFORMATION</a> = 203</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The returned metainformation in the entity-header is not the definitive set as available from the origin server, but is gathered from a local or a third-party copy.  <a href="#a599d56c4dca2ef96d7677e0c3789c814"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a3ed51c19d0da89c19236b5ef7ddf9500">STATUS_NO_CONTENT</a> = 204</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The server has fulfilled the request but does not need to return an entity-body, and might want to return updated metainformation.  <a href="#a3ed51c19d0da89c19236b5ef7ddf9500"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#af2b701a5f6ded0805575ce760b407132">STATUS_RESET_CONTENT</a> = 205</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The server has fulfilled the request and the user agent SHOULD reset the document view which caused the request to be sent.  <a href="#af2b701a5f6ded0805575ce760b407132"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#afb9d4b4b6628a9fe506c8d45ffb10e1f">STATUS_PARTIAL_CONTENT</a> = 206</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The server has fulfilled the partial GET request for the resource.  <a href="#afb9d4b4b6628a9fe506c8d45ffb10e1f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#ab294589705cd322ad6186e0c466493a1">STATUS_MULTIPLE_CHOICES</a> = 300</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent-driven negotiation information (section 12) is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location.  <a href="#ab294589705cd322ad6186e0c466493a1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#aa01778a7b04ff7d32d2f9be280c97fe2">STATUS_MOVED_PERMANENTLY</a> = 301</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The requested resource has been assigned a new permanent URI and any future references to this resource SHOULD use one of the returned URIs.  <a href="#aa01778a7b04ff7d32d2f9be280c97fe2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_status.html#a5c8e392e4cd0e13621a2580b153e9ddf">STATUS_FOUND</a> = 302</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The requested resource resides temporarily under a different URI.  <a href="#a5c8e392e4cd0e13621a2580b153e9ddf"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52f021c5bf87a93241fe7d8aa1a7dd6b"></a><!-- doxytag: member="PHPx::HTTP::HTTPStatus::$statusCode" ref="a52f021c5bf87a93241fe7d8aa1a7dd6b" args="" -->
@@ -106,7 +121,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$statusTexts</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This class represents a HTTP status code.</p>
+<p>This class represents a HTTP status code. </p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_status_8php_source.html#l00010">10</a> of file <a class="el" href="_h_t_t_p_status_8php_source.html">HTTPStatus.php</a>.</p>
@@ -150,7 +165,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The request has been accepted for processing, but the processing has not been completed. The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</p>
+
+<p>The request has been accepted for processing, but the processing has not been completed. </p>
+<p>The request might or might not eventually be acted upon, as it might be disallowed when processing actually takes place. There is no facility for re-sending a status code from an asynchronous operation such as this.</p>
 <p>The 202 response is intentionally non-committal. Its purpose is to allow a server to accept a request for some other process (perhaps a batch-oriented process that is only run once per day) without requiring that the user agent's connection to the server persist until the process is completed. The entity returned with this response SHOULD include an indication of the request's current status and either a pointer to a status monitor or some estimate of when the user can expect the request to be fulfilled.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.3">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.3</a> </dd></dl>
 
@@ -168,7 +185,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The client SHOULD continue with its request. This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server MUST send a final response after the request has been completed. See section 8.2.3 for detailed discussion of the use and handling of this status code.</p>
+
+<p>The client SHOULD continue with its request. </p>
+<p>This interim response is used to inform the client that the initial part of the request has been received and has not yet been rejected by the server. The client SHOULD continue by sending the remainder of the request or, if the request has already been completed, ignore this response. The server MUST send a final response after the request has been completed. See section 8.2.3 for detailed discussion of the use and handling of this status code.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.1.1">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.1.1</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_status_8php_source.html#l00022">22</a> of file <a class="el" href="_h_t_t_p_status_8php_source.html">HTTPStatus.php</a>.</p>
@@ -185,7 +204,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The request has been fulfilled and resulted in a new resource being created. The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</p>
+
+<p>The request has been fulfilled and resulted in a new resource being created. </p>
+<p>The newly created resource can be referenced by the URI(s) returned in the entity of the response, with the most specific URI for the resource given by a Location header field. The response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. The origin server MUST create the resource before returning the 201 status code. If the action cannot be carried out immediately, the server SHOULD respond with 202 (Accepted) response instead.</p>
 <p>A 201 response MAY contain an ETag response header field indicating the current value of the entity tag for the requested variant just created, see section 14.19.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2</a> </dd></dl>
 
@@ -203,7 +224,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The requested resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client SHOULD continue to use the Request-URI for future requests. This response is only cacheable if indicated by a Cache-Control or Expires header field.</p>
+
+<p>The requested resource resides temporarily under a different URI. </p>
+<p>Since the redirection might be altered on occasion, the client SHOULD continue to use the Request-URI for future requests. This response is only cacheable if indicated by a Cache-Control or Expires header field.</p>
 <p>The temporary URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).</p>
 <p>If the 302 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.3</a> </dd></dl>
@@ -222,7 +245,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The requested resource has been assigned a new permanent URI and any future references to this resource SHOULD use one of the returned URIs. Clients with link editing capabilities ought to automatically re-link references to the Request-URI to one or more of the new references returned by the server, where possible. This response is cacheable unless indicated otherwise.</p>
+
+<p>The requested resource has been assigned a new permanent URI and any future references to this resource SHOULD use one of the returned URIs. </p>
+<p>Clients with link editing capabilities ought to automatically re-link references to the Request-URI to one or more of the new references returned by the server, where possible. This response is cacheable unless indicated otherwise.</p>
 <p>The new permanent URI SHOULD be given by the Location field in the response. Unless the request method was HEAD, the entity of the response SHOULD contain a short hypertext note with a hyperlink to the new URI(s).</p>
 <p>If the 301 status code is received in response to a request other than GET or HEAD, the user agent MUST NOT automatically redirect the request unless it can be confirmed by the user, since this might change the conditions under which the request was issued.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.2</a> </dd></dl>
@@ -241,7 +266,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent-driven negotiation information (section 12) is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location.</p>
+
+<p>The requested resource corresponds to any one of a set of representations, each with its own specific location, and agent-driven negotiation information (section 12) is being provided so that the user (or user agent) can select a preferred representation and redirect its request to that location. </p>
 <p>Unless it was a HEAD request, the response SHOULD include an entity containing a list of resource characteristics and location(s) from which the user or user agent can choose the one most appropriate. The entity format is specified by the media type given in the Content-Type header field. Depending upon the format and the capabilities of the user agent, selection of the most appropriate choice MAY be performed automatically. However, this specification does not define any standard for such automatic selection.</p>
 <p>If the server has a preferred choice of representation, it SHOULD include the specific URI for that representation in the Location field; user agents MAY use the Location field value for automatic redirection. This response is cacheable unless indicated otherwise.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.1">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.3.1</a> </dd></dl>
@@ -260,7 +286,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The server has fulfilled the request but does not need to return an entity-body, and might want to return updated metainformation. The response MAY include new or updated metainformation in the form of entity-headers, which if present SHOULD be associated with the requested variant.</p>
+
+<p>The server has fulfilled the request but does not need to return an entity-body, and might want to return updated metainformation. </p>
+<p>The response MAY include new or updated metainformation in the form of entity-headers, which if present SHOULD be associated with the requested variant.</p>
 <p>If the client is a user agent, it SHOULD NOT change its document view from that which caused the request to be sent. This response is primarily intended to allow input for actions to take place without causing a change to the user agent's active document view, although any new or updated metainformation SHOULD be applied to the document currently in the user agent's active view.</p>
 <p>The 204 response MUST NOT include a message-body, and thus is always terminated by the first empty line after the header fields.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.5">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.5</a> </dd></dl>
@@ -279,7 +307,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The returned metainformation in the entity-header is not the definitive set as available from the origin server, but is gathered from a local or a third-party copy. The set presented MAY be a subset or superset of the original version. For example, including local annotation information about the resource might result in a superset of the metainformation known by the origin server. Use of this response code is not required and is only appropriate when the response would otherwise be 200 (OK).</p>
+
+<p>The returned metainformation in the entity-header is not the definitive set as available from the origin server, but is gathered from a local or a third-party copy. </p>
+<p>The set presented MAY be a subset or superset of the original version. For example, including local annotation information about the resource might result in a superset of the metainformation known by the origin server. Use of this response code is not required and is only appropriate when the response would otherwise be 200 (OK).</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.4">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.4</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_status_8php_source.html#l00106">106</a> of file <a class="el" href="_h_t_t_p_status_8php_source.html">HTTPStatus.php</a>.</p>
@@ -296,7 +326,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>The request has succeeded. The information returned with the response is dependent on the method used in the request, for example: </p>
+
+<p>The request has succeeded. </p>
+<p>The information returned with the response is dependent on the method used in the request, for example: </p>
 <ul>
 <li>
 GET an entity corresponding to the requested resource is sent in the response; </li>
@@ -323,7 +355,9 @@ TRACE an entity containing the request message as received by the end server. </
       </table>
 </div>
 <div class="memdoc">
-<p>The server has fulfilled the partial GET request for the resource. The request MUST have included a Range header field (section 14.35) indicating the desired range, and MAY have included an If-Range header field (section 14.27) to make the request conditional.</p>
+
+<p>The server has fulfilled the partial GET request for the resource. </p>
+<p>The request MUST have included a Range header field (section 14.35) indicating the desired range, and MAY have included an If-Range header field (section 14.27) to make the request conditional.</p>
 <p>The response MUST include the following header fields: </p>
 <ul>
 <li>
@@ -354,7 +388,9 @@ Expires, Cache-Control, and/or Vary, if the field-value might differ from that s
       </table>
 </div>
 <div class="memdoc">
-<p>The server has fulfilled the request and the user agent SHOULD reset the document view which caused the request to be sent. This response is primarily intended to allow input for actions to take place via user input, followed by a clearing of the form in which the input is given so that the user can easily initiate another input action. The response MUST NOT include an entity.</p>
+
+<p>The server has fulfilled the request and the user agent SHOULD reset the document view which caused the request to be sent. </p>
+<p>This response is primarily intended to allow input for actions to take place via user input, followed by a clearing of the form in which the input is given so that the user can easily initiate another input action. The response MUST NOT include an entity.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.6">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.6</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_status_8php_source.html#l00137">137</a> of file <a class="el" href="_h_t_t_p_status_8php_source.html">HTTPStatus.php</a>.</p>
@@ -371,7 +407,9 @@ Expires, Cache-Control, and/or Vary, if the field-value might differ from that s
       </table>
 </div>
 <div class="memdoc">
-<p>The server understands and is willing to comply with the client's request, via the Upgrade message header field (section 14.42), for a change in the application protocol being used on this connection. The server will switch protocols to those defined by the response's Upgrade header field immediately after the empty line which terminates the 101 response.</p>
+
+<p>The server understands and is willing to comply with the client's request, via the Upgrade message header field (section 14.42), for a change in the application protocol being used on this connection. </p>
+<p>The server will switch protocols to those defined by the response's Upgrade header field immediately after the empty line which terminates the 101 response.</p>
 <p>The protocol SHOULD be switched only when it is advantageous to do so. For example, switching to a newer version of HTTP is advantageous over older versions, and switching to a real-time, synchronous protocol might be advantageous when delivering resources that use such features.</p>
 <dl class="see"><dt><b>See also:</b></dt><dd><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.1.2">http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.1.2</a> </dd></dl>
 
@@ -397,7 +435,7 @@ Expires, Cache-Control, and/or Vary, if the field-value might differ from that s
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:17 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:32 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

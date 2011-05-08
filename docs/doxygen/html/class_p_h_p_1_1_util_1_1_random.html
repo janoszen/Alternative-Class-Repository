@@ -63,15 +63,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="PHP::Util::Random" -->
+<p>Utility for generating random numbers.  
+<a href="#_details">More...</a></p>
+
 <p><a href="class_p_h_p_1_1_util_1_1_random-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_util_1_1_random.html#af6e644bfc0321ac480a39785f904bc2c">pseudoNumber</a> ($min=0, $max=1)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a pseudo-random number between $min and $max.  <a href="#af6e644bfc0321ac480a39785f904bc2c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_util_1_1_random.html#acbe4d736cec2ec02e0e954931578d8ed">pseudoString</a> ($length=8)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a pseudo-random string in the given length.  <a href="#acbe4d736cec2ec02e0e954931578d8ed"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Utility for generating random numbers.</p>
+<p>Utility for generating random numbers. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_random_8php_source.html#l00015">15</a> of file <a class="el" href="_random_8php_source.html">Random.php</a>.</p>
@@ -100,7 +105,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Generate a pseudo-random number between $min and $max. If possible, this function will use mt_rand() for random number generation. Otherwise it will fall back to rand(), which uses the libc random number generator. </p>
+
+<p>Generate a pseudo-random number between $min and $max. </p>
+<p>If possible, this function will use mt_rand() for random number generation. Otherwise it will fall back to rand(), which uses the libc random number generator. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">float</td><td class="paramname">$min</td><td></td></tr>
@@ -144,7 +151,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Generate a pseudo-random string in the given length. This string is NOT suitable for cryptographic purposes! Use the  library for that! </p>
+
+<p>Generate a pseudo-random string in the given length. </p>
+<p>This string is NOT suitable for cryptographic purposes! Use the  library for that! </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">integer</td><td class="paramname">$length</td><td>default 8 </td></tr>
@@ -195,7 +204,7 @@ Static Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:17 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:32 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

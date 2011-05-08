@@ -53,20 +53,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="keyword">namespace </span>PHP\Util;
 <a name="l00004"></a>00004 
-<a name="l00015"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html">00015</a> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html">ArrayObject</a> <span class="keyword">implements</span> \Iterator, \ArrayAccess, \Countable, \Serializable {
+<a name="l00015"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html">00015</a> <span class="keyword">abstract</span> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html" title="This class implements a common array handling for  and .">ArrayObject</a> <span class="keyword">implements</span> \Iterator, \ArrayAccess, \Countable, \Serializable {
 <a name="l00020"></a>00020         <span class="keyword">protected</span> $data = array();
 <a name="l00021"></a>00021 
 <a name="l00029"></a>00029         <span class="keyword">abstract</span> <span class="keyword">protected</span> function keyCheck($offset);
 <a name="l00030"></a>00030 
-<a name="l00038"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578">00038</a>         <span class="keyword">protected</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578">typeCheck</a>($element) {
+<a name="l00038"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578">00038</a>         <span class="keyword">protected</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578" title="This function checks, if the ArrayObject subclass may contain the given type.">typeCheck</a>($element) {
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040         }
 <a name="l00041"></a>00041 
-<a name="l00048"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f">00048</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f">count</a>() {
+<a name="l00048"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f">00048</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f" title="Counts the elements in this collection.">count</a>() {
 <a name="l00049"></a>00049                 <span class="keywordflow">return</span> count($this-&gt;data);
 <a name="l00050"></a>00050         }
 <a name="l00051"></a>00051 
-<a name="l00062"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99">00062</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99">offsetExists</a>($offset) {
+<a name="l00062"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99">00062</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99" title="Returns if an offset exists in this collection.">offsetExists</a>($offset) {
 <a name="l00063"></a>00063                 $this-&gt;keyCheck($offset);
 <a name="l00064"></a>00064                 <span class="keywordflow">if</span> (array_key_exists($offset, $this-&gt;data)) {
 <a name="l00065"></a>00065                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00068"></a>00068                 }
 <a name="l00069"></a>00069         }
 <a name="l00070"></a>00070 
-<a name="l00081"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8e6ad619020e07f224dc2026c4a4003">00081</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8e6ad619020e07f224dc2026c4a4003">offsetGet</a>($offset) {
+<a name="l00081"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8e6ad619020e07f224dc2026c4a4003">00081</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8e6ad619020e07f224dc2026c4a4003" title="Returns an element in this collection.">offsetGet</a>($offset) {
 <a name="l00082"></a>00082                 $this-&gt;keyCheck($offset);
 <a name="l00083"></a>00083                 <span class="keywordflow">if</span> ($this-&gt;offsetExists($offset)) {
 <a name="l00084"></a>00084                         <span class="keywordflow">return</span> $this-&gt;data[$offset];
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00087"></a>00087                 }
 <a name="l00088"></a>00088         }
 <a name="l00089"></a>00089 
-<a name="l00097"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aa98503f7b62f5d81d384af2c929c010d">00097</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aa98503f7b62f5d81d384af2c929c010d">offsetSet</a>($offset, $value) {
+<a name="l00097"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aa98503f7b62f5d81d384af2c929c010d">00097</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aa98503f7b62f5d81d384af2c929c010d" title="Set an element in this Collection.">offsetSet</a>($offset, $value) {
 <a name="l00098"></a>00098                 $this-&gt;typeCheck($value);
 <a name="l00099"></a>00099                 <span class="keywordflow">if</span> (\is_null($offset)) {
 <a name="l00100"></a>00100                         $this-&gt;data[] = $value;
@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00104"></a>00104                 }
 <a name="l00105"></a>00105         }
 <a name="l00106"></a>00106 
-<a name="l00115"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ae7dad238e730d0503553582f2eed3fee">00115</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ae7dad238e730d0503553582f2eed3fee">offsetUnset</a>($offset) {
+<a name="l00115"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ae7dad238e730d0503553582f2eed3fee">00115</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ae7dad238e730d0503553582f2eed3fee" title="This function unsets a given offset from a Collection.">offsetUnset</a>($offset) {
 <a name="l00116"></a>00116                 $this-&gt;keyCheck($offset);
 <a name="l00117"></a>00117                 <span class="keywordflow">if</span> ($this-&gt;offsetExists($offset)) {
 <a name="l00118"></a>00118                         unset($this-&gt;data[$offset]);
@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00122"></a>00122                 }
 <a name="l00123"></a>00123         }
 <a name="l00124"></a>00124 
-<a name="l00132"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad58d963190667780d7846c5c6e7728ce">00132</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad58d963190667780d7846c5c6e7728ce">current</a>() {
+<a name="l00132"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad58d963190667780d7846c5c6e7728ce">00132</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad58d963190667780d7846c5c6e7728ce" title="Returns the current element in the Collection.">current</a>() {
 <a name="l00133"></a>00133                 <span class="keywordflow">if</span> (!$this-&gt;valid()) {
 <a name="l00134"></a>00134                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException();
 <a name="l00135"></a>00135                 } <span class="keywordflow">else</span> {
@@ -112,11 +112,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00137"></a>00137                 }
 <a name="l00138"></a>00138         }
 <a name="l00139"></a>00139 
-<a name="l00146"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe">00146</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe">key</a>() {
+<a name="l00146"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe">00146</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe" title="Returns the key of the current element.">key</a>() {
 <a name="l00147"></a>00147                 <span class="keywordflow">return</span> key($this-&gt;data);
 <a name="l00148"></a>00148         }
 <a name="l00149"></a>00149 
-<a name="l00158"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a920bd8ffc16f537c8bdb8aa713da668f">00158</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a920bd8ffc16f537c8bdb8aa713da668f">next</a>() {
+<a name="l00158"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a920bd8ffc16f537c8bdb8aa713da668f">00158</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a920bd8ffc16f537c8bdb8aa713da668f" title="Returns the current element and moves the pointer to the next element.">next</a>() {
 <a name="l00159"></a>00159                 $current = each($this-&gt;data);
 <a name="l00160"></a>00160                 <span class="keywordflow">if</span> ($current === <span class="keyword">false</span>) {
 <a name="l00161"></a>00161                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException();
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00164"></a>00164                 }
 <a name="l00165"></a>00165         }
 <a name="l00166"></a>00166 
-<a name="l00173"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a359e2185ca0880d04d0fd182818a1bf2">00173</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a359e2185ca0880d04d0fd182818a1bf2">rewind</a>() {
+<a name="l00173"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a359e2185ca0880d04d0fd182818a1bf2">00173</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a359e2185ca0880d04d0fd182818a1bf2" title="Sets the internal pointer of this collection to the first element.">rewind</a>() {
 <a name="l00174"></a>00174                 <span class="keywordflow">if</span> (reset($this-&gt;data)) {
 <a name="l00175"></a>00175                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
 <a name="l00176"></a>00176                 } <span class="keywordflow">else</span> {
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00178"></a>00178                 }
 <a name="l00179"></a>00179         }
 <a name="l00180"></a>00180 
-<a name="l00187"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a677d83bbb44299ac17a9d1cad923f898">00187</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a677d83bbb44299ac17a9d1cad923f898">valid</a>() {
+<a name="l00187"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a677d83bbb44299ac17a9d1cad923f898">00187</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a677d83bbb44299ac17a9d1cad923f898" title="Checks if the Collection internal pointer is on a valid element.">valid</a>() {
 <a name="l00188"></a>00188                 <span class="keywordflow">if</span> ($this-&gt;key() === null) {
 <a name="l00189"></a>00189                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
 <a name="l00190"></a>00190                 } <span class="keywordflow">else</span> {
@@ -141,21 +141,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00192"></a>00192                 }
 <a name="l00193"></a>00193         }
 <a name="l00194"></a>00194 
-<a name="l00200"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a55843823ca1f42a1696ba39cdbd939ca">00200</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a55843823ca1f42a1696ba39cdbd939ca">serialize</a>() {
+<a name="l00200"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a55843823ca1f42a1696ba39cdbd939ca">00200</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a55843823ca1f42a1696ba39cdbd939ca" title="Serializes this Collection as required by the Serializable interface.">serialize</a>() {
 <a name="l00201"></a>00201                 <span class="keywordflow">return</span> serialize($this-&gt;data);
 <a name="l00202"></a>00202         }
 <a name="l00203"></a>00203 
-<a name="l00209"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a9e5ab936e9c3b3d7845bc92efcda7132">00209</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a9e5ab936e9c3b3d7845bc92efcda7132">unserialize</a>($serialized) {
+<a name="l00209"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a9e5ab936e9c3b3d7845bc92efcda7132">00209</a>         <span class="keyword">public</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a9e5ab936e9c3b3d7845bc92efcda7132" title="Loads this Collection from a serialized string.">unserialize</a>($serialized) {
 <a name="l00210"></a>00210                 $this-&gt;data = unserialize($serialized);
 <a name="l00211"></a>00211         }
 <a name="l00212"></a>00212 
-<a name="l00220"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a49f7893d28e524befeaeaca548d6d543">00220</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a49f7893d28e524befeaeaca548d6d543">add</a>($element) {
+<a name="l00220"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a49f7893d28e524befeaeaca548d6d543">00220</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a49f7893d28e524befeaeaca548d6d543" title="Add a single element.">add</a>($element) {
 <a name="l00221"></a>00221                 $this-&gt;typeCheck($element);
 <a name="l00222"></a>00222                 $this[] = $element;
 <a name="l00223"></a>00223                 <span class="keywordflow">return</span> $this;
 <a name="l00224"></a>00224         }
 <a name="l00225"></a>00225 
-<a name="l00236"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a8d1aaee18ea62610ad9de43c9c9bf77a">00236</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a8d1aaee18ea62610ad9de43c9c9bf77a">addAll</a>(<span class="keyword">self</span> $other) {
+<a name="l00236"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a8d1aaee18ea62610ad9de43c9c9bf77a">00236</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a8d1aaee18ea62610ad9de43c9c9bf77a" title="Add all elements from an other collection to this one.">addAll</a>(<span class="keyword">self</span> $other) {
 <a name="l00240"></a>00240                 <span class="keywordflow">foreach</span> ($collection as $element) {
 <a name="l00241"></a>00241                         $this-&gt;typeCheck($element);
 <a name="l00242"></a>00242                 }
@@ -165,15 +165,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00246"></a>00246                 <span class="keywordflow">return</span> $this;
 <a name="l00247"></a>00247         }
 <a name="l00248"></a>00248 
-<a name="l00252"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a53b31e5a3b04e930a7f91b8316d6ada0">00252</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a53b31e5a3b04e930a7f91b8316d6ada0">clear</a>() {
+<a name="l00252"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a53b31e5a3b04e930a7f91b8316d6ada0">00252</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a53b31e5a3b04e930a7f91b8316d6ada0" title="Deletes all elemens.">clear</a>() {
 <a name="l00253"></a>00253                 $this-&gt;data = array();
 <a name="l00254"></a>00254         }
 <a name="l00255"></a>00255 
-<a name="l00261"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad03d816214fa91c2cfcabcadc1a9472d">00261</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad03d816214fa91c2cfcabcadc1a9472d">contains</a>($element) {
+<a name="l00261"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad03d816214fa91c2cfcabcadc1a9472d">00261</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad03d816214fa91c2cfcabcadc1a9472d" title="Checks if an element is contained here.">contains</a>($element) {
 <a name="l00262"></a>00262                 <span class="keywordflow">return</span> in_array($element, $this-&gt;data);
 <a name="l00263"></a>00263         }
 <a name="l00264"></a>00264 
-<a name="l00273"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a75b5584a0214804e5e3dde46277c1312">00273</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a75b5584a0214804e5e3dde46277c1312">containsAll</a>(<span class="keyword">self</span> $other) {
+<a name="l00273"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a75b5584a0214804e5e3dde46277c1312">00273</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a75b5584a0214804e5e3dde46277c1312" title="Checks all elements in a Collection if they are contained in this ArrayObject.">containsAll</a>(<span class="keyword">self</span> $other) {
 <a name="l00274"></a>00274                 <span class="keywordflow">foreach</span> ($other as $element) {
 <a name="l00275"></a>00275                         <span class="keywordflow">if</span> (!$this-&gt;contains($elements)) {
 <a name="l00276"></a>00276                                 <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -192,14 +192,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00296"></a>00296                 }
 <a name="l00297"></a>00297         }
 <a name="l00298"></a>00298 
-<a name="l00306"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a88377eb57b539490a948cb5b5ef7fee6">00306</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a88377eb57b539490a948cb5b5ef7fee6">removeAll</a>(<span class="keyword">self</span> $other) {
+<a name="l00306"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a88377eb57b539490a948cb5b5ef7fee6">00306</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a88377eb57b539490a948cb5b5ef7fee6" title="Remove all elements contained in an other ArrayObject.">removeAll</a>(<span class="keyword">self</span> $other) {
 <a name="l00307"></a>00307                 <span class="keywordflow">foreach</span> ($other as $elements) {
 <a name="l00308"></a>00308                         $this-&gt;<span class="keyword">remove</span>($elements);
 <a name="l00309"></a>00309                 }
 <a name="l00310"></a>00310                 <span class="keywordflow">return</span> $this;
 <a name="l00311"></a>00311         }
 <a name="l00312"></a>00312 
-<a name="l00320"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8ddfbb888e75000c357f161ddcabf1c">00320</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8ddfbb888e75000c357f161ddcabf1c">retainAll</a>(<span class="keyword">self</span> $other) {
+<a name="l00320"></a><a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8ddfbb888e75000c357f161ddcabf1c">00320</a>         function <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ac8ddfbb888e75000c357f161ddcabf1c" title="Retains all elements contained in a different collection.">retainAll</a>(<span class="keyword">self</span> $other) {
 <a name="l00321"></a>00321                 <span class="keywordflow">foreach</span> ($this as $key =&gt; $value) {
 <a name="l00322"></a>00322                         <span class="keywordflow">if</span> (!$other-&gt;contains($value)) {
 <a name="l00323"></a>00323                                 unset($this[$key]);
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:15 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

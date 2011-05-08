@@ -63,16 +63,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="PHP::OS::ForkListener" -->
+<p>Describes a class as a potential receiver for events related to process forks.  
+<a href="#_details">More...</a></p>
+
 <p><a href="interface_p_h_p_1_1_o_s_1_1_fork_listener-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html#a2f1ccd16093a2ce23fc611aac759545a">beforeFork</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called immediately before fork.  <a href="#a2f1ccd16093a2ce23fc611aac759545a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html#ab527ffa880adc6c824ec29d5cec75a14">onForkFailed</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called, if the fork failed for whatever reason.  <a href="#ab527ffa880adc6c824ec29d5cec75a14"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html#a9d9b2219ce03c4e2f4c1a4df591663af">afterFork</a> ($child)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called after a successful fork.  <a href="#a9d9b2219ce03c4e2f4c1a4df591663af"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Describes a class as a potential receiver for events related to process forks.</p>
+<p>Describes a class as a potential receiver for events related to process forks. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_fork_listener_8php_source.html#l00013">13</a> of file <a class="el" href="_fork_listener_8php_source.html">ForkListener.php</a>.</p>
@@ -91,7 +97,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to be called after a successful fork.</p>
+
+<p>Function to be called after a successful fork. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$child</td><td>if the current process is the child or the parent. </td></tr>
@@ -114,7 +121,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to be called immediately before fork. Please note, that this event is called regardless, if the fork is successful. </p>
+
+<p>Function to be called immediately before fork. </p>
+<p>Please note, that this event is called regardless, if the fork is successful. </p>
 
 </div>
 </div>
@@ -131,7 +140,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to be called, if the fork failed for whatever reason. Mainly useful for cleanup functions. </p>
+
+<p>Function to be called, if the fork failed for whatever reason. </p>
+<p>Mainly useful for cleanup functions. </p>
 
 </div>
 </div>
@@ -153,7 +164,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:16 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:31 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

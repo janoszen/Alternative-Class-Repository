@@ -100,7 +100,7 @@
 			<property name="STRIP_FROM_PATH" value="" />
 			<property name="STRIP_FROM_INC_PATH" value="" />
 			<property name="SHORT_NAMES" value="NO" />
-			<property name="JAVADOC_AUTOBRIEF" value="NO" />
+			<property name="JAVADOC_AUTOBRIEF" value="YES" />
 			<property name="QT_AUTOBRIEF" value="NO" />
 			<property name="MULTILINE_CPP_IS_BRIEF" value="NO" />
 			<property name="INHERIT_DOCS" value="YES" />
