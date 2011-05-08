@@ -64,7 +64,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>PHPx.HTTP.HTTPVersion Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="PHPx::HTTP::HTTPVersion" --><!-- doxytag: inherits="PHP::Lang::Comparable" --><!-- startSectionHeader --><div class="dynheader">
+<!-- doxytag: class="PHPx::HTTP::HTTPVersion" --><!-- doxytag: inherits="PHP::Lang::Comparable" -->
+<p>This object represents a HTTP version number.  
+<a href="#_details">More...</a></p>
+<!-- startSectionHeader --><div class="dynheader">
 Inheritance diagram for PHPx.HTTP.HTTPVersion:<!-- endSectionHeader --></div>
 <!-- startSectionSummary --><!-- endSectionSummary --><!-- startSectionContent --><div class="dyncontent">
  <div class="center">
@@ -79,18 +82,30 @@ Inheritance diagram for PHPx.HTTP.HTTPVersion:<!-- endSectionHeader --></div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#afff346d0af44028e4ad42f46713d93d3">__construct</a> ($version=<a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a05ca5788ff355c39f6f76a7e3a9a149b">HTTPVersion::VERSION11</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize version.  <a href="#afff346d0af44028e4ad42f46713d93d3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026">parse</a> ($version)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a version number.  <a href="#a36c6c9ef11fb61873bff4a0640ae3026"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a97938635ab516dbcba652bfb5c83249b">__toString</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the version number to a string.  <a href="#a97938635ab516dbcba652bfb5c83249b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0">setMajor</a> ($version)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the major version number.  <a href="#a9afc80e12516636bd450f433eb2894b0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">getMajor</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the major version number.  <a href="#ab9e328f88917133d6e39a0a26d4c1393"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a">setMinor</a> ($version)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the minor version number.  <a href="#af3324c951b7da2790a66fad6a87eda5a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">getMinor</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the minor version number.  <a href="#abb3259ed18d2136473ae0495bfe0cf06"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac91b7d1925ec09b8a569bb8a0587ea6c">compareTo</a> (<a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a> $o)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two version numbers.  <a href="#ac91b7d1925ec09b8a569bb8a0587ea6c"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a05ca5788ff355c39f6f76a7e3a9a149b">VERSION11</a> = '1.1'</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP version 1.1, which ads:  <a href="#a05ca5788ff355c39f6f76a7e3a9a149b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ac6e428dd07974ea2617dd5a26065d8e7">VERSION10</a> = '1.0'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a4c5c17d57303afc6a8cf897a0a3c7bc4">VERSION09</a> = '0.9'</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP version 1.0, which ads:  <a href="#ac6e428dd07974ea2617dd5a26065d8e7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c5c17d57303afc6a8cf897a0a3c7bc4"></a><!-- doxytag: member="PHPx::HTTP::HTTPVersion::VERSION09" ref="a4c5c17d57303afc6a8cf897a0a3c7bc4" args="" -->
+const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a4c5c17d57303afc6a8cf897a0a3c7bc4">VERSION09</a> = '0.9'</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP version 0.9, which is the first HTTP version. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac61ecfde21d3f64d9908e3bfb908cd62"></a><!-- doxytag: member="PHPx::HTTP::HTTPVersion::$major" ref="ac61ecfde21d3f64d9908e3bfb908cd62" args="" -->
@@ -99,7 +114,7 @@ Protected Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$minor</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This object represents a HTTP version number </p>
+<p>This object represents a HTTP version number. </p>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_version_8php_source.html#l00010">10</a> of file <a class="el" href="_h_t_t_p_version_8php_source.html">HTTPVersion.php</a>.</p>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
@@ -117,7 +132,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Initialize version. Defaults to HTTP 1.1 </p>
+
+<p>Initialize version. </p>
+<p>Defaults to HTTP 1.1 </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>default "1.1" </td></tr>
@@ -127,7 +144,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_version_8php_source.html#l00056">56</a> of file <a class="el" href="_h_t_t_p_version_8php_source.html">HTTPVersion.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                              {
-                $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026">parse</a>($version);
+                $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a36c6c9ef11fb61873bff4a0640ae3026" title="Parse a version number.">parse</a>($version);
         }
 </pre></div>
 </div>
@@ -146,7 +163,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Converts the version number to a string </p>
+
+<p>Converts the version number to a string. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_version_8php_source.html#l00084">84</a> of file <a class="el" href="_h_t_t_p_version_8php_source.html">HTTPVersion.php</a>.</p>
@@ -170,10 +188,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Compare two version numbers </p>
+
+<p>Compare two version numbers. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a></td><td class="paramname">$o</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html" title="This object represents a HTTP version number.">HTTPVersion</a></td><td class="paramname">$o</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -181,13 +200,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_version_8php_source.html#l00145">145</a> of file <a class="el" href="_h_t_t_p_version_8php_source.html">HTTPVersion.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                  {
-                <span class="keywordflow">if</span> ($o-&gt;getMajor() &lt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">getMajor</a>()) {
+                <span class="keywordflow">if</span> ($o-&gt;getMajor() &lt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393" title="Return the major version number.">getMajor</a>()) {
                         <span class="keywordflow">return</span> -1;
-                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;getMajor() &gt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393">getMajor</a>()) {
+                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;getMajor() &gt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#ab9e328f88917133d6e39a0a26d4c1393" title="Return the major version number.">getMajor</a>()) {
                         <span class="keywordflow">return</span> 1;
-                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;getMinor() &lt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">getMinor</a>()) {
+                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;getMinor() &lt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06" title="Get the minor version number.">getMinor</a>()) {
                         <span class="keywordflow">return</span> -1;
-                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;getMinor() &gt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06">getMinor</a>()) {
+                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ($o-&gt;getMinor() &gt; $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#abb3259ed18d2136473ae0495bfe0cf06" title="Get the minor version number.">getMinor</a>()) {
                         <span class="keywordflow">return</span> 1;
                 } <span class="keywordflow">else</span> {
                         <span class="keywordflow">return</span> 0;
@@ -209,6 +228,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Return the major version number. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
@@ -232,7 +252,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Get the minor version number </p>
+
+<p>Get the minor version number. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
 <p>Definition at line <a class="el" href="_h_t_t_p_version_8php_source.html#l00136">136</a> of file <a class="el" href="_h_t_t_p_version_8php_source.html">HTTPVersion.php</a>.</p>
@@ -256,14 +277,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Parse a version number </p>
+
+<p>Parse a version number. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html" title="This object represents a HTTP version number.">HTTPVersion</a> </dd></dl>
 <dl><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
     <tr><td class="paramname">\PHP\Lang\TypeError</td><td>if the version number given is not a string </td></tr>
@@ -280,8 +302,8 @@ Protected Attributes</h2></td></tr>
                 <span class="keywordflow">if</span> (!\preg_match(<span class="stringliteral">&#39;/^(?P&lt;major&gt;[0-9]+)\.(?P&lt;minor&gt;[0-9]+)$/&#39;</span>, $version, $matches)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($version, <span class="stringliteral">&#39;Valid version number&#39;</span>);
                 }
-                $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0">setMajor</a>((<span class="keywordtype">int</span>)$matches[<span class="stringliteral">&#39;major&#39;</span>]);
-                $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a">setMinor</a>((<span class="keywordtype">int</span>)$matches[<span class="stringliteral">&#39;minor&#39;</span>]);
+                $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a9afc80e12516636bd450f433eb2894b0" title="Set the major version number.">setMajor</a>((<span class="keywordtype">int</span>)$matches[<span class="stringliteral">&#39;major&#39;</span>]);
+                $this-&gt;<a class="code" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#af3324c951b7da2790a66fad6a87eda5a" title="Set the minor version number.">setMinor</a>((<span class="keywordtype">int</span>)$matches[<span class="stringliteral">&#39;minor&#39;</span>]);
                 <span class="keywordflow">return</span> $this;
         }
 </pre></div>
@@ -301,6 +323,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Set the major version number. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -308,7 +331,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html" title="This object represents a HTTP version number.">HTTPVersion</a> </dd></dl>
 <dl><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
     <tr><td class="paramname">\PHP\Lang\TypeError</td><td>if the version number is not an integer </td></tr>
@@ -345,6 +368,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Set the minor version number. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -352,7 +376,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html">HTTPVersion</a> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html" title="This object represents a HTTP version number.">HTTPVersion</a> </dd></dl>
 <dl><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
     <tr><td class="paramname">\PHP\Lang\TypeError</td><td>if the version number is not an integer </td></tr>
@@ -376,22 +400,6 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a4c5c17d57303afc6a8cf897a0a3c7bc4"></a><!-- doxytag: member="PHPx::HTTP::HTTPVersion::VERSION09" ref="a4c5c17d57303afc6a8cf897a0a3c7bc4" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="class_p_h_px_1_1_h_t_t_p_1_1_h_t_t_p_version.html#a4c5c17d57303afc6a8cf897a0a3c7bc4">PHPx.HTTP.HTTPVersion.VERSION09</a> = '0.9'</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>HTTP version 0.9, which is the first HTTP version. </p>
-
-<p>Definition at line <a class="el" href="_h_t_t_p_version_8php_source.html#l00039">39</a> of file <a class="el" href="_h_t_t_p_version_8php_source.html">HTTPVersion.php</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="ac6e428dd07974ea2617dd5a26065d8e7"></a><!-- doxytag: member="PHPx::HTTP::HTTPVersion::VERSION10" ref="ac6e428dd07974ea2617dd5a26065d8e7" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -402,6 +410,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>HTTP version 1.0, which ads: </p>
 <ul>
 <li>
@@ -426,6 +435,7 @@ HTTP Basic Authentication </li>
       </table>
 </div>
 <div class="memdoc">
+
 <p>HTTP version 1.1, which ads: </p>
 <ul>
 <li>
@@ -472,7 +482,7 @@ Content negotiation </li>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:17 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:32 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

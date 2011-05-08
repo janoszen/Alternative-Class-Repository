@@ -65,6 +65,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="PHP::OS::Signal" -->
+<p>This class contains constants and functions related to signal handling.  
+<a href="#_details">More...</a></p>
+
 <p><a href="class_p_h_p_1_1_o_s_1_1_signal-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
@@ -72,9 +75,13 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af95b7068c7ec5464342412fd31c7fe0c"></a><!-- doxytag: member="PHP::OS::Signal::send" ref="af95b7068c7ec5464342412fd31c7fe0c" args="($pid, $signal)" -->
 static&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> ($pid, $signal)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_signal.html#ab37b2cc3db508fa4a4ed6f50b89af80d">block</a> (\PHP\Util\Collection $signals)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks a specific set of signals.  <a href="#ab37b2cc3db508fa4a4ed6f50b89af80d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_signal.html#a7a87715a7e7c3c6ee25bf1a4759bde69">unblock</a> (\PHP\Util\Collection $signals)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Unblocks a specific set of signals.  <a href="#a7a87715a7e7c3c6ee25bf1a4759bde69"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5e227860c75ceb90166b47992ac072c9">replaceBlockMask</a> (\PHP\Util\Collection $signals)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the block mask with the given set of signals.  <a href="#a5e227860c75ceb90166b47992ac072c9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_signal.html#a8f6fbcf4970525b00a3467e92474a78f">wait</a> (\PHP\Util\Collection $signals, $seconds=0, $nanoseconds=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a given signal or signals.  <a href="#a8f6fbcf4970525b00a3467e92474a78f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5658b77e75114f229474f6187c051d64"></a><!-- doxytag: member="PHP::OS::Signal::PROCALL" ref="a5658b77e75114f229474f6187c051d64" args="" -->
@@ -152,10 +159,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>SIGBABY</b> = \SIGBA
 <tr><td colspan="2"><h2><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">validateSignals</a> (\PHP\Util\Collection $signals)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a set of signals for type and blockability.  <a href="#a5dd6c2072ed868d27e02c37558359c2d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_signal.html#a89df5c442848e7e6bdc17b1a6ad949fd">isBlockable</a> ($signal)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks, if a given signal is blockable.  <a href="#a89df5c442848e7e6bdc17b1a6ad949fd"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This class contains constants and functions related to signal handling.</p>
+<p>This class contains constants and functions related to signal handling. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_signal_8php_source.html#l00014">14</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
@@ -174,7 +183,8 @@ Static Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Blocks a specific set of signals </p>
+
+<p>Blocks a specific set of signals. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\Util\Collection</td><td>$signals </td></tr>
@@ -185,7 +195,7 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_signal_8php_source.html#l00097">97</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                    {
-                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
+                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d" title="Validates a set of signals for type and blockability.">self::validateSignals</a>($signals);
                 \pcntl_sigprocmask(\SIG_BLOCK, $signals-&gt;getArrayCopy(), $oldset);
                 <span class="keywordflow">return</span> $this;
         }
@@ -206,7 +216,8 @@ Static Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Checks, if a given signal is blockable </p>
+
+<p>Checks, if a given signal is blockable. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$signal</td><td></td></tr>
@@ -249,7 +260,8 @@ Static Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Replace the block mask with the given set of signals </p>
+
+<p>Replace the block mask with the given set of signals. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\Util\Collection</td><td>$signals </td></tr>
@@ -260,7 +272,7 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_signal_8php_source.html#l00119">119</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                               {
-                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
+                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d" title="Validates a set of signals for type and blockability.">self::validateSignals</a>($signals);
                 \pcntl_sigprocmask(\SIG_SETMASK, $signals-&gt;getArrayCopy(), $oldset);
                 <span class="keywordflow">return</span> $this;
         }
@@ -281,7 +293,8 @@ Static Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Unblocks a specific set of signals </p>
+
+<p>Unblocks a specific set of signals. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\Util\Collection</td><td>$signals </td></tr>
@@ -292,7 +305,7 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_signal_8php_source.html#l00108">108</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                                      {
-                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
+                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d" title="Validates a set of signals for type and blockability.">self::validateSignals</a>($signals);
                 \pcntl_sigprocmask(\SIG_UNBLOCK, $signals-&gt;getArrayCopy(), $oldset);
                 <span class="keywordflow">return</span> $this;
         }
@@ -313,7 +326,8 @@ Static Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Validates a set of signals for type and blockability </p>
+
+<p>Validates a set of signals for type and blockability. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\Util\Collection</td><td>$signals </td></tr>
@@ -374,6 +388,7 @@ Static Protected Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
 <p>Wait for a given signal or signals. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -387,7 +402,7 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_signal_8php_source.html#l00132">132</a> of file <a class="el" href="_signal_8php_source.html">Signal.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                          {
-                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d">self::validateSignals</a>($signals);
+                <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#a5dd6c2072ed868d27e02c37558359c2d" title="Validates a set of signals for type and blockability.">self::validateSignals</a>($signals);
                 <span class="keywordflow">if</span> ($seconds || $nanoseconds) {
                         <span class="keywordflow">return</span> \pcntl_sigtimedwait($signals-&gt;getArrayCopy(), $siginfo,
                                         $seconds, $nanoseconds);
@@ -416,7 +431,7 @@ Static Protected Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:17 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:31 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

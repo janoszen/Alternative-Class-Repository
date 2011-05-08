@@ -58,22 +58,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="ClassLoader" -->
+<p>End of static constructor code.  
+<a href="#_details">More...</a></p>
+
 <p><a href="class_class_loader-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a452270ba3efac6f631295570fa0080b9">setClassPath</a> ($classpath)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the classpath for the loader.  <a href="#a452270ba3efac6f631295570fa0080b9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a9fcd22bb603aa20c29da417b0d51ba3c">hasLoadCallback</a> ($className)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests, if a loaded class has a load callback.  <a href="#a9fcd22bb603aa20c29da417b0d51ba3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5">getCandidates</a> ($namespace)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all candidates for a given namespace.  <a href="#ab946f9118953e58a1864e58bfc9a81e5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">import</a> ($namespace)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import class or classes from namespace.  <a href="#a11a21558711c77762d67877c003f102f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a7f0fe014b3dfcbfb987e8c8dd004c9a3">loadAndCreateInstance</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a given class.  <a href="#a7f0fe014b3dfcbfb987e8c8dd004c9a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#aa6df21c0bbd3651a476c0322b27433e6">createInstance</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a given class.  <a href="#aa6df21c0bbd3651a476c0322b27433e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#aec9ec09d9ec2fd8b704e2a83c8d018cb">autoload</a> ($namespace)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Autoload a given namespace.  <a href="#aec9ec09d9ec2fd8b704e2a83c8d018cb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e">registerAutoload</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the <a class="el" href="class_class_loader.html" title="End of static constructor code.">ClassLoader</a> for autoloading.  <a href="#a6173c4d479e0135fe3e22f69ed53897e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214">callbackClass</a> ($className)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">If a class has a load callback, this function calls it.  <a href="#a65530bb2e1e7d9f4df7c17ba990df214"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2">loadFile</a> ($file, $className)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal file loader.  <a href="#a7b203f2e11da8c6bba6e46c9dd00f1c2"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83e24a7bc68796e9969627b194995dab"></a><!-- doxytag: member="ClassLoader::$classpath" ref="a83e24a7bc68796e9969627b194995dab" args="" -->
@@ -88,8 +101,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$callbackqueue</b> 
 static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>End of static constructor code. This is the basic class loader for the framework. It implements static loading of all classes required.</p>
-<p>Note, that there is an autoload mechanism in place, so any projects build for autoloading can use <a class="el" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e">ClassLoader.registerAutoload()</a> to enable this functionality.</p>
+<p>End of static constructor code. </p>
+<p>This is the basic class loader for the framework. It implements static loading of all classes required.</p>
+<p>Note, that there is an autoload mechanism in place, so any projects build for autoloading can use <a class="el" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e" title="Register the ClassLoader for autoloading.">ClassLoader.registerAutoload()</a> to enable this functionality.</p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_class_loader_8php_source.html#l00044">44</a> of file <a class="el" href="_class_loader_8php_source.html">ClassLoader.php</a>.</p>
@@ -108,7 +122,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Autoload a given namespace. This is not automatically enabled, the application must do so by calling <a class="el" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e">ClassLoader.registerAutoload</a> </p>
+
+<p>Autoload a given namespace. </p>
+<p>This is not automatically enabled, the application must do so by calling <a class="el" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e" title="Register the ClassLoader for autoloading.">ClassLoader.registerAutoload</a> </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$namespace</td><td></td></tr>
@@ -118,7 +134,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
 
 <p>Definition at line <a class="el" href="_class_loader_8php_source.html#l00246">246</a> of file <a class="el" href="_class_loader_8php_source.html">ClassLoader.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                    {
-                <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">self::import</a>(<span class="charliteral">&#39;\\&#39;</span> . $namespace);
+                <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">self::import</a>(<span class="charliteral">&#39;\\&#39;</span> . $namespace);
         }
 </pre></div>
 </div>
@@ -137,6 +153,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
+
 <p>If a class has a load callback, this function calls it. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -167,7 +184,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Create an instance of a given class. This function does NOT load the class, you have to do that with <a class="el" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">import()</a> </p>
+
+<p>Create an instance of a given class. </p>
+<p>This function does NOT load the class, you have to do that with <a class="el" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">import()</a> </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td></td></tr>
@@ -204,6 +223,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
+
 <p>Get all candidates for a given namespace. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -262,7 +282,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Tests, if a loaded class has a load callback. This is utilized to provide plugin functionality </p>
+
+<p>Tests, if a loaded class has a load callback. </p>
+<p>This is utilized to provide plugin functionality </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$className</td><td></td></tr>
@@ -298,7 +320,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Import class or classes from namespace </p>
+
+<p>Import class or classes from namespace. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$namespace</td><td></td></tr>
@@ -321,16 +344,16 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
 
                 self::$loadDepth++;
 
-                $files = <a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5">self::getCandidates</a>($namespace);
+                $files = <a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5" title="Get all candidates for a given namespace.">self::getCandidates</a>($namespace);
                 <span class="keywordflow">foreach</span> ($files as $file) {
                         <span class="keywordflow">if</span> (!in_array($file, self::$imported)) {
-                                <a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2">self::loadFile</a>($file[<span class="stringliteral">&#39;file&#39;</span>], $file[<span class="stringliteral">&#39;class&#39;</span>]);
+                                <a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2" title="Internal file loader.">self::loadFile</a>($file[<span class="stringliteral">&#39;file&#39;</span>], $file[<span class="stringliteral">&#39;class&#39;</span>]);
                         }
                 }
                 self::$loadDepth--;
                 <span class="keywordflow">if</span> (self::$loadDepth == 0) {
                         <span class="keywordflow">foreach</span> (self::$callbackqueue as $key =&gt; $className) {
-                                <a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214">self::callbackClass</a>($className);
+                                <a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214" title="If a class has a load callback, this function calls it.">self::callbackClass</a>($className);
                                 unset(self::$callbackqueue[$key]);
                         }
                 }
@@ -351,7 +374,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Create an instance of a given class. This function DOES load the class, you have to do that with <a class="el" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">import()</a> </p>
+
+<p>Create an instance of a given class. </p>
+<p>This function DOES load the class, you have to do that with <a class="el" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">import()</a> </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td></td></tr>
@@ -367,7 +392,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
 <div class="fragment"><pre class="fragment">                                                       {
                 $arguments = \func_get_args();
                 $classname = \array_shift($arguments);
-                <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">self::import</a>($classname);
+                <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">self::import</a>($classname);
                 $reflect = <span class="keyword">new</span> \ReflectionClass($classname);
                 $instance = $reflect-&gt;newInstance($arguments);
                 <span class="keywordflow">return</span> $instance;
@@ -399,7 +424,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Internal file loader </p>
+
+<p>Internal file loader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$file</td><td></td></tr>
@@ -413,7 +439,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
                         self::$imported[] = $file;
                         <span class="keywordflow">if</span> (is_file($file) &amp;&amp; is_readable($file)) {
                                 <span class="keywordflow">if</span> (!include($file)) {
-                                        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_class_loader_exception.html">ClassLoaderException</a>(<span class="stringliteral">&quot;Include failed: &quot;</span> . $file);
+                                        <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_class_loader_exception.html" title="Generic exception for the ClassLoader.">ClassLoaderException</a>(<span class="stringliteral">&quot;Include failed: &quot;</span> . $file);
                                 } <span class="keywordflow">else</span> {
                                         self::$callbackqueue[] = $className;
                                 }
@@ -436,7 +462,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Register the <a class="el" href="class_class_loader.html">ClassLoader</a> for autoloading. This is not automatically done so any projects using autoload functionality must use this function to enable it. </p>
+
+<p>Register the <a class="el" href="class_class_loader.html" title="End of static constructor code.">ClassLoader</a> for autoloading. </p>
+<p>This is not automatically done so any projects using autoload functionality must use this function to enable it. </p>
 
 <p>Definition at line <a class="el" href="_class_loader_8php_source.html#l00255">255</a> of file <a class="el" href="_class_loader_8php_source.html">ClassLoader.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                  {
@@ -459,7 +487,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
       </table>
 </div>
 <div class="memdoc">
-<p>Set the classpath for the loader </p>
+
+<p>Set the classpath for the loader. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$classpath</td><td></td></tr>
@@ -496,7 +525,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$loadDepth</b> = 0<
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:15 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

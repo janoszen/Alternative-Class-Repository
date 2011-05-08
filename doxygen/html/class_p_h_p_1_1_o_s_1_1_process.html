@@ -65,22 +65,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="PHP::OS::Process" -->
+<p>This class contains all process-related functionality.  
+<a href="#_details">More...</a></p>
+
 <p><a href="class_p_h_p_1_1_o_s_1_1_process-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#ac377d6e9699dcf584becf2bc1161d4a3">setuid</a> ($uid)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the user ID of the current process.  <a href="#ac377d6e9699dcf584becf2bc1161d4a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#aca8d9d6ad16dd70770086bcb56c9fe9c">setgid</a> ($gid)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the group ID of the current process.  <a href="#aca8d9d6ad16dd70770086bcb56c9fe9c"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#a91a4bfa59d7038b4e1ee3819447d4440">setForkListener</a> (<a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html">ForkListener</a> $listener)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a class as a listener for fork events.  <a href="#a91a4bfa59d7038b4e1ee3819447d4440"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#aa1d667faa110c979c657d14a3fadffa9">removeForkListener</a> (<a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html">ForkListener</a> $listener)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html" title="Describes a class as a potential receiver for events related to process forks.">ForkListener</a> from the listener collection.  <a href="#aa1d667faa110c979c657d14a3fadffa9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#a3acca9733326bd0eab172495aa869289">setChrootListener</a> (<a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html">ChrootListener</a> $listener)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a class as a listener for chroot events.  <a href="#a3acca9733326bd0eab172495aa869289"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#a758f3418e51e3a3b102f3f21251c0a41">removeChrootListener</a> (<a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html">ChrootListener</a> $listener)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html" title="Describes a class as a potential receiver for events related to process chroot calls.">ChrootListener</a> from the listener collection.  <a href="#a758f3418e51e3a3b102f3f21251c0a41"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#a062bc7b457af79deab6c8ae5c32125af">fork</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Forks a child process of the current process, copying everything including open files and connections.  <a href="#a062bc7b457af79deab6c8ae5c32125af"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#a7e3da1aedea0fa6f4da6bb3c822e0155">waitForChild</a> ($pid=false, $blocking=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for one child.  <a href="#a7e3da1aedea0fa6f4da6bb3c822e0155"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#ae1169cb21959135d319464d296db7eb2">handleChildTerminations</a> ($blocking=false)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all pending child reaps.  <a href="#ae1169cb21959135d319464d296db7eb2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#adb2777f1b7272e56e51e2e38360bc6c3">chroot</a> (\PHP\IO\File $directory)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the root filesystem to a new directory.  <a href="#adb2777f1b7272e56e51e2e38360bc6c3"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94783f3536374b840257df912615baba"></a><!-- doxytag: member="PHP::OS::Process::$forklisteners" ref="a94783f3536374b840257df912615baba" args="" -->
@@ -89,7 +102,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$forklisteners</b><
 static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>This class contains all process-related functionality.</p>
+<p>This class contains all process-related functionality. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_process_8php_source.html#l00015">15</a> of file <a class="el" href="_process_8php_source.html">Process.php</a>.</p>
@@ -108,7 +121,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Set the root filesystem to a new directory. All files not within this directory will be inaccessible. This can only be done as root on a Unix system!</p>
+
+<p>Set the root filesystem to a new directory. </p>
+<p>All files not within this directory will be inaccessible. This can only be done as root on a Unix system!</p>
 <p>This function also facilitates a callback feature, which can be used to close outstanding file descriptors. Please note, that in the event of a chroot failure, the chroot may or may not actually have happened, so you will have to determine, if the process can be restored to a working state.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -119,7 +134,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
 <dl><dt><b>Exceptions:</b></dt><dd>
   <table class="exception">
     <tr><td class="paramname">\PHP\Lang\ValueError</td><td>if the directory doesn't exist. </td></tr>
-    <tr><td class="paramname">\PHP\OS\ChrootFailed</td><td>if the <a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#adb2777f1b7272e56e51e2e38360bc6c3">chroot()</a> call failed </td></tr>
+    <tr><td class="paramname">\PHP\OS\ChrootFailed</td><td>if the <a class="el" href="class_p_h_p_1_1_o_s_1_1_process.html#adb2777f1b7272e56e51e2e38360bc6c3" title="Set the root filesystem to a new directory.">chroot()</a> call failed </td></tr>
   </table>
   </dd>
 </dl>
@@ -140,7 +155,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
                         $failed = <span class="keyword">true</span>;
                 }
                 <span class="keywordflow">if</span> (!$failed) {
-                        <span class="keywordflow">if</span> (!\<a class="code" href="class_p_h_p_1_1_o_s_1_1_process.html#adb2777f1b7272e56e51e2e38360bc6c3">chroot</a>($directory-&gt;getAbsolutePath())) {
+                        <span class="keywordflow">if</span> (!\<a class="code" href="class_p_h_p_1_1_o_s_1_1_process.html#adb2777f1b7272e56e51e2e38360bc6c3" title="Set the root filesystem to a new directory.">chroot</a>($directory-&gt;getAbsolutePath())) {
                                 $failed = <span class="keyword">true</span>;
                         }
                 }
@@ -181,7 +196,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Forks a child process of the current process, copying everything including open files and connections. Please be VERY aware, that you will be using the SAME connection in two processes if you have it open at the time of forking.</p>
+
+<p>Forks a child process of the current process, copying everything including open files and connections. </p>
+<p>Please be VERY aware, that you will be using the SAME connection in two processes if you have it open at the time of forking.</p>
 <p>This function will call all registered  classes in the event of a fork to ensure connection and data consistency.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int 0 if in the child process, the pid of the child otherwise. </dd></dl>
 <dl><dt><b>Exceptions:</b></dt><dd>
@@ -243,7 +260,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Handles all pending child reaps. Useful if called from a SIGCLD signal handler.</p>
+
+<p>Handles all pending child reaps. </p>
+<p>Useful if called from a SIGCLD signal handler.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$blocking</td><td>default false </td></tr>
@@ -257,7 +276,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
                 $children = <span class="keyword">new</span> \PHP\Util\Collection();
                 $exit = <span class="keyword">false</span>;
                 <span class="keywordflow">do</span> {
-                        $status = <a class="code" href="class_p_h_p_1_1_o_s_1_1_process.html#a7e3da1aedea0fa6f4da6bb3c822e0155">self::waitForChild</a>(<span class="keyword">false</span>, $blocking);
+                        $status = <a class="code" href="class_p_h_p_1_1_o_s_1_1_process.html#a7e3da1aedea0fa6f4da6bb3c822e0155" title="Waits for one child.">self::waitForChild</a>(<span class="keyword">false</span>, $blocking);
                         <span class="keywordflow">if</span> ($status-&gt;getPid()) {
                                 $children[] = $status;
                         } <span class="keywordflow">else</span> {
@@ -283,10 +302,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Remove a <a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html">ChrootListener</a> from the listener collection. </p>
+
+<p>Remove a <a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html" title="Describes a class as a potential receiver for events related to process chroot calls.">ChrootListener</a> from the listener collection. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html">ChrootListener</a></td><td class="paramname">$listener</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html" title="Describes a class as a potential receiver for events related to process chroot calls.">ChrootListener</a></td><td class="paramname">$listener</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -316,10 +336,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Remove a <a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html">ForkListener</a> from the listener collection. </p>
+
+<p>Remove a <a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html" title="Describes a class as a potential receiver for events related to process forks.">ForkListener</a> from the listener collection. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html">ForkListener</a></td><td class="paramname">$listener</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html" title="Describes a class as a potential receiver for events related to process forks.">ForkListener</a></td><td class="paramname">$listener</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -349,10 +370,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Set a class as a listener for chroot events.</p>
+
+<p>Set a class as a listener for chroot events. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html">ChrootListener</a></td><td class="paramname">$listener</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html" title="Describes a class as a potential receiver for events related to process chroot calls.">ChrootListener</a></td><td class="paramname">$listener</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -385,10 +407,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Set a class as a listener for fork events. This can be used to facilitate reconnect needs of specific classes.</p>
+
+<p>Set a class as a listener for fork events. </p>
+<p>This can be used to facilitate reconnect needs of specific classes.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html">ForkListener</a></td><td class="paramname">$listener</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_fork_listener.html" title="Describes a class as a potential receiver for events related to process forks.">ForkListener</a></td><td class="paramname">$listener</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -421,7 +445,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Set the group ID of the current process </p>
+
+<p>Set the group ID of the current process. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$gid</td><td></td></tr>
@@ -468,7 +493,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Set the user ID of the current process </p>
+
+<p>Set the user ID of the current process. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$uid</td><td></td></tr>
@@ -525,7 +551,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
       </table>
 </div>
 <div class="memdoc">
-<p>Waits for one child. If requested, it can wait in non-blocking mode, that is reap the child, if it's available, otherwise return immediately. If $pid is false, it waits for any child instead of a specific one.</p>
+
+<p>Waits for one child. </p>
+<p>If requested, it can wait in non-blocking mode, that is reap the child, if it's available, otherwise return immediately. If $pid is false, it waits for any child instead of a specific one.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$pid</td><td>default false </td></tr>
@@ -583,7 +611,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$chrootlisteners</b
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:16 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:31 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

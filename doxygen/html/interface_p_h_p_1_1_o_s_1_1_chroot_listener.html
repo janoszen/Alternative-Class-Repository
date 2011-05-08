@@ -63,16 +63,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="PHP::OS::ChrootListener" -->
+<p>Describes a class as a potential receiver for events related to process chroot calls.  
+<a href="#_details">More...</a></p>
+
 <p><a href="interface_p_h_p_1_1_o_s_1_1_chroot_listener-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html#a514ee7afe0f3a04ae21d9c2a8f531318">beforeChroot</a> (\PHP\IO\File $directory)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called immediately before chroot.  <a href="#a514ee7afe0f3a04ae21d9c2a8f531318"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html#ab0a600b2bd1a92a6d084056c30a0a3b2">onChrootFailed</a> (\PHP\IO\File $directory)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called, if the chroot failed for whatever reason.  <a href="#ab0a600b2bd1a92a6d084056c30a0a3b2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_p_h_p_1_1_o_s_1_1_chroot_listener.html#acdf9c87f962ad2076f51d3979bc96ef0">afterChroot</a> (\PHP\IO\File $directory)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to be called after a successful chroot.  <a href="#acdf9c87f962ad2076f51d3979bc96ef0"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>Describes a class as a potential receiver for events related to process chroot calls.</p>
+<p>Describes a class as a potential receiver for events related to process chroot calls. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:janos@janoszen.hu">janos@janoszen.hu</a>&gt;  Janos Pasztor (c) 2011  <a href="http://creativecommons.org/licenses/BSD/">http://creativecommons.org/licenses/BSD/</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_chroot_listener_8php_source.html#l00015">15</a> of file <a class="el" href="_chroot_listener_8php_source.html">ChrootListener.php</a>.</p>
@@ -91,7 +97,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to be called after a successful chroot.</p>
+
+<p>Function to be called after a successful chroot. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\IO\File</td><td>$directory </td></tr>
@@ -115,7 +122,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to be called immediately before chroot. Please note, that this event is called regardless, if the chroot is successful.</p>
+
+<p>Function to be called immediately before chroot. </p>
+<p>Please note, that this event is called regardless, if the chroot is successful.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\IO\File</td><td>$directory </td></tr>
@@ -139,7 +148,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Function to be called, if the chroot failed for whatever reason. Mainly useful for cleanup functions.</p>
+
+<p>Function to be called, if the chroot failed for whatever reason. </p>
+<p>Mainly useful for cleanup functions.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">\PHP\IO\File</td><td>$directory </td></tr>
@@ -167,7 +178,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:16 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:31 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

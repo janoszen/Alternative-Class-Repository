@@ -53,11 +53,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="keyword">namespace </span>PHP\OS;
 <a name="l00004"></a>00004 
-<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\*&#39;</span>);
-<a name="l00006"></a>00006 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\IO\*&#39;</span>);
-<a name="l00007"></a>00007 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\OS\*&#39;</span>);
+<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\*&#39;</span>);
+<a name="l00006"></a>00006 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\IO\*&#39;</span>);
+<a name="l00007"></a>00007 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\OS\*&#39;</span>);
 <a name="l00008"></a>00008 
-<a name="l00017"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html">00017</a> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html">DaemonContext</a> {
+<a name="l00017"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html">00017</a> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html" title="This is a daemonizing toolkit for classes, that implement PHP.">DaemonContext</a> {
 <a name="l00023"></a>00023         <span class="keyword">protected</span> $workingDir;
 <a name="l00028"></a>00028         <span class="keyword">protected</span> $uid;
 <a name="l00033"></a>00033         <span class="keyword">protected</span> $gid;
@@ -77,7 +77,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00077"></a>00077                 $this-&gt;chroot = <span class="keyword">new</span> \PHP\IO\File(<span class="charliteral">&#39;/&#39;</span>);
 <a name="l00078"></a>00078         }
 <a name="l00079"></a>00079 
-<a name="l00087"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a5d5657fb9082fa951bd587d665157347">00087</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a5d5657fb9082fa951bd587d665157347">setWorkingDir</a>(\PHP\IO\File $workingDir) {
+<a name="l00087"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a5d5657fb9082fa951bd587d665157347">00087</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a5d5657fb9082fa951bd587d665157347" title="Set the current working directory for the application.">setWorkingDir</a>(\PHP\IO\File $workingDir) {
 <a name="l00088"></a>00088                 <span class="keywordflow">if</span> (!$workingDir-&gt;isDirectory()) {
 <a name="l00089"></a>00089                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($workingDir-&gt;getPath(), <span class="stringliteral">&#39;existing directory&#39;</span>);
 <a name="l00090"></a>00090                 }
@@ -85,11 +85,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00092"></a>00092                 <span class="keywordflow">return</span> $this;
 <a name="l00093"></a>00093         }
 <a name="l00094"></a>00094 
-<a name="l00099"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ae1819450217bf0aea1e9a44dd78ebb10">00099</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ae1819450217bf0aea1e9a44dd78ebb10">getWorkingDir</a>() {
+<a name="l00099"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ae1819450217bf0aea1e9a44dd78ebb10">00099</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ae1819450217bf0aea1e9a44dd78ebb10" title="Returns the specified CWD.">getWorkingDir</a>() {
 <a name="l00100"></a>00100                 <span class="keywordflow">return</span> $this-&gt;workingDir;
 <a name="l00101"></a>00101         }
 <a name="l00102"></a>00102 
-<a name="l00110"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a7533ee8a919e6d796187e581ea1221d0">00110</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a7533ee8a919e6d796187e581ea1221d0">setUid</a>($uid) {
+<a name="l00110"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a7533ee8a919e6d796187e581ea1221d0">00110</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a7533ee8a919e6d796187e581ea1221d0" title="Set the UID for the application.">setUid</a>($uid) {
 <a name="l00111"></a>00111                 <span class="keywordflow">if</span> (!\is_int($uid)) {
 <a name="l00112"></a>00112                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($uid, <span class="stringliteral">&#39;integer&#39;</span>);
 <a name="l00113"></a>00113                 }
@@ -100,11 +100,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00118"></a>00118                 <span class="keywordflow">return</span> $this;
 <a name="l00119"></a>00119         }
 <a name="l00120"></a>00120 
-<a name="l00125"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a07eff23d63dd5859eb4b9efb797470ed">00125</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a07eff23d63dd5859eb4b9efb797470ed">getUid</a>() {
+<a name="l00125"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a07eff23d63dd5859eb4b9efb797470ed">00125</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a07eff23d63dd5859eb4b9efb797470ed" title="Returns the UID the application is supposed to run under.">getUid</a>() {
 <a name="l00126"></a>00126                 <span class="keywordflow">return</span> $this-&gt;uid;
 <a name="l00127"></a>00127         }
 <a name="l00128"></a>00128 
-<a name="l00136"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#aef279f525a025a6eb0decfff1e610397">00136</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#aef279f525a025a6eb0decfff1e610397">setGid</a>($gid) {
+<a name="l00136"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#aef279f525a025a6eb0decfff1e610397">00136</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#aef279f525a025a6eb0decfff1e610397" title="Set the GID for the application.">setGid</a>($gid) {
 <a name="l00137"></a>00137                 <span class="keywordflow">if</span> (!\is_int($gid)) {
 <a name="l00138"></a>00138                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($gid, <span class="stringliteral">&#39;integer&#39;</span>);
 <a name="l00139"></a>00139                 }
@@ -115,11 +115,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00144"></a>00144                 <span class="keywordflow">return</span> $this;
 <a name="l00145"></a>00145         }
 <a name="l00146"></a>00146 
-<a name="l00151"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ac024be8686e4fef7e4d4a26095fb5ef0">00151</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ac024be8686e4fef7e4d4a26095fb5ef0">getGid</a>() {
+<a name="l00151"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ac024be8686e4fef7e4d4a26095fb5ef0">00151</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ac024be8686e4fef7e4d4a26095fb5ef0" title="Returns the GID the application is supposed to run under.">getGid</a>() {
 <a name="l00152"></a>00152                 <span class="keywordflow">return</span> $this-&gt;gid;
 <a name="l00153"></a>00153         }
 <a name="l00154"></a>00154 
-<a name="l00161"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a1651076ff3740e85d73e29263dcc9c69">00161</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a1651076ff3740e85d73e29263dcc9c69">setChroot</a>(\PHP\IO\File $chroot) {
+<a name="l00161"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a1651076ff3740e85d73e29263dcc9c69">00161</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a1651076ff3740e85d73e29263dcc9c69" title="Set the chroot() directory.">setChroot</a>(\PHP\IO\File $chroot) {
 <a name="l00162"></a>00162                 <span class="keywordflow">if</span> (!$chroot-&gt;isDirectory()) {
 <a name="l00163"></a>00163                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($chroot-&gt;getPath(), <span class="stringliteral">&#39;existing directory&#39;</span>);
 <a name="l00164"></a>00164                 }
@@ -127,14 +127,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00166"></a>00166                 <span class="keywordflow">return</span> $this;
 <a name="l00167"></a>00167         }
 <a name="l00168"></a>00168 
-<a name="l00173"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a09d2f2700de295f25d6f1d95d4cecb00">00173</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a09d2f2700de295f25d6f1d95d4cecb00">getChroot</a>() {
+<a name="l00173"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a09d2f2700de295f25d6f1d95d4cecb00">00173</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a09d2f2700de295f25d6f1d95d4cecb00" title="Return the chroot() directory.">getChroot</a>() {
 <a name="l00174"></a>00174                 <span class="keywordflow">return</span> $this-&gt;chroot;
 <a name="l00175"></a>00175         }
 <a name="l00176"></a>00176 
-<a name="l00182"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a31fc38fce484a1b0e588760b4764bd90">00182</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a31fc38fce484a1b0e588760b4764bd90">outputHandler</a>($output) {
+<a name="l00182"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a31fc38fce484a1b0e588760b4764bd90">00182</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#a31fc38fce484a1b0e588760b4764bd90" title="Output handler function stub.">outputHandler</a>($output) {
 <a name="l00183"></a>00183         }
 <a name="l00184"></a>00184 
-<a name="l00191"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ad2fc5a0a12e3584d2b68ba3d4066c89e">00191</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ad2fc5a0a12e3584d2b68ba3d4066c89e">runAsDaemon</a>(<a class="code" href="interface_p_h_p_1_1_o_s_1_1_daemon.html">Daemon</a> $daemon) {
+<a name="l00191"></a><a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ad2fc5a0a12e3584d2b68ba3d4066c89e">00191</a>         function <a class="code" href="class_p_h_p_1_1_o_s_1_1_daemon_context.html#ad2fc5a0a12e3584d2b68ba3d4066c89e" title="Run an application as a daemon.">runAsDaemon</a>(<a class="code" href="interface_p_h_p_1_1_o_s_1_1_daemon.html" title="This interface ensures, that all functions required by PHP exist.">Daemon</a> $daemon) {
 <a name="l00192"></a>00192                 Signal::block(<span class="keyword">new</span> \PHP\Util\Collection(array(Signal::SIGUSR2,
 <a name="l00193"></a>00193                         Signal::SIGCLD, Signal::SIGINT, Signal::SIGTERM)));
 <a name="l00194"></a>00194                 $pid = Process::fork();
@@ -264,7 +264,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:17:15 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>
