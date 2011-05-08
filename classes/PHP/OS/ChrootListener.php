@@ -6,7 +6,7 @@ namespace PHP\OS;
 
 /**
  * Describes a class as a potential receiver for events related to process
- * forks.
+ * chroot calls.
  *
  * @author Janos Pasztor <janos@janoszen.hu>
  * @copyright Janos Pasztor (c) 2011

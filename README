@@ -1,4 +1,14 @@
+A word of warning
+=================
+
+**This project is experimental.** There are absoluely *no warranties* on performance
+or code stability. You are free to [open issues](https://github.com/janoszen/Alternative-Class-Repository/issues)
+on [GitHub](https://github.com/janoszen/Alternative-Class-Repository), but being not only an
+open source, but also a hobby project, I may or may not resolve anything you
+report.
+
 Yet another framework?
+======================
 
 Why create a PHP framework, when there are at least a zillion out there and half
 a dozen mainstream ones? The answer is quite easy: both the PEAR and the PHP
@@ -10,6 +20,7 @@ crashes, warnings will become exceptions. This way code quality can be ensured
 from the foundation.
 
 Application server mode
+=======================
 
 There is an other reason for writing this framework. Even though Zend loudly
 advertizes Zend Server as an application server, it is not. Opcode caches and
@@ -31,3 +42,19 @@ against when using this framework as a daemon, because potential PHP compile
 errors don't occur at startup time. Also, if you don't load everything at
 startup, the first couple of page requests will be slower, thus degrading the
 positive effect of the application server mode.
+
+How to build
+============
+
+The project includes an Apache Ant build.xml file, which uses
+[Doxygen](http://doxygen.org/), [PDepend](http://pdepend.org),
+[PHPCS](http://pear.php.net/package/PHP_CodeSniffer/), [PHPMD](http://phpmd.org)
+and [PHPUnit](http://phpunit.de). These must be installed in order to run a
+successful build.
+
+How to use
+==========
+
+Since this project is pretty much experimental, it's up to you to find out
+your best way to use it. You could just use the classes, or you could build
+a complete application around it.
