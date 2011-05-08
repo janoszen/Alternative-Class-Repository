@@ -1,8 +1,9 @@
 A word of warning
 =================
 
-This project is experimental. There are absoluely no warranties on performance
-or code stability. You are free to open issues on GitHub, but being not only an
+**This project is experimental.** There are absoluely *no warranties* on performance
+or code stability. You are free to [open issues](https://github.com/janoszen/Alternative-Class-Repository/issues)
+on [GitHub](https://github.com/janoszen/Alternative-Class-Repository), but being not only an
 open source, but also a hobby project, I may or may not resolve anything you
 report.
 
