@@ -13,7 +13,7 @@ $baseclasses = array(
 	'ClassLoaderCallbackInterface',
 );
 foreach ($baseclasses as $baseclass) {
-	$file = __DIR__ . DIRECTORY_SEPARATOR . $baseclass;
+	$file = __DIR__ . DIRECTORY_SEPARATOR . $baseclass . '.php';
 	if (!\file_exists($file) || !include($file)) {
 		die('Fatal error: failed to load ' . $baseclass);
 	}
