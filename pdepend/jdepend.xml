@@ -30,11 +30,11 @@
         <TotalClasses>7</TotalClasses>
         <ConcreteClasses>6</ConcreteClasses>
         <AbstractClasses>1</AbstractClasses>
-        <Ca>0</Ca>
+        <Ca>1</Ca>
         <Ce>1</Ce>
         <A>0.14285714285714</A>
-        <I>1</I>
-        <D>0.14285714285714</D>
+        <I>0.5</I>
+        <D>0.35714285714286</D>
       </Stats>
       <ConcreteClasses>
         <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Exception.php">Exception</Class>
@@ -49,6 +49,37 @@
       </AbstractClasses>
       <DependsUpon>
         <Package></Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>PHP\Net</Package>
+      </UsedBy>
+    </Package>
+    <Package name="PHP\Net">
+      <Stats>
+        <TotalClasses>9</TotalClasses>
+        <ConcreteClasses>7</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0.22222222222222</A>
+        <I>1</I>
+        <D>0.22222222222222</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET4Address.php">INET4Address</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET6Address.php">INET6Address</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressFormatError.php">INETAddressFormatError</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressTypeError.php">INETAddressTypeError</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETInvalidMask.php">INETInvalidMask</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETRange.php">INETRange</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETUnknownHost.php">INETUnknownHost</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddress.php">INETAddress</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETException.php">INETException</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>PHP\Lang</Package>
       </DependsUpon>
       <UsedBy/>
     </Package>

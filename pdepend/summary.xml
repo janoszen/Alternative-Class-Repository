@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2011-06-14T23:59:40" pdepend="0.10.0RC3" ahh="1.6666666666667" andc="0.5" calls="42" ccn="38" ccn2="41" cloc="206" clsa="0" clsc="8" eloc="223" fanout="3" leafs="5" lloc="136" loc="479" maxDIT="3" ncloc="273" noc="8" nof="0" noi="2" nom="18" nop="2" roots="2">
+<metrics generated="2011-06-15T00:23:45" pdepend="0.10.0RC3" ahh="1.4" andc="0.61111111111111" calls="97" ccn="125" ccn2="135" cloc="560" clsa="1" clsc="15" eloc="597" fanout="32" leafs="10" lloc="381" loc="1297" maxDIT="4" ncloc="737" noc="16" nof="0" noi="3" nom="63" nop="3" roots="3">
   <files>
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoader.php" cloc="111" eloc="138" lloc="89" loc="268" ncloc="157"/>
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoaderException.php" cloc="7" eloc="3" lloc="0" loc="12" ncloc="5"/>
@@ -9,6 +9,14 @@
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\NullPointerException.php" cloc="8" eloc="5" lloc="2" loc="18" ncloc="10"/>
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\TypeError.php" cloc="12" eloc="21" lloc="15" loc="37" ncloc="25"/>
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\ValueError.php" cloc="12" eloc="12" lloc="7" loc="28" ncloc="16"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET4Address.php" cloc="77" eloc="96" lloc="61" loc="191" ncloc="114"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET6Address.php" cloc="124" eloc="150" lloc="95" loc="296" ncloc="172"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddress.php" cloc="69" eloc="50" lloc="41" loc="135" ncloc="66"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressFormatError.php" cloc="15" eloc="14" lloc="9" loc="35" ncloc="20"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressTypeError.php" cloc="7" eloc="9" lloc="5" loc="20" ncloc="13"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETInvalidMask.php" cloc="15" eloc="14" lloc="9" loc="35" ncloc="20"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETRange.php" cloc="27" eloc="23" lloc="15" loc="58" ncloc="31"/>
+    <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETUnknownHost.php" cloc="16" eloc="14" lloc="9" loc="36" ncloc="20"/>
   </files>
   <package name="+global" cr="0.15" noc="2" nof="0" noi="1" nom="12" rcr="0.2775">
     <class name="ClassLoader" cis="9" cloc="99" cr="0.15" csz="16" dit="0" eloc="110" impl="0" lloc="59" loc="232" ncloc="133" noam="0" nocc="0" nom="11" noom="0" rcr="0.15" vars="5" varsi="5" varsnp="0" wmc="31" wmci="31" wmcnp="24">
@@ -29,29 +37,100 @@
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoaderException.php"/>
     </class>
   </package>
-  <package name="PHP\Lang" cr="0.15" noc="6" nof="0" noi="1" nom="6" rcr="0.2775">
-    <class name="Exception" cis="1" cloc="7" cr="0.7875" csz="1" dit="2" eloc="3" impl="0" lloc="1" loc="12" ncloc="5" noam="1" nocc="5" nom="1" noom="0" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+  <package name="PHP\Lang" cr="0.2775" noc="6" nof="0" noi="1" nom="6" rcr="0.2775">
+    <class name="Exception" cis="1" cloc="7" cr="1.0138125" csz="1" dit="2" eloc="3" impl="0" lloc="1" loc="12" ncloc="5" noam="1" nocc="6" nom="1" noom="0" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Exception.php"/>
       <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
     </class>
-    <class name="IndexOutOfBoundsException" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="7" impl="0" lloc="3" loc="14" ncloc="9" noam="0" nocc="0" nom="1" noom="1" rcr="0.197175" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
+    <class name="IndexOutOfBoundsException" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="7" impl="0" lloc="3" loc="14" ncloc="9" noam="0" nocc="0" nom="1" noom="1" rcr="0.1893125" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\IndexOutOfBoundsException.php"/>
       <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
     </class>
-    <class name="NotImplementedException" cis="1" cloc="0" cr="0.15" csz="1" dit="3" eloc="11" impl="0" lloc="6" loc="13" ncloc="13" noam="0" nocc="0" nom="1" noom="1" rcr="0.197175" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
+    <class name="NotImplementedException" cis="1" cloc="0" cr="0.15" csz="1" dit="3" eloc="11" impl="0" lloc="6" loc="13" ncloc="13" noam="0" nocc="0" nom="1" noom="1" rcr="0.1893125" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\NotImplementedException.php"/>
       <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="11" lloc="6" loc="11" ncloc="11" npath="2"/>
     </class>
-    <class name="NullPointerException" cis="0" cloc="0" cr="0.15" csz="0" dit="3" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.197175" vars="0" varsi="0" varsnp="0" wmc="0" wmci="1" wmcnp="0">
+    <class name="NullPointerException" cis="0" cloc="0" cr="0.15" csz="0" dit="3" eloc="0" impl="0" lloc="0" loc="3" ncloc="3" noam="0" nocc="0" nom="0" noom="0" rcr="0.1893125" vars="0" varsi="0" varsnp="0" wmc="0" wmci="1" wmcnp="0">
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\NullPointerException.php"/>
     </class>
-    <class name="TypeError" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="16" impl="0" lloc="12" loc="23" ncloc="18" noam="0" nocc="0" nom="1" noom="1" rcr="0.197175" vars="0" varsi="0" varsnp="0" wmc="3" wmci="1" wmcnp="3">
+    <class name="TypeError" cis="1" cloc="5" cr="0.21375" csz="1" dit="3" eloc="16" impl="0" lloc="12" loc="23" ncloc="18" noam="0" nocc="1" nom="1" noom="1" rcr="0.1893125" vars="0" varsi="0" varsnp="0" wmc="3" wmci="1" wmcnp="3">
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\TypeError.php"/>
       <method name="__construct" ccn="3" ccn2="3" cloc="0" eloc="16" lloc="12" loc="16" ncloc="16" npath="4"/>
     </class>
-    <class name="ValueError" cis="1" cloc="5" cr="0.15" csz="1" dit="3" eloc="7" impl="0" lloc="4" loc="14" ncloc="9" noam="0" nocc="0" nom="1" noom="1" rcr="0.197175" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
+    <class name="ValueError" cis="1" cloc="5" cr="0.2775" csz="1" dit="3" eloc="7" impl="0" lloc="4" loc="14" ncloc="9" noam="0" nocc="2" nom="1" noom="1" rcr="0.1893125" vars="0" varsi="0" varsnp="0" wmc="2" wmci="1" wmcnp="2">
       <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\ValueError.php"/>
       <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="4" loc="7" ncloc="7" npath="2"/>
+    </class>
+  </package>
+  <package name="PHP\Net" cr="0.15" noc="8" nof="0" noi="1" nom="45" rcr="0.385875">
+    <class name="INET4Address" cis="8" cloc="74" cr="0.15" csz="18" dit="1" eloc="84" impl="1" lloc="41" loc="181" ncloc="107" noam="3" nocc="0" nom="11" noom="1" rcr="0.2679375" vars="7" varsi="7" varsnp="0" wmc="28" wmci="25" wmcnp="22">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET4Address.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setAddress" ccn="3" ccn2="6" cloc="0" eloc="17" lloc="10" loc="17" ncloc="17" npath="10"/>
+      <method name="getAddress" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="1" loc="4" ncloc="4" npath="1"/>
+      <method name="getAsBinary" ccn="5" ccn2="7" cloc="0" eloc="16" lloc="11" loc="16" ncloc="16" npath="24"/>
+      <method name="isUnicast" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="getMulticastRange" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="getPrivateRanges" ccn="2" ccn2="2" cloc="0" eloc="12" lloc="3" loc="12" ncloc="12" npath="2"/>
+      <method name="getLoopbackRange" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="isMulticast" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="isLoopback" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="isGloballyRoutable" ccn="4" ccn2="4" cloc="0" eloc="11" lloc="6" loc="11" ncloc="11" npath="6"/>
+    </class>
+    <class name="INET6Address" cis="8" cloc="121" cr="0.15" csz="26" dit="1" eloc="131" impl="1" lloc="67" loc="286" ncloc="165" noam="4" nocc="0" nom="12" noom="1" rcr="0.2679375" vars="14" varsi="14" varsnp="0" wmc="36" wmci="27" wmcnp="28">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET6Address.php"/>
+      <method name="getGlobalUnicastAddressRange" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="getLinkLocalAddressRange" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="getLoopbackAddressRange" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="getUniqueLocalAddressRange" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="setAddress" ccn="8" ccn2="8" cloc="0" eloc="34" lloc="21" loc="34" ncloc="34" npath="40"/>
+      <method name="getAddress" ccn="3" ccn2="3" cloc="0" eloc="11" lloc="7" loc="11" ncloc="11" npath="3"/>
+      <method name="getAsBinary" ccn="4" ccn2="6" cloc="0" eloc="13" lloc="9" loc="13" ncloc="13" npath="10"/>
+      <method name="isUnicast" ccn="2" ccn2="2" cloc="0" eloc="12" lloc="3" loc="12" ncloc="12" npath="2"/>
+      <method name="isMulticast" ccn="2" ccn2="2" cloc="1" eloc="7" lloc="3" loc="8" ncloc="7" npath="2"/>
+      <method name="isLoopback" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
+      <method name="isGloballyRoutable" ccn="4" ccn2="4" cloc="0" eloc="20" lloc="8" loc="20" ncloc="20" npath="6"/>
+    </class>
+    <class name="INETAddress" cis="13" cloc="65" cr="0.405" csz="13" dit="0" eloc="37" impl="1" lloc="18" loc="123" ncloc="58" noam="0" nocc="2" nom="13" noom="0" rcr="0.2775" vars="0" varsi="0" varsnp="0" wmc="19" wmci="19" wmcnp="19">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddress.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="isUnicast" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="isMulticast" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="isLoopback" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="isGloballyRoutable" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="isInRange" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="isInRanges" ccn="4" ccn2="4" cloc="1" eloc="13" lloc="7" loc="14" ncloc="13" npath="4"/>
+      <method name="setAddress" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="getAddress" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="getAsBinary" ccn="1" ccn2="1" cloc="0" eloc="0" lloc="0" loc="1" ncloc="1" npath="1"/>
+      <method name="__toString" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+      <method name="equals" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="compareTo" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+    </class>
+    <class name="INETAddressFormatError" cis="2" cloc="12" cr="0.15" csz="3" dit="4" eloc="7" impl="1" lloc="3" loc="24" ncloc="12" noam="1" nocc="0" nom="2" noom="1" rcr="0.2623328125" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressFormatError.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="getAddress" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="INETAddressTypeError" cis="1" cloc="4" cr="0.15" csz="1" dit="4" eloc="3" impl="1" lloc="1" loc="9" ncloc="5" noam="0" nocc="0" nom="1" noom="1" rcr="0.342790625" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressTypeError.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="INETInvalidMask" cis="2" cloc="12" cr="0.15" csz="3" dit="4" eloc="7" impl="1" lloc="3" loc="24" ncloc="12" noam="1" nocc="0" nom="2" noom="1" rcr="0.2623328125" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETInvalidMask.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="getMask" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
+    </class>
+    <class name="INETRange" cis="2" cloc="24" cr="0.15" csz="5" dit="0" eloc="15" impl="0" lloc="8" loc="48" ncloc="24" noam="0" nocc="0" nom="2" noom="0" rcr="0.15" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETRange.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="5" lloc="3" loc="5" ncloc="5" npath="1"/>
+      <method name="containsAddress" ccn="3" ccn2="3" cloc="0" eloc="10" lloc="5" loc="10" ncloc="10" npath="4"/>
+    </class>
+    <class name="INETUnknownHost" cis="2" cloc="12" cr="0.15" csz="3" dit="3" eloc="7" impl="1" lloc="3" loc="24" ncloc="12" noam="1" nocc="0" nom="2" noom="1" rcr="0.2211875" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETUnknownHost.php"/>
+      <method name="__construct" ccn="1" ccn2="1" cloc="0" eloc="4" lloc="2" loc="4" ncloc="4" npath="1"/>
+      <method name="getAddress" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
     </class>
   </package>
 </metrics>
