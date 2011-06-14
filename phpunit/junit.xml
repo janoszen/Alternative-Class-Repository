@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository/tests/" tests="13" assertions="24" failures="0" errors="0" time="0.102940">
+    <testsuite name="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" tests="5" assertions="13" failures="0" errors="0" time="0.050384">
+      <testcase name="testLoadEverything" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="30" assertions="8" time="0.023702"/>
+      <testcase name="testWildcardImport" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="47" assertions="1" time="0.007103"/>
+      <testcase name="testClassLoaderCallbackInterface" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="56" assertions="2" time="0.005841"/>
+      <testcase name="testLoadAndCreateInstance" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="66" assertions="1" time="0.006868"/>
+      <testcase name="testCreateInstance" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="76" assertions="1" time="0.006870"/>
+    </testsuite>
+    <testsuite name="PHP\Lang\ExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\ExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="1" assertions="1" failures="0" errors="0" time="0.012142">
+      <testcase name="testThrow" class="PHP\Lang\ExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\ExceptionTest.php" line="14" assertions="1" time="0.012142"/>
+    </testsuite>
+    <testsuite name="PHP\Lang\IndexOutOfBoundsExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\IndexOutOfBoundsExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="2" failures="0" errors="0" time="0.017330">
+      <testcase name="testThrowWithOffset" class="PHP\Lang\IndexOutOfBoundsExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\IndexOutOfBoundsExceptionTest.php" line="14" assertions="1" time="0.010424"/>
+      <testcase name="testThrowWithoutOffset" class="PHP\Lang\IndexOutOfBoundsExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\IndexOutOfBoundsExceptionTest.php" line="28" assertions="1" time="0.006906"/>
+    </testsuite>
+    <testsuite name="PHP\Lang\NotImplementedExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\NotImplementedExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="2" failures="0" errors="0" time="0.008637">
+      <testcase name="testWithFeature" class="PHP\Lang\NotImplementedExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\NotImplementedExceptionTest.php" line="14" assertions="1" time="0.004302"/>
+      <testcase name="testWithoutFeature" class="PHP\Lang\NotImplementedExceptionTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\NotImplementedExceptionTest.php" line="28" assertions="1" time="0.004335"/>
+    </testsuite>
+    <testsuite name="PHP\Lang\TypeErrorTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\TypeErrorTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="4" failures="0" errors="0" time="0.009758">
+      <testcase name="testWithClass" class="PHP\Lang\TypeErrorTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\TypeErrorTest.php" line="14" assertions="2" time="0.004802"/>
+      <testcase name="testWithBaseType" class="PHP\Lang\TypeErrorTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\TypeErrorTest.php" line="31" assertions="2" time="0.004956"/>
+    </testsuite>
+    <testsuite name="PHP\Lang\ValueErrorTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\ValueErrorTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="1" assertions="2" failures="0" errors="0" time="0.004688">
+      <testcase name="testThrow" class="PHP\Lang\ValueErrorTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\PHP\Lang\ValueErrorTest.php" line="14" assertions="2" time="0.004688"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

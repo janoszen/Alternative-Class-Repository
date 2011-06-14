@@ -2,49 +2,20 @@ PHP CODE SNIFFER REPORT SUMMARY
 --------------------------------------------------------------------------------
 FILE                                                            ERRORS  WARNINGS
 --------------------------------------------------------------------------------
-...ojects\Alternative-Class-Repository\classes\ClassLoader.php  401     1
-...e-Class-Repository\classes\ClassLoaderCallbackInterface.php  22      1
-...ternative-Class-Repository\classes\ClassLoaderException.php  9       0
-...ojects\Alternative-Class-Repository\classes\PHP\IO\File.php  299     3
-...e-Class-Repository\classes\PHP\IO\FileNotFoundException.php  16      0
-...Alternative-Class-Repository\classes\PHP\IO\IOException.php  10      0
-...lternative-Class-Repository\classes\PHP\Lang\Comparable.php  18      0
-...Alternative-Class-Repository\classes\PHP\Lang\Exception.php  25      0
-...s-Repository\classes\PHP\Lang\IndexOutOfBoundsException.php  28      0
-...ects\Alternative-Class-Repository\classes\PHP\Lang\Math.php  456     0
-...ass-Repository\classes\PHP\Lang\NotImplementedException.php  31      0
-...-Class-Repository\classes\PHP\Lang\NullPointerException.php  10      0
-...Alternative-Class-Repository\classes\PHP\Lang\TypeError.php  49      0
-...lternative-Class-Repository\classes\PHP\Lang\ValueError.php  33      0
-...lternative-Class-Repository\classes\PHP\OS\ChrootFailed.php  16      0
-...ernative-Class-Repository\classes\PHP\OS\ChrootListener.php  41      0
-...ects\Alternative-Class-Repository\classes\PHP\OS\Daemon.php  15      0
-...ternative-Class-Repository\classes\PHP\OS\DaemonContext.php  527     0
-...s\Alternative-Class-Repository\classes\PHP\OS\Exception.php  10      0
-...\Alternative-Class-Repository\classes\PHP\OS\ForkFailed.php  16      0
-...lternative-Class-Repository\classes\PHP\OS\ForkListener.php  34      0
-...cts\Alternative-Class-Repository\classes\PHP\OS\Process.php  438     0
-...-Class-Repository\classes\PHP\OS\ProcessExitInformation.php  199     0
-...lternative-Class-Repository\classes\PHP\OS\SetGIDFailed.php  16      0
-...lternative-Class-Repository\classes\PHP\OS\SetUIDFailed.php  16      0
-...ects\Alternative-Class-Repository\classes\PHP\OS\Signal.php  250     1
-...ternative-Class-Repository\classes\PHP\Util\ArrayObject.php  471     1
-...lternative-Class-Repository\classes\PHP\Util\Collection.php  29      0
-...jects\Alternative-Class-Repository\classes\PHP\Util\Map.php  29      0
-...ts\Alternative-Class-Repository\classes\PHP\Util\Random.php  88      0
-...ternative-Class-Repository\classes\PHPx\HTTP\HTTPClient.php  45      0
-...ternative-Class-Repository\classes\PHPx\HTTP\HTTPHeader.php  3       0
-...ternative-Class-Repository\classes\PHPx\HTTP\HTTPMethod.php  267     0
-...ernative-Class-Repository\classes\PHPx\HTTP\HTTPRequest.php  15      0
-...native-Class-Repository\classes\PHPx\HTTP\HTTPResponder.php  69      0
-...rnative-Class-Repository\classes\PHPx\HTTP\HTTPResponse.php  4       0
-...ternative-Class-Repository\classes\PHPx\HTTP\HTTPServer.php  4       0
-...ternative-Class-Repository\classes\PHPx\HTTP\HTTPStatus.php  377     0
-...ernative-Class-Repository\classes\PHPx\HTTP\HTTPVersion.php  238     0
-...rnative-Class-Repository\classes\PHPx\MIME\MIMEDocument.php  4       0
-...Alternative-Class-Repository\classes\PHPx\MIME\MIMEPart.php  4       0
+...nsProjects\Alternative-Class-Repository\src\ClassLoader.php  428     0
+...ative-Class-Repository\src\ClassLoaderCallbackInterface.php  22      1
+...s\Alternative-Class-Repository\src\ClassLoaderException.php  9       0
+...ts\Alternative-Class-Repository\src\PHP\Lang\Comparable.php  18      0
+...cts\Alternative-Class-Repository\src\PHP\Lang\Exception.php  25      0
+...Class-Repository\src\PHP\Lang\IndexOutOfBoundsException.php  28      0
+...e-Class-Repository\src\PHP\Lang\NotImplementedException.php  31      0
+...tive-Class-Repository\src\PHP\Lang\NullPointerException.php  10      0
+...cts\Alternative-Class-Repository\src\PHP\Lang\TypeError.php  49      0
+...ts\Alternative-Class-Repository\src\PHP\Lang\ValueError.php  33      0
+...s\Alternative-Class-Repository\src\PHP\Lang\__package__.php  10      1
+...nsProjects\Alternative-Class-Repository\src\__package__.php  8       6
 --------------------------------------------------------------------------------
-A TOTAL OF 4632 ERROR(S) AND 7 WARNING(S) WERE FOUND IN 41 FILE(S)
+A TOTAL OF 671 ERROR(S) AND 8 WARNING(S) WERE FOUND IN 12 FILE(S)
 --------------------------------------------------------------------------------
 
-Time: 3 seconds, Memory: 10.75Mb
+Time: 0 seconds, Memory: 5.25Mb

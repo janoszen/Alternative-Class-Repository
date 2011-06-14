@@ -1,14 +1,1 @@
 
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Comparable.php:17	Avoid variables with short names like $o
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Lang\Math.php:16	This class has too many methods, consider refactoring it.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php:191	The method runAsDaemon() has a Cyclomatic Complexity of 32.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php:191	The method runAsDaemon() has an NPath complexity of 12294.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php:191	Avoid really long methods.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\DaemonContext.php:236	Avoid variables with short names like $fd
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\ForkFailed.php:15	Avoid variables with short names like $e
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php:15	This class Process has an overall complexity of 52 which is very high. The configured complexity threshold is 50.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php:97	The method fork() has a Cyclomatic Complexity of 11.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php:205	The method chroot() has a Cyclomatic Complexity of 14.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\OS\Process.php:205	The method chroot() has an NPath complexity of 1296.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHP\Util\ArrayObject.php:15	This class has too many methods, consider refactoring it.
-C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\classes\PHPx\HTTP\HTTPVersion.php:145	Avoid variables with short names like $o

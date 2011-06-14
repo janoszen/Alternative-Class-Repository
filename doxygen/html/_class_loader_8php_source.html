@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>ACR: C:/Users/janoszen/Documents/NetBeansProjects/Alternative-Class-Repository/classes/ClassLoader.php Source File</title>
+<title>ACR: C:/Users/janoszen/Documents/NetBeansProjects/Alternative-Class-Repository/src/ClassLoader.php Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
@@ -17,7 +17,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -46,155 +45,167 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>C:/Users/janoszen/Documents/NetBeansProjects/Alternative-Class-Repository/classes/ClassLoader.php</h1>  </div>
+<h1>C:/Users/janoszen/Documents/NetBeansProjects/Alternative-Class-Repository/src/ClassLoader.php</h1>  </div>
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 &lt;?php
-<a name="l00011"></a>00011 $baseclasses = array(
-<a name="l00012"></a>00012         <span class="stringliteral">&#39;ClassLoaderException&#39;</span>,
-<a name="l00013"></a>00013         <span class="stringliteral">&#39;ClassLoaderCallbackInterface&#39;</span>,
-<a name="l00014"></a>00014 );
-<a name="l00015"></a>00015 <span class="keywordflow">foreach</span> ($baseclasses as $baseclass) {
-<a name="l00016"></a>00016         $file = __DIR__ . DIRECTORY_SEPARATOR . $baseclass;
-<a name="l00017"></a>00017         <span class="keywordflow">if</span> (!\file_exists($file) || !include($file)) {
-<a name="l00018"></a>00018                 die(<span class="stringliteral">&#39;Fatal error: failed to load &#39;</span> . $baseclass);
-<a name="l00019"></a>00019         }
-<a name="l00020"></a>00020 }
-<a name="l00021"></a>00021 unset($baseclasses);
-<a name="l00022"></a>00022 <span class="keywordflow">if</span> (isset($file)) {
-<a name="l00023"></a>00023         unset($file);
-<a name="l00024"></a>00024 }
-<a name="l00025"></a>00025 <span class="keywordflow">if</span> (isset($baseclass)) {
-<a name="l00026"></a>00026         unset($baseclass);
-<a name="l00027"></a>00027 }
-<a name="l00044"></a><a class="code" href="class_class_loader.html">00044</a> <span class="keyword">class </span><a class="code" href="class_class_loader.html" title="End of static constructor code.">ClassLoader</a> {
-<a name="l00049"></a>00049         <span class="keyword">protected</span> <span class="keyword">static</span> $classpath = array();
-<a name="l00054"></a>00054         <span class="keyword">protected</span> <span class="keyword">static</span> $imported = array();
-<a name="l00055"></a>00055 
-<a name="l00061"></a>00061         <span class="keyword">protected</span> <span class="keyword">static</span> $loadQueue = array();
-<a name="l00062"></a>00062 
-<a name="l00067"></a>00067         <span class="keyword">protected</span> <span class="keyword">static</span> $callbackqueue = array();
-<a name="l00068"></a>00068 
-<a name="l00073"></a>00073         <span class="keyword">protected</span> <span class="keyword">static</span> $loadDepth = 0;
-<a name="l00074"></a>00074 
-<a name="l00079"></a><a class="code" href="class_class_loader.html#a452270ba3efac6f631295570fa0080b9">00079</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a452270ba3efac6f631295570fa0080b9" title="Set the classpath for the loader.">setClassPath</a>($classpath) {
-<a name="l00080"></a>00080                 <span class="keywordflow">if</span> (is_array($classpath)) {
-<a name="l00081"></a>00081                         self::$classpath = $classpath;
-<a name="l00082"></a>00082                 } <span class="keywordflow">else</span> {
-<a name="l00083"></a>00083                         self::$classpath = array($classpath);
-<a name="l00084"></a>00084                 }
-<a name="l00085"></a>00085         }
-<a name="l00086"></a>00086 
-<a name="l00093"></a><a class="code" href="class_class_loader.html#a9fcd22bb603aa20c29da417b0d51ba3c">00093</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a9fcd22bb603aa20c29da417b0d51ba3c" title="Tests, if a loaded class has a load callback.">hasLoadCallback</a>($className) {
-<a name="l00094"></a>00094                 <span class="keywordflow">if</span> (class_exists($className, <span class="keyword">false</span>)
-<a name="l00095"></a>00095                                 &amp;&amp; in_array(<span class="stringliteral">&quot;ClassLoaderCallbackInterface&quot;</span>,
-<a name="l00096"></a>00096                                                 class_implements($className, <span class="keyword">false</span>))) {
-<a name="l00097"></a>00097                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
-<a name="l00098"></a>00098                 } <span class="keywordflow">else</span> {
-<a name="l00099"></a>00099                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00100"></a>00100                 }
-<a name="l00101"></a>00101         }
-<a name="l00102"></a>00102 
-<a name="l00107"></a><a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214">00107</a>         <span class="keyword">protected</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214" title="If a class has a load callback, this function calls it.">callbackClass</a>($className) {
-<a name="l00108"></a>00108                 <span class="keywordflow">if</span> (self::hasLoadCallback($className)) {
-<a name="l00109"></a>00109                         call_user_func($className . <span class="stringliteral">&#39;::onClassLoaded&#39;</span>);
-<a name="l00110"></a>00110                 }
-<a name="l00111"></a>00111         }
-<a name="l00112"></a>00112 
-<a name="l00117"></a><a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2">00117</a>         <span class="keyword">protected</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2" title="Internal file loader.">loadFile</a>($file, $className) {
-<a name="l00118"></a>00118                 <span class="keywordflow">if</span> (!in_array($file, self::$imported)) {
-<a name="l00119"></a>00119                         self::$imported[] = $file;
-<a name="l00120"></a>00120                         <span class="keywordflow">if</span> (is_file($file) &amp;&amp; is_readable($file)) {
-<a name="l00121"></a>00121                                 <span class="keywordflow">if</span> (!include($file)) {
-<a name="l00122"></a>00122                                         <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_class_loader_exception.html" title="Generic exception for the ClassLoader.">ClassLoaderException</a>(<span class="stringliteral">&quot;Include failed: &quot;</span> . $file);
-<a name="l00123"></a>00123                                 } <span class="keywordflow">else</span> {
-<a name="l00124"></a>00124                                         self::$callbackqueue[] = $className;
-<a name="l00125"></a>00125                                 }
-<a name="l00126"></a>00126                         }
-<a name="l00127"></a>00127                 }
-<a name="l00128"></a>00128         }
-<a name="l00129"></a>00129 
-<a name="l00135"></a><a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5">00135</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5" title="Get all candidates for a given namespace.">getCandidates</a>($namespace) {
-<a name="l00136"></a>00136                 $files = array();
-<a name="l00137"></a>00137                 <span class="keywordflow">foreach</span> (self::$classpath as $path) {
-<a name="l00138"></a>00138                         $namespace = ltrim($namespace, <span class="charliteral">&#39;\\&#39;</span>);
-<a name="l00139"></a>00139                         $path = str_replace(<span class="charliteral">&#39;\\&#39;</span>, DIRECTORY_SEPARATOR, $path .
-<a name="l00140"></a>00140                                         DIRECTORY_SEPARATOR . $namespace);
-<a name="l00141"></a>00141                         <span class="keywordflow">if</span> (substr($path, -2) == <span class="stringliteral">&#39;\\*&#39;</span> || substr($path, -2) == <span class="stringliteral">&#39;/*&#39;</span>) {
-<a name="l00142"></a>00142                                 $path = substr($path, 0, strlen($path) - 2);
-<a name="l00143"></a>00143                                 <span class="keywordflow">if</span> (is_dir($path)) {
-<a name="l00144"></a>00144                                         $fh = opendir($path);
-<a name="l00145"></a>00145                                         <span class="keywordflow">if</span> ($fh) {
-<a name="l00146"></a>00146                                                 <span class="keywordflow">while</span> ($file = readdir($fh)) {
-<a name="l00147"></a>00147                                                         <span class="keywordflow">if</span> (preg_match(<span class="stringliteral">&quot;/^(?P&lt;class&gt;[a-zA-Z0-9]+)\.php$/&quot;</span>, $file, $matches)) {
-<a name="l00148"></a>00148                                                                 $files[] = array(
-<a name="l00149"></a>00149                                                                         <span class="stringliteral">&#39;file&#39;</span> =&gt; $path . DIRECTORY_SEPARATOR . $file,
-<a name="l00150"></a>00150                                                                         <span class="stringliteral">&#39;class&#39;</span> =&gt; substr($namespace, 0, strlen($namespace) - 2)
-<a name="l00151"></a>00151                                                                                 . <span class="charliteral">&#39;\\&#39;</span> . $matches[<span class="stringliteral">&#39;class&#39;</span>]);
-<a name="l00152"></a>00152                                                         }
-<a name="l00153"></a>00153                                                 }
-<a name="l00154"></a>00154                                                 closedir($fh);
-<a name="l00155"></a>00155                                         }
-<a name="l00156"></a>00156                                 }
-<a name="l00157"></a>00157                         } <span class="keywordflow">else</span> {
-<a name="l00158"></a>00158                                 $files[] = array(
-<a name="l00159"></a>00159                                         <span class="stringliteral">&#39;file&#39;</span> =&gt; $path . <span class="stringliteral">&#39;.php&#39;</span>,
-<a name="l00160"></a>00160                                         <span class="stringliteral">&#39;class&#39;</span> =&gt; $namespace);
-<a name="l00161"></a>00161                         }
-<a name="l00162"></a>00162                 }
-<a name="l00163"></a>00163                 sort($files);
-<a name="l00164"></a>00164                 <span class="keywordflow">return</span> $files;
-<a name="l00165"></a>00165         }
-<a name="l00166"></a>00166 
-<a name="l00171"></a><a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">00171</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <span class="keyword">import</span>($namespace) {
-<a name="l00176"></a>00176                 $backtrace = debug_backtrace();
-<a name="l00177"></a>00177                 $file = $backtrace[0][<span class="stringliteral">&#39;file&#39;</span>];
-<a name="l00178"></a>00178                 <span class="keywordflow">if</span> (!in_array($file, self::$imported)) {
-<a name="l00179"></a>00179                         self::$imported[] = $file;
-<a name="l00180"></a>00180                 }
-<a name="l00181"></a>00181 
-<a name="l00186"></a>00186                 self::$loadDepth++;
-<a name="l00187"></a>00187 
-<a name="l00191"></a>00191                 $files = <a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5" title="Get all candidates for a given namespace.">self::getCandidates</a>($namespace);
-<a name="l00192"></a>00192                 <span class="keywordflow">foreach</span> ($files as $file) {
-<a name="l00193"></a>00193                         <span class="keywordflow">if</span> (!in_array($file, self::$imported)) {
-<a name="l00194"></a>00194                                 <a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2" title="Internal file loader.">self::loadFile</a>($file[<span class="stringliteral">&#39;file&#39;</span>], $file[<span class="stringliteral">&#39;class&#39;</span>]);
-<a name="l00195"></a>00195                         }
-<a name="l00196"></a>00196                 }
-<a name="l00197"></a>00197                 self::$loadDepth--;
-<a name="l00198"></a>00198                 <span class="keywordflow">if</span> (self::$loadDepth == 0) {
-<a name="l00199"></a>00199                         <span class="keywordflow">foreach</span> (self::$callbackqueue as $key =&gt; $className) {
-<a name="l00200"></a>00200                                 <a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214" title="If a class has a load callback, this function calls it.">self::callbackClass</a>($className);
-<a name="l00201"></a>00201                                 unset(self::$callbackqueue[$key]);
+<a name="l00002"></a>00002 
+<a name="l00003"></a>00003 $baseclasses = array(
+<a name="l00004"></a>00004         <span class="stringliteral">&#39;ClassLoaderException&#39;</span>,
+<a name="l00005"></a>00005         <span class="stringliteral">&#39;ClassLoaderCallbackInterface&#39;</span>,
+<a name="l00006"></a>00006 );
+<a name="l00007"></a>00007 $file = __FILE__;
+<a name="l00008"></a>00008 $imported = array($file);
+<a name="l00009"></a>00009 <span class="keywordflow">foreach</span> ($baseclasses as &amp;$baseclass) {
+<a name="l00010"></a>00010         $file = __DIR__ . DIRECTORY_SEPARATOR . $baseclass . <span class="stringliteral">&#39;.php&#39;</span>;
+<a name="l00011"></a>00011         <span class="keywordflow">if</span> (!\file_exists($file) || !include($file)) {
+<a name="l00012"></a>00012                 die(<span class="stringliteral">&#39;Fatal error: failed to load &#39;</span> . $baseclass);
+<a name="l00013"></a>00013         }
+<a name="l00014"></a>00014         $imported[] = $file;
+<a name="l00015"></a>00015 }
+<a name="l00016"></a>00016 \<a class="code" href="class_class_loader.html#a121c85e4fddcc1e48912a0b057d13101" title="Pre-set imported files list.">ClassLoader::setImportedFiles</a>($imported);
+<a name="l00017"></a>00017 unset($imported);
+<a name="l00018"></a>00018 unset($baseclasses);
+<a name="l00019"></a>00019 unset($file);
+<a name="l00020"></a>00020 <span class="keywordflow">if</span> (isset($baseclass)) {
+<a name="l00021"></a>00021         unset($baseclass);
+<a name="l00022"></a>00022 }
+<a name="l00023"></a>00023 
+<a name="l00036"></a><a class="code" href="class_class_loader.html">00036</a> <span class="keyword">class </span><a class="code" href="class_class_loader.html" title="This is the basic class loader for the framework.">ClassLoader</a> {
+<a name="l00041"></a>00041         <span class="keyword">protected</span> <span class="keyword">static</span> $classpath = array();
+<a name="l00046"></a>00046         <span class="keyword">protected</span> <span class="keyword">static</span> $imported = array();
+<a name="l00047"></a>00047 
+<a name="l00053"></a>00053         <span class="keyword">protected</span> <span class="keyword">static</span> $loadQueue = array();
+<a name="l00054"></a>00054 
+<a name="l00059"></a>00059         <span class="keyword">protected</span> <span class="keyword">static</span> $callbackqueue = array();
+<a name="l00060"></a>00060 
+<a name="l00065"></a>00065         <span class="keyword">protected</span> <span class="keyword">static</span> $loadDepth = 0;
+<a name="l00066"></a>00066 
+<a name="l00073"></a><a class="code" href="class_class_loader.html#a452270ba3efac6f631295570fa0080b9">00073</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a452270ba3efac6f631295570fa0080b9" title="Set the classpath for the loader.">setClassPath</a>($classpath) {
+<a name="l00074"></a>00074                 <span class="keywordflow">if</span> (is_array($classpath)) {
+<a name="l00075"></a>00075                         self::$classpath = $classpath;
+<a name="l00076"></a>00076                 } <span class="keywordflow">else</span> {
+<a name="l00077"></a>00077                         self::$classpath = array($classpath);
+<a name="l00078"></a>00078                 }
+<a name="l00079"></a>00079         }
+<a name="l00080"></a>00080 
+<a name="l00087"></a><a class="code" href="class_class_loader.html#a121c85e4fddcc1e48912a0b057d13101">00087</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a121c85e4fddcc1e48912a0b057d13101" title="Pre-set imported files list.">setImportedFiles</a>($imported = array()) {
+<a name="l00088"></a>00088                 self::$imported = $imported;
+<a name="l00089"></a>00089         }
+<a name="l00090"></a>00090 
+<a name="l00097"></a><a class="code" href="class_class_loader.html#a9fcd22bb603aa20c29da417b0d51ba3c">00097</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a9fcd22bb603aa20c29da417b0d51ba3c" title="Tests, if a loaded class has a load callback.">hasLoadCallback</a>($className) {
+<a name="l00098"></a>00098                 $className = \ltrim($className, <span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00099"></a>00099                 <span class="keywordflow">if</span> (\class_exists($className, <span class="keyword">false</span>)
+<a name="l00100"></a>00100                                 &amp;&amp; \in_array(<span class="stringliteral">&quot;ClassLoaderCallbackInterface&quot;</span>,
+<a name="l00101"></a>00101                                                 \class_implements($className, <span class="keyword">false</span>))) {
+<a name="l00102"></a>00102                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+<a name="l00103"></a>00103                 } <span class="keywordflow">else</span> {
+<a name="l00104"></a>00104                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00105"></a>00105                 }
+<a name="l00106"></a>00106         }
+<a name="l00107"></a>00107 
+<a name="l00112"></a><a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214">00112</a>         <span class="keyword">protected</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214" title="If a class has a load callback, this function calls it.">callbackClass</a>($className) {
+<a name="l00113"></a>00113                 <span class="keywordflow">if</span> (self::hasLoadCallback($className)) {
+<a name="l00114"></a>00114                         \call_user_func($className . <span class="stringliteral">&#39;::onClassLoaded&#39;</span>);
+<a name="l00115"></a>00115                 }
+<a name="l00116"></a>00116         }
+<a name="l00117"></a>00117 
+<a name="l00122"></a><a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2">00122</a>         <span class="keyword">protected</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2" title="Internal file loader.">loadFile</a>($file, $className) {
+<a name="l00123"></a>00123                 <span class="keywordflow">if</span> (!\in_array($file, self::$imported)) {
+<a name="l00124"></a>00124                         self::$imported[] = $file;
+<a name="l00125"></a>00125                         <span class="keywordflow">if</span> (\is_file($file) &amp;&amp; \is_readable($file)) {
+<a name="l00126"></a>00126                                 <span class="keywordflow">if</span> (!include($file)) {
+<a name="l00127"></a>00127                                         <span class="comment">// @codeCoverageIgnoreStart</span>
+<a name="l00128"></a>00128                                         <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_class_loader_exception.html" title="Generic exception for the ClassLoader.">ClassLoaderException</a>(<span class="stringliteral">&quot;Include failed: &quot;</span> . $file);
+<a name="l00129"></a>00129                                         <span class="comment">// @codeCoverageIgnoreEnd</span>
+<a name="l00130"></a>00130                                 } <span class="keywordflow">else</span> {
+<a name="l00131"></a>00131                                         self::$callbackqueue[] = $className;
+<a name="l00132"></a>00132                                 }
+<a name="l00133"></a>00133                         }
+<a name="l00134"></a>00134                 }
+<a name="l00135"></a>00135         }
+<a name="l00136"></a>00136 
+<a name="l00142"></a><a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5">00142</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5" title="Get all candidates for a given namespace.">getCandidates</a>($namespace) {
+<a name="l00143"></a>00143                 $files = array();
+<a name="l00144"></a>00144                 <span class="keywordflow">foreach</span> (self::$classpath as $path) {
+<a name="l00145"></a>00145                         $namespace = \ltrim($namespace, <span class="charliteral">&#39;\\&#39;</span>);
+<a name="l00146"></a>00146                         $path = \str_replace(<span class="charliteral">&#39;\\&#39;</span>, \DIRECTORY_SEPARATOR, $path .
+<a name="l00147"></a>00147                                         \DIRECTORY_SEPARATOR . $namespace);
+<a name="l00148"></a>00148                         <span class="keywordflow">if</span> (\substr($path, -2) == <span class="stringliteral">&#39;\\*&#39;</span> || \substr($path, -2) == <span class="stringliteral">&#39;/*&#39;</span>) {
+<a name="l00149"></a>00149                                 $path = \substr($path, 0, \strlen($path) - 2);
+<a name="l00150"></a>00150                                 <span class="keywordflow">if</span> (\is_dir($path)) {
+<a name="l00151"></a>00151                                         $fh = \opendir($path);
+<a name="l00152"></a>00152                                         <span class="keywordflow">if</span> ($fh) {
+<a name="l00153"></a>00153                                                 <span class="keywordflow">while</span> ($file = readdir($fh)) {
+<a name="l00154"></a>00154                                                         <span class="keywordflow">if</span> (\preg_match(<span class="stringliteral">&quot;/^(?P&lt;class&gt;[a-zA-Z0-9]+)\.php$/&quot;</span>, $file, $matches)) {
+<a name="l00155"></a>00155                                                                 $files[] = array(
+<a name="l00156"></a>00156                                                                         <span class="stringliteral">&#39;file&#39;</span> =&gt; $path . \DIRECTORY_SEPARATOR . $file,
+<a name="l00157"></a>00157                                                                         <span class="stringliteral">&#39;class&#39;</span> =&gt; \substr($namespace, 0, \strlen($namespace) - 2)
+<a name="l00158"></a>00158                                                                                 . <span class="charliteral">&#39;\\&#39;</span> . $matches[<span class="stringliteral">&#39;class&#39;</span>]);
+<a name="l00159"></a>00159                                                         }
+<a name="l00160"></a>00160                                                 }
+<a name="l00161"></a>00161                                                 \closedir($fh);
+<a name="l00162"></a>00162                                         }
+<a name="l00163"></a>00163                                 }
+<a name="l00164"></a>00164                         } <span class="keywordflow">else</span> {
+<a name="l00165"></a>00165                                 $files[] = array(
+<a name="l00166"></a>00166                                         <span class="stringliteral">&#39;file&#39;</span> =&gt; $path . <span class="stringliteral">&#39;.php&#39;</span>,
+<a name="l00167"></a>00167                                         <span class="stringliteral">&#39;class&#39;</span> =&gt; $namespace);
+<a name="l00168"></a>00168                         }
+<a name="l00169"></a>00169                 }
+<a name="l00170"></a>00170                 \sort($files);
+<a name="l00171"></a>00171                 <span class="keywordflow">return</span> $files;
+<a name="l00172"></a>00172         }
+<a name="l00173"></a>00173 
+<a name="l00178"></a><a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f">00178</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <span class="keyword">import</span>($namespace) {
+<a name="l00183"></a>00183                 $backtrace = \debug_backtrace();
+<a name="l00184"></a>00184                 $file = $backtrace[0][<span class="stringliteral">&#39;file&#39;</span>];
+<a name="l00185"></a>00185                 <span class="keywordflow">if</span> (!\in_array($file, self::$imported)) {
+<a name="l00186"></a>00186                         self::$imported[] = $file;
+<a name="l00187"></a>00187                 }
+<a name="l00188"></a>00188 
+<a name="l00193"></a>00193                 self::$loadDepth++;
+<a name="l00194"></a>00194 
+<a name="l00198"></a>00198                 $files = <a class="code" href="class_class_loader.html#ab946f9118953e58a1864e58bfc9a81e5" title="Get all candidates for a given namespace.">self::getCandidates</a>($namespace);
+<a name="l00199"></a>00199                 <span class="keywordflow">foreach</span> ($files as $file) {
+<a name="l00200"></a>00200                         <span class="keywordflow">if</span> (!\in_array($file, self::$imported)) {
+<a name="l00201"></a>00201                                 <a class="code" href="class_class_loader.html#a7b203f2e11da8c6bba6e46c9dd00f1c2" title="Internal file loader.">self::loadFile</a>($file[<span class="stringliteral">&#39;file&#39;</span>], $file[<span class="stringliteral">&#39;class&#39;</span>]);
 <a name="l00202"></a>00202                         }
 <a name="l00203"></a>00203                 }
-<a name="l00204"></a>00204         }
-<a name="l00205"></a>00205 
-<a name="l00215"></a><a class="code" href="class_class_loader.html#a7f0fe014b3dfcbfb987e8c8dd004c9a3">00215</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a7f0fe014b3dfcbfb987e8c8dd004c9a3" title="Create an instance of a given class.">loadAndCreateInstance</a>() {
-<a name="l00216"></a>00216                 $arguments = \func_get_args();
-<a name="l00217"></a>00217                 $classname = \array_shift($arguments);
-<a name="l00218"></a>00218                 <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">self::import</a>($classname);
-<a name="l00219"></a>00219                 $reflect = <span class="keyword">new</span> \ReflectionClass($classname);
-<a name="l00220"></a>00220                 $instance = $reflect-&gt;newInstance($arguments);
-<a name="l00221"></a>00221                 <span class="keywordflow">return</span> $instance;
-<a name="l00222"></a>00222         }
-<a name="l00223"></a>00223 
-<a name="l00233"></a><a class="code" href="class_class_loader.html#aa6df21c0bbd3651a476c0322b27433e6">00233</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#aa6df21c0bbd3651a476c0322b27433e6" title="Create an instance of a given class.">createInstance</a>() {
-<a name="l00234"></a>00234                 $arguments = \func_get_args();
-<a name="l00235"></a>00235                 $classname = \array_shift($arguments);
-<a name="l00236"></a>00236                 $reflect = <span class="keyword">new</span> \ReflectionClass($classname);
-<a name="l00237"></a>00237                 $instance = $reflect-&gt;newInstance($arguments);
-<a name="l00238"></a>00238                 <span class="keywordflow">return</span> $instance;
-<a name="l00239"></a>00239         }
-<a name="l00240"></a>00240 
-<a name="l00246"></a><a class="code" href="class_class_loader.html#aec9ec09d9ec2fd8b704e2a83c8d018cb">00246</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#aec9ec09d9ec2fd8b704e2a83c8d018cb" title="Autoload a given namespace.">autoload</a>($namespace) {
-<a name="l00247"></a>00247                 <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">self::import</a>(<span class="charliteral">&#39;\\&#39;</span> . $namespace);
-<a name="l00248"></a>00248         }
-<a name="l00249"></a>00249 
-<a name="l00255"></a><a class="code" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e">00255</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e" title="Register the ClassLoader for autoloading.">registerAutoload</a>() {
-<a name="l00256"></a>00256                 \spl_autoload_register(<span class="stringliteral">&#39;\ClassLoader::autoload&#39;</span>);
-<a name="l00257"></a>00257         }
-<a name="l00258"></a>00258 }
+<a name="l00204"></a>00204                 self::$loadDepth--;
+<a name="l00205"></a>00205                 <span class="keywordflow">if</span> (self::$loadDepth == 0) {
+<a name="l00206"></a>00206                         <span class="keywordflow">foreach</span> (self::$callbackqueue as $key =&gt; $className) {
+<a name="l00207"></a>00207                                 <a class="code" href="class_class_loader.html#a65530bb2e1e7d9f4df7c17ba990df214" title="If a class has a load callback, this function calls it.">self::callbackClass</a>($className);
+<a name="l00208"></a>00208                                 unset(self::$callbackqueue[$key]);
+<a name="l00209"></a>00209                         }
+<a name="l00210"></a>00210                 }
+<a name="l00211"></a>00211         }
+<a name="l00212"></a>00212 
+<a name="l00222"></a><a class="code" href="class_class_loader.html#a7f0fe014b3dfcbfb987e8c8dd004c9a3">00222</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a7f0fe014b3dfcbfb987e8c8dd004c9a3" title="Create an instance of a given class.">loadAndCreateInstance</a>() {
+<a name="l00223"></a>00223                 $arguments = \func_get_args();
+<a name="l00224"></a>00224                 $classname = \array_shift($arguments);
+<a name="l00225"></a>00225                 <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">self::import</a>($classname);
+<a name="l00226"></a>00226                 $reflect = <span class="keyword">new</span> \ReflectionClass($classname);
+<a name="l00227"></a>00227                 $instance = $reflect-&gt;newInstance($arguments);
+<a name="l00228"></a>00228                 <span class="keywordflow">return</span> $instance;
+<a name="l00229"></a>00229         }
+<a name="l00230"></a>00230 
+<a name="l00240"></a><a class="code" href="class_class_loader.html#aa6df21c0bbd3651a476c0322b27433e6">00240</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#aa6df21c0bbd3651a476c0322b27433e6" title="Create an instance of a given class.">createInstance</a>() {
+<a name="l00241"></a>00241                 $arguments = \func_get_args();
+<a name="l00242"></a>00242                 $classname = \array_shift($arguments);
+<a name="l00243"></a>00243                 $reflect = <span class="keyword">new</span> \ReflectionClass($classname);
+<a name="l00244"></a>00244                 $instance = $reflect-&gt;newInstance($arguments);
+<a name="l00245"></a>00245                 <span class="keywordflow">return</span> $instance;
+<a name="l00246"></a>00246         }
+<a name="l00247"></a>00247 
+<a name="l00254"></a><a class="code" href="class_class_loader.html#aec9ec09d9ec2fd8b704e2a83c8d018cb">00254</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#aec9ec09d9ec2fd8b704e2a83c8d018cb" title="Autoload a given namespace.">autoload</a>($namespace) {
+<a name="l00255"></a>00255                 <a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">self::import</a>(<span class="charliteral">&#39;\\&#39;</span> . $namespace);
+<a name="l00256"></a>00256         }
+<a name="l00257"></a>00257 
+<a name="l00264"></a><a class="code" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e">00264</a>         <span class="keyword">public</span> <span class="keyword">static</span> function <a class="code" href="class_class_loader.html#a6173c4d479e0135fe3e22f69ed53897e" title="Register the ClassLoader for autoloading.">registerAutoload</a>() {
+<a name="l00265"></a>00265                 \spl_autoload_register(<span class="stringliteral">&#39;\ClassLoader::autoload&#39;</span>);
+<a name="l00266"></a>00266         }
+<a name="l00267"></a>00267 }
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -202,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -211,7 +222,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Jun 14 2011 23:59:42 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>
