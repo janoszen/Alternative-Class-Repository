@@ -2,7 +2,7 @@
 
 namespace PHP\Lang;
 
-\ClassLoader::import('\PHP\Lang\NotImplementedExceptionTest');
+\ClassLoader::import('\PHP\Lang\NotImplementedException');
 
 /**
  * Test class for \PHP\Lang\NotImplementedException.
