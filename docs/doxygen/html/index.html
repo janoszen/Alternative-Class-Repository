@@ -17,7 +17,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -49,11 +48,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>A word of warning</h1>
 <p><b>This project is experimental.</b> There are absoluely <em>no warranties</em> on performance or code stability. You are free to <a href="https://github.com/janoszen/Alternative-Class-Repository/issues">open issues</a> on <a href="https://github.com/janoszen/Alternative-Class-Repository">GitHub</a>, but being not only an open source, but also a hobby project, I may or may not resolve anything you report.</p>
 <h1>Yet another framework?</h1>
-<p>Why create a <a class="el" href="namespace_p_h_p.html" title="This package contains subpackages, which are related to PHP.">PHP</a> framework, when there are at least a zillion out there and half a dozen mainstream ones? The answer is quite easy: both the PEAR and the <a class="el" href="namespace_p_h_p.html" title="This package contains subpackages, which are related to PHP.">PHP</a> frameworks out there have more or less poor quality standards. Skipping error handling and type checking in basic functions such as math, json, etc. has become common due to the fact, that <a class="el" href="namespace_p_h_p.html" title="This package contains subpackages, which are related to PHP.">PHP</a> allows it. This framework tries to enforce the most strict rules possible with <a class="el" href="namespace_p_h_p.html" title="This package contains subpackages, which are related to PHP.">PHP</a>. Notices will become fatal crashes, warnings will become exceptions. This way code quality can be ensured from the foundation.</p>
+<p>Why create a PHP framework, when there are at least a zillion out there and half a dozen mainstream ones? The answer is quite easy: both the PEAR and the PHP frameworks out there have more or less poor quality standards. Skipping error handling and type checking in basic functions such as math, json, etc. has become common due to the fact, that PHP allows it. This framework tries to enforce the most strict rules possible with PHP. Notices will become fatal crashes, warnings will become exceptions. This way code quality can be ensured from the foundation.</p>
 <h1>Application server mode</h1>
-<p>There is an other reason for writing this framework. Even though Zend loudly advertizes Zend Server as an application server, it is not. Opcode caches and optimizers may help with parsing the code, but they don't alleviate the fact, that in most cases 50-80% of the code is about initializing something. Therefore <a class="el" href="namespace_p_h_p.html" title="This package contains subpackages, which are related to PHP.">PHP</a> code running on a per-request basis will never be as fast as Django for example.</p>
+<p>There is an other reason for writing this framework. Even though Zend loudly advertizes Zend Server as an application server, it is not. Opcode caches and optimizers may help with parsing the code, but they don't alleviate the fact, that in most cases 50-80% of the code is about initializing something. Therefore PHP code running on a per-request basis will never be as fast as Django for example.</p>
 <p>This framework tries to provide a layer for that. It runs as a daemon implementing multiple protocols, which webservers can use for connecting it. Even though this layer may be skipped and skipping it is a supported way of using it, it provides speed benefits if you can afford a virtual or dedicated server for running it.</p>
-<p>Because of this design concept, autoloading is not enabled by default. If you wish to create a project with autoloading support, you must call registerAutoload() to enable it. Please note, that this is heavily recommended against when using this framework as a daemon, because potential <a class="el" href="namespace_p_h_p.html" title="This package contains subpackages, which are related to PHP.">PHP</a> compile errors don't occur at startup time. Also, if you don't load everything at startup, the first couple of page requests will be slower, thus degrading the positive effect of the application server mode.</p>
+<p>Because of this design concept, autoloading is not enabled by default. If you wish to create a project with autoloading support, you must call registerAutoload() to enable it. Please note, that this is heavily recommended against when using this framework as a daemon, because potential PHP compile errors don't occur at startup time. Also, if you don't load everything at startup, the first couple of page requests will be slower, thus degrading the positive effect of the application server mode.</p>
 <h1>How to build</h1>
 <p>The project includes an Apache Ant build.xml file, which uses <a href="http://www.doxygen.org/">Doxygen</a>, <a href="http://pdepend.org/">PDepend</a>, <a href="http://pear.php.net/package/PHP_CodeSniffer">PHPCS</a>, <a href="http://phpmd.org/">PHPMD</a> and <a href="http://www.phpunit.de">PHPUnit</a>. These must be installed in order to run a successful build.</p>
 <h1>How to use</h1>
@@ -64,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -73,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Jun 14 2011 23:49:46 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

@@ -19,12 +19,12 @@ class TypeError extends Exception {
 	 */
 	function __construct($object, $required = "") {
 		$type = 'unknown';
-		switch (gettype($object)) {
+		switch (\gettype($object)) {
 			case 'object':
-				$type = get_class($object);
+				$type = \get_class($object);
 				break;
 			default:
-				$type = gettype($object);
+				$type = \gettype($object);
 				break;
 		}
 		$message = 'Invalid object type: ' . $type;

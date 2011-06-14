@@ -124,7 +124,9 @@ class ClassLoader {
 			self::$imported[] = $file;
 			if (\is_file($file) && \is_readable($file)) {
 				if (!include($file)) {
+					// @codeCoverageIgnoreStart
 					throw new ClassLoaderException("Include failed: " . $file);
+					// @codeCoverageIgnoreEnd
 				} else {
 					self::$callbackqueue[] = $className;
 				}
@@ -247,6 +249,7 @@ class ClassLoader {
 	 * Autoload a given namespace. This is not automatically enabled,
 	 * the application must do so by calling ClassLoader::registerAutoload
 	 * @param string $namespace
+	 * @codeCoverageIgnore
 	 */
 	public static function autoload($namespace) {
 		self::import('\\' . $namespace);
@@ -256,6 +259,7 @@ class ClassLoader {
 	 * Register the ClassLoader for autoloading. This is not automatically done
 	 * so any projects using autoload functionality must use this function to
 	 * enable it.
+	 * @codeCoverageIgnore
 	 */
 	public static function registerAutoload() {
 		\spl_autoload_register('\ClassLoader::autoload');

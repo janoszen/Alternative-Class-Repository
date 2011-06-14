@@ -7,7 +7,7 @@ class ClassLoaderInstanceTestClass {
 	/**
 	 * Mock constructor
 	 */
-	function __construct() {
+	public function __construct() {
 		
 	}
 }

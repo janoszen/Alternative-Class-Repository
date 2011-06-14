@@ -21,7 +21,7 @@ class NotImplementedException extends Exception {
 			parent::__construct();
 			$trace = $this->getTrace();
 			$this->message = 'This feature was not implemented: ' .
-					$trace[0]['class'] . '::' . $trace[0]['func'];
+					$trace[0]['class'] . '::' . $trace[0]['function'];
 		}
 	}
 }
