@@ -39,7 +39,7 @@
 
 	<target name="phpunit" description="Run PHPUnit on project">
 		<pearexec scriptname="phpunit" parameters="
-			--bootstrap ${basedir}/bootstrap/unittest.php
+			--configuration ${basedir}/phpunit.xml
 			--log-junit ${basedir}/docs/phpunit/junit.xml
 			--coverage-clover ${basedir}/docs/phpunit/coverage.xml
 			--coverage-html ${basedir}/docs/phpunit/coverage.html
@@ -52,7 +52,7 @@
 			--overview-pyramid=${basedir}/docs/pdepend/pyramid.svg
 			--jdepend-xml=${basedir}/docs/pdepend/jdepend.xml
 			--summary-xml=${basedir}/docs/pdepend/summary.xml
-			${basedir}/classes/" />
+			${basedir}/src/" />
 	</target>
 
 	<target name="phpcs" description="Run PHPCS on project">
@@ -60,17 +60,17 @@
 			--report=full
 			--report-file=${basedir}/docs/phpcs/full.txt
 			--encoding=UTF-8
-			${basedir}/classes/" />
+			${basedir}/src/" />
 		<pearexec scriptname="phpcs" failonerror="false" parameters="
 			--report=xml
 			--report-file=${basedir}/docs/phpcs/report.xml
 			--encoding=UTF-8
-			${basedir}/classes/" />
+			${basedir}/src/" />
 		<pearexec scriptname="phpcs" failonerror="false" parameters="
 			--report=summary
 			--report-file=${basedir}/docs/phpcs/summary.txt
 			--encoding=UTF-8
-			${basedir}/classes/" />
+			${basedir}/src/" />
 	</target>
 
 	<target name="doxygen" description="Generate documentation with Doxygen">
@@ -160,7 +160,7 @@
 			<property name="WARN_NO_PARAMDOC" value="NO" />
 			<property name="WARN_FORMAT" value="$file:$line: $text" />
 			<property name="WARN_LOGFILE" value="" />
-			<property name="INPUT" value="${basedir}/classes" />
+			<property name="INPUT" value="${basedir}/src" />
 			<property name="INPUT_ENCODING" value="UTF-8" />
 			<property name="FILE_PATTERNS" value="*.php" />
 			<property name="RECURSIVE" value="YES" />
@@ -313,13 +313,13 @@
 
 	<target name="phpmd" description="Generate PHP MD report">
 		<pearexec scriptname="phpmd" failonerror="false"
-			parameters="${basedir}/classes/ xml
+			parameters="${basedir}/src/ xml
 			codesize,design,naming --reportfile ${basedir}/docs/phpmd/report.xml" />
 		<pearexec scriptname="phpmd" failonerror="false"
-			parameters="${basedir}/classes/ html
+			parameters="${basedir}/src/ html
 			codesize,design,naming --reportfile ${basedir}/docs/phpmd/report.html" />
 		<pearexec scriptname="phpmd" failonerror="false"
-			parameters="${basedir}/classes/ text
+			parameters="${basedir}/src/ text
 			codesize,design,naming --reportfile ${basedir}/docs/phpmd/report.txt" />
 	</target>
 </project>

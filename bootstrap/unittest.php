@@ -1,11 +1,12 @@
 <?php
 
-require(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'classes' .
-		DIRECTORY_SEPARATOR . 'ClassLoader.php');
-ClassLoader::setClassPath(
+$GLOBALS['classroot'] = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "src";
+$GLOBALS['testroot'] = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "tests";
+
+require($GLOBALS['classroot'] . \DIRECTORY_SEPARATOR . 'ClassLoader.php');
+\ClassLoader::setClassPath(
 	array(
-		dirname(__DIR__) . DIRECTORY_SEPARATOR . "classes",
-		dirname(__DIR__) . DIRECTORY_SEPARATOR . "tests" .
-			DIRECTORY_SEPARATOR . "classes"
+		$GLOBALS['classroot'],
+		$GLOBALS['testroot'],
 	)
 );

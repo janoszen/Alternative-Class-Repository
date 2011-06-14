@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository/tests/" tests="5" assertions="13" failures="0" errors="0" time="0.050174">
+    <testsuite name="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" tests="5" assertions="13" failures="0" errors="0" time="0.050174">
+      <testcase name="testLoadEverything" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="31" assertions="8" time="0.028196"/>
+      <testcase name="testWildcardImport" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="48" assertions="1" time="0.006582"/>
+      <testcase name="testClassLoaderCallbackInterface" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="57" assertions="2" time="0.005807"/>
+      <testcase name="testLoadAndCreateInstance" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="67" assertions="1" time="0.005582"/>
+      <testcase name="testCreateInstance" class="ClassLoaderTest" file="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\tests\ClassLoaderTest.php" line="77" assertions="1" time="0.004007"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
