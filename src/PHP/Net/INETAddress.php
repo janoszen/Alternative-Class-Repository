@@ -3,13 +3,14 @@
 namespace PHP\Net;
 
 \ClassLoader::import('\PHP\Lang\Comparable');
+\ClassLoader::import('\PHP\Lang\Object');
 \ClassLoader::import('\PHP\Net\*');
 
 /**
  * This class is an abstract for the IPv4 and IPv6 address classes created as INET4Address and INET6Address. For more
  * information about IP addresses see http://en.wikipedia.org/wiki/IP_address .
  */
-abstract class INETAddress implements \PHP\Lang\Comparable {
+abstract class INETAddress extends \PHP\Lang\Object implements \PHP\Lang\Comparable {
 	/**
 	 * Initialize the INETAddress instance with an address from a string.
 	 * @param string $address
@@ -99,7 +100,7 @@ abstract class INETAddress implements \PHP\Lang\Comparable {
 	 * Get address as string
 	 * @return string
 	 */
-	public function __toString() {
+	public function toString() {
 		return $this->getAddress();
 	}
 

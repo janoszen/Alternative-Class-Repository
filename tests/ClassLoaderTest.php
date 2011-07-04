@@ -28,10 +28,11 @@ class ClassLoaderTest extends \PHPUnit_Framework_TestCase {
 	 * problems. Also, this includes each and every file in the coverage report.
 	 */
 	public function testLoadEverything() {
-		$files = $this->enumerateAllClasses($GLOBALS['classroot']);
+		$classroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'src';
+		$files = $this->enumerateAllClasses($classroot);
 		foreach ($files as $key => &$value) {
 			$files[$key] = str_replace('.php', '', str_replace(DIRECTORY_SEPARATOR, '\\',
-					str_replace($GLOBALS['classroot'] . DIRECTORY_SEPARATOR, '', $value)));
+					str_replace($classroot . DIRECTORY_SEPARATOR, '', $value)));
 		}
 		$this->assertGreaterThan(0, \count($files), 'At least one class must be present!');
 		foreach ($files as &$class) {

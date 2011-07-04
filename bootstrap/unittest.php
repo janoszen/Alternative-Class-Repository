@@ -1,12 +1,17 @@
 <?php
 
-$GLOBALS['classroot'] = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "src";
-$GLOBALS['testroot'] = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "tests";
+$classroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "src";
+$testroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "tests";
 
-require($GLOBALS['classroot'] . \DIRECTORY_SEPARATOR . 'ClassLoader.php');
+require($classroot . \DIRECTORY_SEPARATOR . 'ClassLoader.php');
 \ClassLoader::setClassPath(
 	array(
-		$GLOBALS['classroot'],
-		$GLOBALS['testroot'],
+		$classroot,
+		$testroot,
 	)
 );
+unset($classroot);
+unset($testroot);
+
+define('TESTDATADIR', dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'testdata');
+define('TESTTMPDIR', dirname(__DIR__) . \DIRECTORY_SEPARATOR . 'testdata' . \DIRECTORY_SEPARATOR . 'tmp');
