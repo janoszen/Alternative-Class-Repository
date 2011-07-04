@@ -1,1 +1,2 @@
 
+C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\File.php:15	This class has too many methods, consider refactoring it.

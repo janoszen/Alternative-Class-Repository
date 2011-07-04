@@ -49,7 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div class="navpath">
     <ul>
-      <li><a class="el" href="namespace_p_h_p.html">PHP</a>      </li>
+      <li><b>PHP</b>      </li>
       <li><a class="el" href="namespace_p_h_p_1_1_i_o.html">IO</a>      </li>
       <li><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html">File</a>      </li>
     </ul>
@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a directory with the current filename.  <a href="#a551b1dc9ef4aa17d7f2abe83509658fa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html#a9a3239689a49b2b322026bc056f4e83c">renameTo</a> (<a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html">File</a> $dest)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename file to new name.  <a href="#a9a3239689a49b2b322026bc056f4e83c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19d7f9b82b05c437a70c887ab270c37b"></a><!-- doxytag: member="PHP::IO::File::unlink" ref="a19d7f9b82b05c437a70c887ab270c37b" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html#a19d7f9b82b05c437a70c887ab270c37b">unlink</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlink current file or directory from filesystem. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7858079cd3dde1c8ab9c23642b11e510"></a><!-- doxytag: member="PHP::IO::File::__destruct" ref="a7858079cd3dde1c8ab9c23642b11e510" args="()" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html#a7858079cd3dde1c8ab9c23642b11e510">__destruct</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove files, which have been marked for delete on exit. <br/></td></tr>
@@ -173,9 +176,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Determine if a file can be read. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00079">79</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00084">84</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
-                <span class="keywordflow">if</span> (file_exists($this-&gt;pathname) &amp;&amp; is_readable($this-&gt;pathname)) {
+                <span class="keywordflow">if</span> (\file_exists($this-&gt;pathname) &amp;&amp; is_readable($this-&gt;pathname)) {
                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
                 } <span class="keywordflow">else</span> {
                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -201,9 +204,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Determine if a file can be written. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00092">92</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00097">97</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                   {
-                <span class="keywordflow">return</span> is_writable($this-&gt;pathname);
+                <span class="keywordflow">return</span> \is_writable($this-&gt;pathname);
         }
 </pre></div>
 </div>
@@ -225,12 +228,14 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Create a new file with the given name. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> </dd></dl>
 
+<p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>For some reason this doesn't work. Write more tests or PoC for PHP bug if any. if (!$path-&gt;<a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html#a765156bc13d253068422bd87596e21be" title="Determine if a file can be written.">canWrite()</a>) { throw new ("Access denied, file creation of " . $this-&gt;<a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html#ad5cb97087d0004039b1c8037251391bf" title="Get the path as a string.">getPath()</a> . " in " . $path-&gt;<a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html#a4a470c51dc72ff1ed5d80787df379551" title="Get the absolute path for a given file.">getAbsolutePath()</a> . " failed"); } else </dd></dl>
+</p>
+
 <p>Definition at line <a class="el" href="_file_8php_source.html#l00063">63</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                        {
-                <span class="keywordflow">if</span> (!file_exists($this-&gt;pathname)) {
-                        <span class="keywordflow">if</span> (!$this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a765156bc13d253068422bd87596e21be" title="Determine if a file can be written.">canWrite</a>()) {
-                                <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\IO\IOException(<span class="stringliteral">&quot;Access denied, file creation of &quot;</span> . $this-&gt;pathname . <span class="stringliteral">&quot; failed&quot;</span>);
-                        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!touch($this-&gt;pathname)) {
+                <span class="keywordflow">if</span> (!\file_exists($this-&gt;pathname)) {
+                        $path = <span class="keyword">new</span> File($this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a4a470c51dc72ff1ed5d80787df379551" title="Get the absolute path for a given file.">getAbsolutePath</a>());
+                        <span class="keywordflow">if</span> (!\touch($this-&gt;pathname)) {
                                 <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\IO\IOException(<span class="stringliteral">&quot;File creation of &quot;</span> . $this-&gt;pathname . <span class="stringliteral">&quot; failed&quot;</span>);
                         }
                 }
@@ -256,12 +261,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Get the absolute filename for the given path. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00101">101</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00106">106</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                          {
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a17e39baf68372b5bd10a73603fed3c09" title="Determine if a path name is an absolute path.">isAbsolute</a>()) {
-                        <span class="keywordflow">return</span> realpath($this-&gt;pathname);
+                        <span class="keywordflow">return</span> \realpath($this-&gt;pathname);
                 } <span class="keywordflow">else</span> {
-                        <span class="keywordflow">return</span> realpath(getcwd() . <span class="stringliteral">&quot;/&quot;</span> . $this-&gt;pathname);
+                        <span class="keywordflow">return</span> \realpath(\getcwd() . <span class="stringliteral">&quot;/&quot;</span> . $this-&gt;pathname);
                 }
         }
 </pre></div>
@@ -284,9 +289,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Get the absolute path for a given file. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00114">114</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00119">119</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                          {
-                <span class="keywordflow">return</span> dirname($this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a58b428cd9ce7f4460bee9c68a79049e8" title="Get the absolute filename for the given path.">getAbsoluteFile</a>());
+                <span class="keywordflow">return</span> \dirname($this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a58b428cd9ce7f4460bee9c68a79049e8" title="Get the absolute filename for the given path.">getAbsoluteFile</a>());
         }
 </pre></div>
 </div>
@@ -308,7 +313,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Get a <a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> object with the cannonical name. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00123">123</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00128">128</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                           {
                 <span class="keywordflow">return</span> <span class="keyword">new</span> File($this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a58b428cd9ce7f4460bee9c68a79049e8" title="Get the absolute filename for the given path.">getAbsoluteFile</a>());
         }
@@ -332,7 +337,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Get a <a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> object with the path of a cannonical name. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00132">132</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00137">137</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                           {
                 <span class="keywordflow">return</span> <span class="keyword">new</span> File($this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a4a470c51dc72ff1ed5d80787df379551" title="Get the absolute path for a given file.">getAbsolutePath</a>());
         }
@@ -356,7 +361,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Get the path as a string. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00141">141</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00146">146</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
                 <span class="keywordflow">return</span> $this-&gt;pathname;
         }
@@ -383,7 +388,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Definition at line <a class="el" href="_file_8php_source.html#l00051">51</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                  {
                 <span class="keywordflow">if</span> (!self::$separator) {
-                        self::$separator = DIRECTORY_SEPARATOR;
+                        self::$separator = \DIRECTORY_SEPARATOR;
                 }
                 <span class="keywordflow">return</span> self::$separator;
         }
@@ -407,10 +412,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Determine if a path name is an absolute path. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00150">150</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00155">155</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                     {
-                <span class="keywordflow">if</span> ((substr($this-&gt;pathname, 0, 1) != self::getPathSeparator())
-                                &amp;&amp; (substr($this-&gt;pathname, 1, 1 + strlen(self::getPathSeparator())) != <span class="stringliteral">&quot;:&quot;</span> . self::getPathSeparator())) {
+                <span class="keywordflow">if</span> ((\substr($this-&gt;pathname, 0, 1) != self::getPathSeparator())
+                                &amp;&amp; (\substr($this-&gt;pathname, 1, 1 + \strlen(self::getPathSeparator()))
+                                                != <span class="stringliteral">&quot;:&quot;</span> . self::getPathSeparator())) {
                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
                 } <span class="keywordflow">else</span> {
                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -436,9 +442,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Determine, if the path given is a directory. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00164">164</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00170">170</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                      {
-                <span class="keywordflow">return</span> is_dir($this-&gt;pathname);
+                <span class="keywordflow">return</span> \is_dir($this-&gt;pathname);
         }
 </pre></div>
 </div>
@@ -460,9 +466,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Determine, if the path given is a file. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00173">173</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00179">179</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                 {
-                <span class="keywordflow">return</span> is_file($this-&gt;pathname);
+                <span class="keywordflow">return</span> \is_file($this-&gt;pathname);
         }
 </pre></div>
 </div>
@@ -484,9 +490,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 <p>Create a directory with the current filename. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00182">182</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00188">188</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                {
-                <span class="keywordflow">if</span> (!<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a551b1dc9ef4aa17d7f2abe83509658fa" title="Create a directory with the current filename.">mkdir</a>($this-&gt;pathname)) {
+                <span class="keywordflow">if</span> (!\<a class="code" href="class_p_h_p_1_1_i_o_1_1_file.html#a551b1dc9ef4aa17d7f2abe83509658fa" title="Create a directory with the current filename.">mkdir</a>($this-&gt;pathname)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\IO\IOException(<span class="stringliteral">&quot;&quot;</span>);
                 }
                 <span class="keywordflow">return</span> $this;
@@ -518,9 +524,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation.">File</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_file_8php_source.html#l00195">195</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
+<p>Definition at line <a class="el" href="_file_8php_source.html#l00201">201</a> of file <a class="el" href="_file_8php_source.html">File.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
-                <span class="keywordflow">if</span> (!rename($this-&gt;pathname, $dest-&gt;getAbsoluteFile())) {
+                <span class="keywordflow">if</span> (!\rename($this-&gt;pathname, $dest-&gt;getAbsoluteFile())) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IOException(<span class="stringliteral">&quot;renameTo of &quot;</span> . $this-&gt;pathname . <span class="stringliteral">&quot; to &quot;</span> . $dest-&gt;getAbsoluteFile() . <span class="stringliteral">&quot; failed.&quot;</span>);
                 }
                 <span class="keywordflow">return</span> $this;
@@ -529,7 +535,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/janoszen/Documents/NetBeansProjects/Alternative-Class-Repository/classes/PHP/IO/<a class="el" href="_file_8php_source.html">File.php</a></li>
+<li>C:/Users/janoszen/Documents/NetBeansProjects/Alternative-Class-Repository/src/PHP/IO/<a class="el" href="_file_8php_source.html">File.php</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->
@@ -537,7 +543,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -546,7 +552,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$separator</b></td>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun May 8 2011 15:30:30 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jul 4 2011 22:24:44 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

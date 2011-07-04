@@ -2,19 +2,23 @@ PHP CODE SNIFFER REPORT SUMMARY
 --------------------------------------------------------------------------------
 FILE                                                            ERRORS  WARNINGS
 --------------------------------------------------------------------------------
-...nsProjects\Alternative-Class-Repository\src\ClassLoader.php  428     0
+...nsProjects\Alternative-Class-Repository\src\ClassLoader.php  427     0
 ...ative-Class-Repository\src\ClassLoaderCallbackInterface.php  22      1
 ...s\Alternative-Class-Repository\src\ClassLoaderException.php  9       0
+...nsProjects\Alternative-Class-Repository\src\PHP\IO\File.php  316     3
+...cts\Alternative-Class-Repository\src\PHP\IO\IOException.php  10      0
+...cts\Alternative-Class-Repository\src\PHP\IO\__package__.php  10      1
 ...ts\Alternative-Class-Repository\src\PHP\Lang\Comparable.php  18      0
-...cts\Alternative-Class-Repository\src\PHP\Lang\Exception.php  25      0
+...cts\Alternative-Class-Repository\src\PHP\Lang\Exception.php  124     4
 ...Class-Repository\src\PHP\Lang\IndexOutOfBoundsException.php  28      0
 ...e-Class-Repository\src\PHP\Lang\NotImplementedException.php  31      0
 ...tive-Class-Repository\src\PHP\Lang\NullPointerException.php  10      0
+...ojects\Alternative-Class-Repository\src\PHP\Lang\Object.php  130     4
 ...cts\Alternative-Class-Repository\src\PHP\Lang\TypeError.php  49      0
 ...ts\Alternative-Class-Repository\src\PHP\Lang\ValueError.php  33      0
 ...s\Alternative-Class-Repository\src\PHP\Lang\__package__.php  10      1
-...s\Alternative-Class-Repository\src\PHP\Net\INET4Address.php  303     3
-...s\Alternative-Class-Repository\src\PHP\Net\INET6Address.php  473     2
+...s\Alternative-Class-Repository\src\PHP\Net\INET4Address.php  299     3
+...s\Alternative-Class-Repository\src\PHP\Net\INET6Address.php  455     2
 ...ts\Alternative-Class-Repository\src\PHP\Net\INETAddress.php  202     4
 ...ive-Class-Repository\src\PHP\Net\INETAddressFormatError.php  43      0
 ...ative-Class-Repository\src\PHP\Net\INETAddressTypeError.php  22      0
@@ -25,7 +29,7 @@ FILE                                                            ERRORS  WARNINGS
 ...ts\Alternative-Class-Repository\src\PHP\Net\__package__.php  7       15
 ...nsProjects\Alternative-Class-Repository\src\__package__.php  8       6
 --------------------------------------------------------------------------------
-A TOTAL OF 1894 ERROR(S) AND 34 WARNING(S) WERE FOUND IN 22 FILE(S)
+A TOTAL OF 2436 ERROR(S) AND 46 WARNING(S) WERE FOUND IN 26 FILE(S)
 --------------------------------------------------------------------------------
 
-Time: 0 seconds, Memory: 7.25Mb
+Time: 1 second, Memory: 8.00Mb

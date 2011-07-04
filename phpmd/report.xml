@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<pmd version="0.2.8RC1" timestamp="2011-06-15T00:24:01+02:00">
+<pmd version="1.1.0" timestamp="2011-07-04T22:25:04+02:00">
+  <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\File.php">
+    <violation beginline="15" endline="223" rule="TooManyMethods" ruleset="Code Size Rules" package="PHP\IO" externalInfoUrl="http://phpmd.org/rules/codesize.html#toomanymethods" class="File" priority="3">
+      This class has too many methods, consider refactoring it.
+    </violation>
+  </file>
 </pmd>

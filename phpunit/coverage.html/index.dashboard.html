@@ -27,7 +27,7 @@
             <h2>Class Coverage Distribution</h2>
             <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
             <script>
-            var ccd = new RGraph.Bar('classCoverageDistribution', [9,0,0,1,0,0,1,0,2,2,0,10]);
+            var ccd = new RGraph.Bar('classCoverageDistribution', [9,1,0,1,0,1,1,1,2,2,0,9]);
             ccd.Set('chart.background.barcolor1', 'white');
             ccd.Set('chart.background.barcolor2', 'white');
             ccd.Set('chart.colors', ['blue']);
@@ -44,7 +44,7 @@
             <h2>Class Complexity</h2>
             <canvas id="classComplexity" width="475" height="200"></canvas>
             <script>
-            var cc = new RGraph.Scatter('classComplexity', [[0,21,"blue","File_Iterator"],[0,15,"blue","File_Iterator_Factory"],[0,11,"blue","Text_Template"],[87.640449438202,31,"blue","ClassLoader"],[100,1,"blue","Exception"],[100,2,"blue","IndexOutOfBoundsException"],[100,2,"blue","NotImplementedException"],[100,3,"blue","TypeError"],[100,2,"blue","ValueError"],[100,28,"blue","INET4Address"],[28.125,36,"blue","INET6Address"],[57.142857142857,19,"blue","INETAddress"],[75,2,"blue","INETAddressFormatError"],[100,1,"blue","INETAddressTypeError"],[75,2,"blue","INETInvalidMask"],[88.888888888889,4,"blue","INETRange"],[0,2,"blue","INETUnknownHost"],[100,1,"blue","ClassLoaderInstanceTestClass"],[100,0,"blue","NamespaceTestClass"],[0,16,"blue","INET6AddressTest"],[0,4,"blue","INETAddressFormatErrorTest"],[0,4,"blue","INETInvalidMaskTest"],[0,5,"blue","INETRangeTest"],[0,4,"blue","INETUnknownHostTest"],[100,2,"blue","TestClassWithCallback"]]);
+            var cc = new RGraph.Scatter('classComplexity', [[0,21,"blue","File_Iterator"],[0,16,"blue","File_Iterator_Factory"],[0,11,"blue","Text_Template"],[87.640449438202,31,"blue","ClassLoader"],[61.904761904762,28,"blue","File"],[41.666666666667,8,"blue","Exception"],[100,2,"blue","IndexOutOfBoundsException"],[100,2,"blue","NotImplementedException"],[7.6923076923077,9,"blue","Object"],[100,3,"blue","TypeError"],[100,2,"blue","ValueError"],[100,28,"blue","INET4Address"],[28.125,36,"blue","INET6Address"],[57.142857142857,19,"blue","INETAddress"],[75,2,"blue","INETAddressFormatError"],[100,1,"blue","INETAddressTypeError"],[75,2,"blue","INETInvalidMask"],[88.888888888889,4,"blue","INETRange"],[0,2,"blue","INETUnknownHost"],[100,1,"blue","ClassLoaderInstanceTestClass"],[100,0,"blue","NamespaceTestClass"],[0,16,"blue","INET6AddressTest"],[0,4,"blue","INETAddressFormatErrorTest"],[0,4,"blue","INETInvalidMaskTest"],[0,5,"blue","INETRangeTest"],[0,4,"blue","INETUnknownHostTest"],[100,2,"blue","TestClassWithCallback"]]);
             cc.Set('chart.xmax', 100);
             cc.Set('chart.background.barcolor1', 'white');
             cc.Set('chart.background.barcolor2', 'white');
@@ -60,12 +60,12 @@
           <td valign="top">
             <h2>Top Project Risks</h2>
             <ul>
-              <li><a href="Program Files (x86)_PHP_PEAR_File_Iterator.php.html#55">File_Iterator</a> (462)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#10">INET6AddressTest</a> (272)</li>
-              <li><a href="Program Files (x86)_PHP_PEAR_File_Iterator_Factory.php.html#58">File_Iterator_Factory</a> (240)</li>
               <li><a href="Program Files (x86)_PHP_PEAR_Text_Template.php.html#58">Text_Template</a> (132)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETAddress.php.html#12">INETAddress</a> (47)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Lang_Object.php.html#13">Object</a> (72)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_IO_File.php.html#15">File</a> (71)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETAddress.php.html#13">INETAddress</a> (47)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_ClassLoader.php.html#36">ClassLoader</a> (32)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Lang_Exception.php.html#12">Exception</a> (20)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INETUnknownHostTest.php.html#10">INETUnknownHostTest</a> (20)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INETInvalidMaskTest.php.html#10">INETInvalidMaskTest</a> (20)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INETAddressFormatErrorTest.php.html#10">INETAddressFormatErrorTest</a> (20)</li>
@@ -77,16 +77,16 @@
           <td valign="top">
             <h2>Least Tested Methods</h2>
             <ul>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#68">INET6AddressTest::testTooLargeBinaryMask</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#58">INET6AddressTest::testTooSmallBinaryMask</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#78">INET6AddressTest::testInvalidAddress</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#87">INET6AddressTest::testInvalidFormatAddress</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#96">INET6AddressTest::testEquals</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#48">INET6AddressTest::testTypeBinaryMask</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#35">INET6AddressTest::testGetAsBinary</a> (0%)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETInvalidMask.php.html#31">INETInvalidMask::getMask</a> (0%)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETAddressFormatError.php.html#31">INETAddressFormatError::getAddress</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETAddress.php.html#63">INETAddress::isInRanges</a> (0%)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETUnknownHost.php.html#23">INETUnknownHost::__construct</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETUnknownHost.php.html#32">INETUnknownHost::getAddress</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#48">INET6AddressTest::testTypeBinaryMask</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#35">INET6AddressTest::testGetAsBinary</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_tests_PHP_Net_INET6AddressTest.php.html#14">INET6AddressTest::testValidAddress</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#275">INET6Address::isGloballyRoutable</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#249">INET6Address::isLoopback</a> (0%)</li>
 
             </ul>
           </td>
@@ -98,7 +98,7 @@
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
-      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.3</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5</a> and PHPUnit 3.5.10 at Wed Jun 15 0:23:40 CEST 2011.</td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5</a> and PHPUnit 3.5.14 at Mon Jul 4 22:24:13 CEST 2011.</td></tr>
     </table>
 
     <br/>

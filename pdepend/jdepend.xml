@@ -25,16 +25,37 @@
       </DependsUpon>
       <UsedBy/>
     </Package>
+    <Package name="PHP\IO">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\File.php">File</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\IOException.php">IOException</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>PHP\Lang</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
     <Package name="PHP\Lang">
       <Stats>
-        <TotalClasses>7</TotalClasses>
+        <TotalClasses>8</TotalClasses>
         <ConcreteClasses>6</ConcreteClasses>
-        <AbstractClasses>1</AbstractClasses>
-        <Ca>1</Ca>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>2</Ca>
         <Ce>1</Ce>
-        <A>0.14285714285714</A>
-        <I>0.5</I>
-        <D>0.35714285714286</D>
+        <A>0.25</A>
+        <I>0.33333333333333</I>
+        <D>0.41666666666667</D>
       </Stats>
       <ConcreteClasses>
         <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Exception.php">Exception</Class>
@@ -46,11 +67,13 @@
       </ConcreteClasses>
       <AbstractClasses>
         <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Comparable.php">Comparable</Class>
+        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Object.php">Object</Class>
       </AbstractClasses>
       <DependsUpon>
         <Package></Package>
       </DependsUpon>
       <UsedBy>
+        <Package>PHP\IO</Package>
         <Package>PHP\Net</Package>
       </UsedBy>
     </Package>
