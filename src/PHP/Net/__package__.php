@@ -55,3 +55,5 @@
  * </ul>
  * <p>Your choice. :)</p>
  */
+
+namespace PHP\Net;
