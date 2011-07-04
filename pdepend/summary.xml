@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2011-07-04T22:24:39" pdepend="0.10.5" ahh="1.3333333333333" andc="0.61904761904762" calls="137" ccn="167" ccn2="179" cloc="748" clsa="2" clsc="17" eloc="752" fanout="17" leafs="12" lloc="478" loc="1688" maxDIT="4" ncloc="940" noc="19" nof="0" noi="3" nom="94" nop="4" roots="3">
+<metrics generated="2011-07-04T22:29:50" pdepend="0.10.5" ahh="1.3333333333333" andc="0.61904761904762" calls="137" ccn="167" ccn2="179" cloc="748" clsa="2" clsc="17" eloc="752" fanout="17" leafs="12" lloc="478" loc="1688" maxDIT="4" ncloc="940" noc="19" nof="0" noi="3" nom="94" nop="4" roots="3">
   <files>
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoader.php" cloc="111" eloc="138" lloc="89" loc="268" ncloc="157"/>
     <file name="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoaderException.php" cloc="7" eloc="3" lloc="0" loc="12" ncloc="5"/>

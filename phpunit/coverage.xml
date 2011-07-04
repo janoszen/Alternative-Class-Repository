@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1309811053">
-  <project timestamp="1309811053">
+<coverage generated="1309811383">
+  <project timestamp="1309811383">
     <file name="C:\Program Files (x86)\PHP\PEAR\File\Iterator.php">
       <class name="File_Iterator" namespace="global" fullPackage="File">
         <metrics methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="45" coveredstatements="0" elements="51" coveredelements="0"/>

@@ -2931,4 +2931,4 @@ FOUND 8 ERROR(S) AND 6 WARNING(S) AFFECTING 9 LINE(S)
  61 | ERROR   | Missing @link tag in file comment
 --------------------------------------------------------------------------------
 
-Time: 4 seconds, Memory: 8.25Mb
+Time: 1 second, Memory: 8.25Mb
