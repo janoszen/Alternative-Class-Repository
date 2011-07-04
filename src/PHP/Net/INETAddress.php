@@ -110,7 +110,7 @@ abstract class INETAddress extends \PHP\Lang\Object implements \PHP\Lang\Compara
 	 * @return bool
 	 */
 	public function equals(INETAddress $address) {
-		if (get_class($address) != get_class($this)) {
+		if ($address->getClass() != $this->getClass()) {
 			return false;
 		}
 		if ($address->getAddress() == $this->getAddress()) {
@@ -127,8 +127,8 @@ abstract class INETAddress extends \PHP\Lang\Object implements \PHP\Lang\Compara
 	 * @return int
 	 */
 	public function compareTo(self $address) {
-		if (\get_class($address) != \get_class($this)) {
-			throw new INETAddressTypeError($address, get_class($this));
+		if ($address->getClass() != $this->getClass()) {
+			throw new INETAddressTypeError($address, $this->getClass());
 		}
 		return \strcmp($address->getAsBinary(), $this->getAsBinary());
 	}

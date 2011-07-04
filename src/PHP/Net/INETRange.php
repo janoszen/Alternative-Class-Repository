@@ -45,8 +45,8 @@ class INETRange {
 	 * @return bool
 	 */
 	function containsAddress(INETAddress $address) {
-		if (get_class($address) != get_class($this->address)) {
-			throw new INETAddressTypeError($address, get_class($this->address));
+		if ($address->getClass() != $this->address->getClass()) {
+			throw new INETAddressTypeError($address, $this->address->getClass());
 		}
 		if (strcmp($address->getAsBinary($this->mask), $this->binary) == 0) {
 			return true;
