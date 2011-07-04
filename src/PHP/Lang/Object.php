@@ -35,6 +35,9 @@ abstract class Object {
 	/**
 	 * Generates a globally unique hash code. Implementation details are hidden, so subclasses can't depend
 	 * on it.
+	 * 
+	 * Please note, that spl_object_hash is not used, because it reuses the hash code for other objects. Since
+	 * we use this code for object comparison, this may result in nasty bugs.
 	 */
 	private final function generateHashCode() {
 		$this->hashCode = \uniqid('', true);
