@@ -383,7 +383,7 @@
 <span class="lineNum" id="container110"><a name="110"></a><a href="#110" id="line110">     110</a> </span>                :      * @return bool                                                                                                   
 <span class="lineNum" id="container111"><a name="111"></a><a href="#111" id="line111">     111</a> </span>                :      */                                                                                                               
 <span class="lineNum" id="container112"><a name="112"></a><a href="#112" id="line112">     112</a> </span>                :     public function equals(INETAddress $address) {                                                                    
-<span class="lineNum" id="container113"><a name="113"></a><a href="#113" id="line113">     113</a> </span><span class="lineCov">              1 :         if (get_class($address) != get_class($this)) {                                                                </span>
+<span class="lineNum" id="container113"><a name="113"></a><a href="#113" id="line113">     113</a> </span><span class="lineCov">              1 :         if ($address-&gt;getClass() != $this-&gt;getClass()) {                                                              </span>
 <span class="lineNum" id="container114"><a name="114"></a><a href="#114" id="line114">     114</a> </span><span class="lineCov">              1 :             return false;                                                                                             </span>
 <span class="lineNum" id="container115"><a name="115"></a><a href="#115" id="line115">     115</a> </span><span class="lineDeadCode">                :         }                                                                                                             </span>
 <span class="lineNum" id="container116"><a name="116"></a><a href="#116" id="line116">     116</a> </span><span class="lineCov">              1 :         if ($address-&gt;getAddress() == $this-&gt;getAddress()) {                                                          </span>
@@ -400,8 +400,8 @@
 <span class="lineNum" id="container127"><a name="127"></a><a href="#127" id="line127">     127</a> </span>                :      * @return int                                                                                                    
 <span class="lineNum" id="container128"><a name="128"></a><a href="#128" id="line128">     128</a> </span>                :      */                                                                                                               
 <span class="lineNum" id="container129"><a name="129"></a><a href="#129" id="line129">     129</a> </span>                :     public function compareTo(self $address) {                                                                        
-<span class="lineNum" id="container130"><a name="130"></a><a href="#130" id="line130">     130</a> </span><span class="lineCov">              2 :         if (\get_class($address) != \get_class($this)) {                                                              </span>
-<span class="lineNum" id="container131"><a name="131"></a><a href="#131" id="line131">     131</a> </span><span class="lineCov">              1 :             throw new INETAddressTypeError($address, get_class($this));                                               </span>
+<span class="lineNum" id="container130"><a name="130"></a><a href="#130" id="line130">     130</a> </span><span class="lineCov">              2 :         if ($address-&gt;getClass() != $this-&gt;getClass()) {                                                              </span>
+<span class="lineNum" id="container131"><a name="131"></a><a href="#131" id="line131">     131</a> </span><span class="lineCov">              1 :             throw new INETAddressTypeError($address, $this-&gt;getClass());                                              </span>
 <span class="lineNum" id="container132"><a name="132"></a><a href="#132" id="line132">     132</a> </span><span class="lineDeadCode">                :         }                                                                                                             </span>
 <span class="lineNum" id="container133"><a name="133"></a><a href="#133" id="line133">     133</a> </span><span class="lineCov">              1 :         return \strcmp($address-&gt;getAsBinary(), $this-&gt;getAsBinary());                                                </span>
 <span class="lineNum" id="container134"><a name="134"></a><a href="#134" id="line134">     134</a> </span><span class="lineDeadCode">                :     }                                                                                                                 </span>
@@ -414,7 +414,7 @@
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
-      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5</a> and PHPUnit 3.5.14 at Mon Jul 4 22:29:43 CEST 2011.</td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5</a> and PHPUnit 3.5.14 at Tue Jul 5 21:14:39 CEST 2011.</td></tr>
     </table>
 
     <br />
