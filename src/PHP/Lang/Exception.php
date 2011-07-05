@@ -39,10 +39,10 @@ class Exception extends \Exception {
 
 	/**
 	 * Check, if two objects are equal in the sense of values. Defaults to hashcode check.
-	 * @param Object $obj
+	 * @param Exception $obj
 	 * @return bool
 	 */
-	public function equals(Object $obj) {
+	public function equals(Exception $obj) {
 		if ($this->hashCode() == $obj->hashCode()) {
 			return true;
 		} else {
