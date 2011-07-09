@@ -27,7 +27,7 @@
             <h2>Class Coverage Distribution</h2>
             <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
             <script>
-            var ccd = new RGraph.Bar('classCoverageDistribution', [1,0,0,1,0,0,1,1,2,1,0,8]);
+            var ccd = new RGraph.Bar('classCoverageDistribution', [4,1,0,3,0,0,1,1,2,1,0,8]);
             ccd.Set('chart.background.barcolor1', 'white');
             ccd.Set('chart.background.barcolor2', 'white');
             ccd.Set('chart.colors', ['blue']);
@@ -44,7 +44,7 @@
             <h2>Class Complexity</h2>
             <canvas id="classComplexity" width="475" height="200"></canvas>
             <script>
-            var cc = new RGraph.Scatter('classComplexity', [[61.904761904762,28,"blue","File"],[100,8,"blue","Exception"],[100,2,"blue","IndexOutOfBoundsException"],[100,2,"blue","NotImplementedException"],[100,9,"blue","Object"],[100,3,"blue","TypeError"],[100,2,"blue","ValueError"],[100,28,"blue","INET4Address"],[28.125,36,"blue","INET6Address"],[57.142857142857,19,"blue","INETAddress"],[75,2,"blue","INETAddressFormatError"],[100,1,"blue","INETAddressTypeError"],[75,2,"blue","INETInvalidMask"],[88.888888888889,4,"blue","INETRange"],[0,2,"blue","INETUnknownHost"]]);
+            var cc = new RGraph.Scatter('classComplexity', [[61.904761904762,28,"blue","File"],[0,1,"blue","FileNotFoundException"],[100,8,"blue","Exception"],[100,2,"blue","IndexOutOfBoundsException"],[0,40,"blue","Math"],[100,2,"blue","NotImplementedException"],[100,9,"blue","Object"],[100,3,"blue","TypeError"],[100,2,"blue","ValueError"],[100,28,"blue","INET4Address"],[28.125,36,"blue","INET6Address"],[57.142857142857,19,"blue","INETAddress"],[75,2,"blue","INETAddressFormatError"],[100,1,"blue","INETAddressTypeError"],[75,2,"blue","INETInvalidMask"],[88.888888888889,4,"blue","INETRange"],[0,2,"blue","INETUnknownHost"],[1.3698630136986,38,"blue","ArrayObject"],[25,2,"blue","Collection"],[25,2,"blue","Map"],[0,8,"blue","Random"]]);
             cc.Set('chart.xmax', 100);
             cc.Set('chart.background.barcolor1', 'white');
             cc.Set('chart.background.barcolor2', 'white');
@@ -60,10 +60,15 @@
           <td valign="top">
             <h2>Top Project Risks</h2>
             <ul>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Lang_Math.php.html#16">Math</a> (1640)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#15">ArrayObject</a> (1423)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#10">INET6Address</a> (517)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_Random.php.html#15">Random</a> (72)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_IO_File.php.html#15">File</a> (71)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETAddress.php.html#13">INETAddress</a> (47)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETRange.php.html#10">INETRange</a> (4)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_Collection.php.html#17">Collection</a> (3)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_Map.php.html#17">Map</a> (3)</li>
 
             </ul>
           </td>
@@ -71,16 +76,16 @@
           <td valign="top">
             <h2>Least Tested Methods</h2>
             <ul>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#236">INET6Address::isMulticast</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#249">INET6Address::isLoopback</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#219">INET6Address::isUnicast</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#201">INET6Address::getAsBinary</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#185">INET6Address::getAddress</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#275">INET6Address::isGloballyRoutable</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETAddress.php.html#63">INETAddress::isInRanges</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#81">ArrayObject::offsetGet</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#62">ArrayObject::offsetExists</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#48">ArrayObject::count</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#97">ArrayObject::offsetSet</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#115">ArrayObject::offsetUnset</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#146">ArrayObject::key</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#132">ArrayObject::current</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Util_ArrayObject.php.html#38">ArrayObject::typeCheck</a> (0%)</li>
               <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETUnknownHost.php.html#32">INETUnknownHost::getAddress</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETUnknownHost.php.html#23">INETUnknownHost::__construct</a> (0%)</li>
-              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INETInvalidMask.php.html#31">INETInvalidMask::getMask</a> (0%)</li>
+              <li><a href="Users_janoszen_Documents_NetBeansProjects_Alternative-Class-Repository_src_PHP_Net_INET6Address.php.html#275">INET6Address::isGloballyRoutable</a> (0%)</li>
 
             </ul>
           </td>
@@ -92,7 +97,7 @@
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
-      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5</a> and PHPUnit 3.5.14 at Tue Jul 5 21:14:39 CEST 2011.</td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5</a> and PHPUnit 3.5.14 at Sat Jul 9 17:32:35 CEST 2011.</td></tr>
     </table>
 
     <br/>

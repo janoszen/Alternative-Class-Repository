@@ -179,8 +179,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00129">129</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                 {
-                <span class="keywordflow">if</span> (\get_class($address) != \get_class($this)) {
-                        <span class="keywordflow">throw</span> <span class="keyword">new</span> INETAddressTypeError($address, get_class($this));
+                <span class="keywordflow">if</span> ($address-&gt;getClass() != $this-&gt;getClass()) {
+                        <span class="keywordflow">throw</span> <span class="keyword">new</span> INETAddressTypeError($address, $this-&gt;getClass());
                 }
                 <span class="keywordflow">return</span> \strcmp($address-&gt;getAsBinary(), $this-&gt;<a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html#a2c2e9c1b6068a00dea9ee7b20433f4e5" title="Get binary representation of the address.">getAsBinary</a>());
         }
@@ -213,7 +213,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00112">112</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                     {
-                <span class="keywordflow">if</span> (get_class($address) != get_class($this)) {
+                <span class="keywordflow">if</span> ($address-&gt;getClass() != $this-&gt;getClass()) {
                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
                 }
                 <span class="keywordflow">if</span> ($address-&gt;getAddress() == $this-&gt;<a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html#a04725e11333a9f193273f0b2c8999a28" title="Get normalized string representation of address.">getAddress</a>()) {
@@ -505,7 +505,7 @@ Public Member Functions</h2></td></tr>
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -514,7 +514,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Jul 4 2011 22:29:52 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:32:56 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>

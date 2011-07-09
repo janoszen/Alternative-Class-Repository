@@ -69,8 +69,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00039"></a>00039         }
 <a name="l00040"></a>00040 
 <a name="l00047"></a><a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_range.html#aba42ced668b3736d03f8027fbcd41dbc">00047</a>         function <a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_range.html#aba42ced668b3736d03f8027fbcd41dbc" title="Returns, if the INETAddress provided is within the network range.">containsAddress</a>(<a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html" title="This class is an abstract for the IPv4 and IPv6 address classes created as INET4Address and INET6Addr...">INETAddress</a> $address) {
-<a name="l00048"></a>00048                 <span class="keywordflow">if</span> (get_class($address) != get_class($this-&gt;address)) {
-<a name="l00049"></a>00049                         <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address_type_error.html" title="This exception indicates, that an INETAddress is not of the required type.">INETAddressTypeError</a>($address, get_class($this-&gt;address));
+<a name="l00048"></a>00048                 <span class="keywordflow">if</span> ($address-&gt;getClass() != $this-&gt;address-&gt;getClass()) {
+<a name="l00049"></a>00049                         <span class="keywordflow">throw</span> <span class="keyword">new</span> <a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address_type_error.html" title="This exception indicates, that an INETAddress is not of the required type.">INETAddressTypeError</a>($address, $this-&gt;address-&gt;getClass());
 <a name="l00050"></a>00050                 }
 <a name="l00051"></a>00051                 <span class="keywordflow">if</span> (strcmp($address-&gt;<a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html#a2c2e9c1b6068a00dea9ee7b20433f4e5" title="Get binary representation of the address.">getAsBinary</a>($this-&gt;mask), $this-&gt;binary) == 0) {
 <a name="l00052"></a>00052                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -86,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Jul 4 2011 22:29:51 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:32:55 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.2 </small></address>
 </body>
