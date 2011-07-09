@@ -2,7 +2,7 @@
 
 namespace PHP\Net;
 
-\ClassLoader::import('\PHP\Net\*');
+\ClassLoader::import('\PHP\Net\INET6Address');
 
 /**
  * This class tests the functionality of INET6Address.

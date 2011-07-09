@@ -2,7 +2,7 @@
 
 namespace PHP\Net;
 
-\ClassLoader::import('\PHP\Net\*');
+\ClassLoader::import('\PHP\Net\INET4Address');
 
 /**
  * This class tests the functionality of INET4Address.
