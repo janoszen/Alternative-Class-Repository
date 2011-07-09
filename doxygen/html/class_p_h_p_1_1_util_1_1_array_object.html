@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">PHP.Util.ArrayObject Class Reference</div>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="PHP::Util::ArrayObject" -->
+<!-- doxytag: class="PHP::Util::ArrayObject" --><!-- doxytag: inherits="PHP::Lang::Object" -->
 <p>This class implements a common array handling for  and .  
  <a href="class_p_h_p_1_1_util_1_1_array_object.html#details">More...</a></p>
 <div class="dynheader">
@@ -84,8 +84,9 @@ Inheritance diagram for PHP.Util.ArrayObject:</div>
  <div class="center">
   <img src="class_p_h_p_1_1_util_1_1_array_object.png" usemap="#PHP.Util.ArrayObject_map" alt=""/>
   <map id="PHP.Util.ArrayObject_map" name="PHP.Util.ArrayObject_map">
-<area href="class_p_h_p_1_1_util_1_1_collection.html" title="This is a generic Collection (array) class, which can be used as an object container and overridden b..." alt="PHP.Util.Collection" shape="rect" coords="0,56,132,80"/>
-<area href="class_p_h_p_1_1_util_1_1_map.html" title="This is a generic Map (key-value) class, which can be used as an object container and overridden by c..." alt="PHP.Util.Map" shape="rect" coords="142,56,274,80"/>
+<area href="class_p_h_p_1_1_lang_1_1_object.html" title="Generic ancestor class for all in-system classes except Exceptions." alt="PHP.Lang.Object" shape="rect" coords="71,0,203,24"/>
+<area href="class_p_h_p_1_1_util_1_1_collection.html" title="This is a generic Collection (array) class, which can be used as an object container and overridden b..." alt="PHP.Util.Collection" shape="rect" coords="0,112,132,136"/>
+<area href="class_p_h_p_1_1_util_1_1_map.html" title="This is a generic Map (key-value) class, which can be used as an object container and overridden by c..." alt="PHP.Util.Map" shape="rect" coords="142,112,274,136"/>
 </map>
  </div></div>
 
@@ -93,6 +94,8 @@ Inheritance diagram for PHP.Util.ArrayObject:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_util_1_1_array_object.html#ade1d387707de83cb04f45069118b4ce8">__construct</a> ($data=null)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new data object.  <a href="#ade1d387707de83cb04f45069118b4ce8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f">count</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts the elements in this collection.  <a href="#a0f47af6af0ee9125472b410f4ef2729f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99">offsetExists</a> ($offset)</td></tr>
@@ -149,8 +152,46 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>This class implements a common array handling for  and . </p>
 <p>No other classes should implement this, because it will most likely not prevail if parts are reimplemented in C. </p>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00015">15</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
-</div><hr/><h2>Member Function Documentation</h2>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00017">17</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ade1d387707de83cb04f45069118b4ce8"></a><!-- doxytag: member="PHP::Util::ArrayObject::__construct" ref="ade1d387707de83cb04f45069118b4ce8" args="($data=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHP.Util.ArrayObject.__construct </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>data</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Create a new data object. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">type</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00049">49</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<div class="fragment"><pre class="fragment">                                                  {
+                <a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#ab37510422969120027b080570bd5ae1e" title="Generates a hashcode.">parent::__construct</a>();
+                <span class="keywordflow">if</span> (\is_array($data)) {
+                        <span class="keywordflow">foreach</span> ($data as $key =&gt; $value) {
+                                $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aa98503f7b62f5d81d384af2c929c010d" title="Set an element in this Collection.">offsetSet</a>($key, $value);
+                        }
+                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!\is_null($data)) {
+                        $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aa98503f7b62f5d81d384af2c929c010d" title="Set an element in this Collection.">offsetSet</a>(null, $data);
+                }
+        }
+</pre></div>
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a49f7893d28e524befeaeaca548d6d543"></a><!-- doxytag: member="PHP::Util::ArrayObject::add" ref="a49f7893d28e524befeaeaca548d6d543" args="($element)" -->
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +216,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>self </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00220">220</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00238">238</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                               {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578" title="This function checks, if the ArrayObject subclass may contain the given type.">typeCheck</a>($element);
                 $this[] = $element;
@@ -217,7 +258,7 @@ Protected Attributes</h2></td></tr>
 <p><p>Add a typecheck to return in a consistent manner, if it fails.</p>
 </p>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00236">236</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00254">254</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                     {
                 <span class="keywordflow">foreach</span> ($collection as $element) {
                         $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578" title="This function checks, if the ArrayObject subclass may contain the given type.">typeCheck</a>($element);
@@ -253,7 +294,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00261">261</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00279">279</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                    {
                 <span class="keywordflow">return</span> in_array($element, $this-&gt;data);
         }
@@ -284,7 +325,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00273">273</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00291">291</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                          {
                 <span class="keywordflow">foreach</span> ($other as $element) {
                         <span class="keywordflow">if</span> (!$this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ad03d816214fa91c2cfcabcadc1a9472d" title="Checks if an element is contained here.">contains</a>($elements)) {
@@ -314,7 +355,7 @@ Protected Attributes</h2></td></tr>
 <p>Implemented as required by the Countable interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00048">48</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00066">66</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                {
                 <span class="keywordflow">return</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a0f47af6af0ee9125472b410f4ef2729f" title="Counts the elements in this collection.">count</a>($this-&gt;data);
         }
@@ -345,7 +386,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00132">132</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00150">150</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
                 <span class="keywordflow">if</span> (!$this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a677d83bbb44299ac17a9d1cad923f898" title="Checks if the Collection internal pointer is on a valid element.">valid</a>()) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> IndexOutOfBoundsException();
@@ -374,7 +415,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the key of the current <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html" title="This is a generic Collection (array) class, which can be used as an object container and overridden b...">Collection</a> element. Implemented as required by the Iterator interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int|string </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00146">146</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00164">164</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                              {
                 <span class="keywordflow">return</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe" title="Returns the key of the current element.">key</a>($this-&gt;data);
         }
@@ -438,7 +479,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00158">158</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00176">176</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                               {
                 $current = each($this-&gt;data);
                 <span class="keywordflow">if</span> ($current === <span class="keyword">false</span>) {
@@ -481,7 +522,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00062">62</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00080">80</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                              {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a255e0f7c012f00900c81cf8d403d9f40" title="Throws a , if $offset is not of the required type.">keyCheck</a>($offset);
                 <span class="keywordflow">if</span> (array_key_exists($offset, $this-&gt;data)) {
@@ -524,7 +565,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00081">81</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00099">99</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                           {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a255e0f7c012f00900c81cf8d403d9f40" title="Throws a , if $offset is not of the required type.">keyCheck</a>($offset);
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99" title="Returns if an offset exists in this collection.">offsetExists</a>($offset)) {
@@ -571,7 +612,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00097">97</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00115">115</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                   {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#ab3303a98127fe34384a063d9e44f3578" title="This function checks, if the ArrayObject subclass may contain the given type.">typeCheck</a>($value);
                 <span class="keywordflow">if</span> (\is_null($offset)) {
@@ -615,7 +656,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00115">115</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00133">133</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a255e0f7c012f00900c81cf8d403d9f40" title="Throws a , if $offset is not of the required type.">keyCheck</a>($offset);
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#af926e276ad902c1d7884966f3b761e99" title="Returns if an offset exists in this collection.">offsetExists</a>($offset)) {
@@ -652,7 +693,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool if the data has changed. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00289">289</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00307">307</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
                 $key = array_search($element, $this-&gt;data);
                 <span class="keywordflow">if</span> ($key === <span class="keyword">false</span>) {
@@ -689,7 +730,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>self </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00306">306</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00324">324</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                        {
                 <span class="keywordflow">foreach</span> ($other as $elements) {
                         $this-&gt;<span class="keyword">remove</span>($elements);
@@ -723,7 +764,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>self </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00320">320</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00338">338</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                        {
                 <span class="keywordflow">foreach</span> ($this as $key =&gt; $value) {
                         <span class="keywordflow">if</span> (!$other-&gt;contains($value)) {
@@ -753,7 +794,7 @@ Protected Attributes</h2></td></tr>
 <p>Implemented as required by the Iterator interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool false if the <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html" title="This is a generic Collection (array) class, which can be used as an object container and overridden b...">Collection</a> is empty. </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00173">173</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00191">191</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                 {
                 <span class="keywordflow">if</span> (reset($this-&gt;data)) {
                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -781,7 +822,7 @@ Protected Attributes</h2></td></tr>
 <p>Serializes this <a class="el" href="class_p_h_p_1_1_util_1_1_collection.html" title="This is a generic Collection (array) class, which can be used as an object container and overridden b...">Collection</a> as required by the Serializable interface. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00200">200</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00218">218</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                    {
                 <span class="keywordflow">return</span> <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a55843823ca1f42a1696ba39cdbd939ca" title="Serializes this Collection as required by the Serializable interface.">serialize</a>($this-&gt;data);
         }
@@ -811,7 +852,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00038">38</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00041">41</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                               {
 
         }
@@ -842,7 +883,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00209">209</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00227">227</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                 {
                 $this-&gt;data = <a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#a9e5ab936e9c3b3d7845bc92efcda7132" title="Loads this Collection from a serialized string.">unserialize</a>($serialized);
         }
@@ -867,7 +908,7 @@ Protected Attributes</h2></td></tr>
 <p>Implemented as required by the Iterator interface.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00187">187</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
+<p>Definition at line <a class="el" href="_array_object_8php_source.html#l00205">205</a> of file <a class="el" href="_array_object_8php_source.html">ArrayObject.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                {
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_util_1_1_array_object.html#aadee01a71d07a91b2347075b0a004efe" title="Returns the key of the current element.">key</a>() === null) {
                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -896,7 +937,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:38:23 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 18:28:36 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

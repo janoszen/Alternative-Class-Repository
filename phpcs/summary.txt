@@ -5,7 +5,7 @@ FILE                                                            ERRORS  WARNINGS
 ...nsProjects\Alternative-Class-Repository\src\ClassLoader.php  427     0
 ...ative-Class-Repository\src\ClassLoaderCallbackInterface.php  22      1
 ...s\Alternative-Class-Repository\src\ClassLoaderException.php  9       0
-...nsProjects\Alternative-Class-Repository\src\PHP\IO\File.php  316     3
+...nsProjects\Alternative-Class-Repository\src\PHP\IO\File.php  318     3
 ...ative-Class-Repository\src\PHP\IO\FileNotFoundException.php  16      0
 ...cts\Alternative-Class-Repository\src\PHP\IO\IOException.php  10      0
 ...cts\Alternative-Class-Repository\src\PHP\IO\__package__.php  10      1
@@ -21,7 +21,7 @@ FILE                                                            ERRORS  WARNINGS
 ...s\Alternative-Class-Repository\src\PHP\Lang\__package__.php  10      1
 ...s\Alternative-Class-Repository\src\PHP\Net\INET4Address.php  299     3
 ...s\Alternative-Class-Repository\src\PHP\Net\INET6Address.php  455     2
-...ts\Alternative-Class-Repository\src\PHP\Net\INETAddress.php  202     4
+...ts\Alternative-Class-Repository\src\PHP\Net\INETAddress.php  204     4
 ...ive-Class-Repository\src\PHP\Net\INETAddressFormatError.php  43      0
 ...ative-Class-Repository\src\PHP\Net\INETAddressTypeError.php  22      0
 ...\Alternative-Class-Repository\src\PHP\Net\INETException.php  8       1
@@ -32,7 +32,7 @@ FILE                                                            ERRORS  WARNINGS
 ...ts\Alternative-Class-Repository\src\PHP\OS\ChrootFailed.php  16      0
 ...\Alternative-Class-Repository\src\PHP\OS\ChrootListener.php  41      0
 ...Projects\Alternative-Class-Repository\src\PHP\OS\Daemon.php  15      0
-...s\Alternative-Class-Repository\src\PHP\OS\DaemonContext.php  527     0
+...s\Alternative-Class-Repository\src\PHP\OS\DaemonContext.php  529     0
 ...jects\Alternative-Class-Repository\src\PHP\OS\Exception.php  10      0
 ...ects\Alternative-Class-Repository\src\PHP\OS\ForkFailed.php  16      0
 ...ts\Alternative-Class-Repository\src\PHP\OS\ForkListener.php  34      0
@@ -40,16 +40,16 @@ FILE                                                            ERRORS  WARNINGS
 ...tive-Class-Repository\src\PHP\OS\ProcessExitInformation.php  199     0
 ...ts\Alternative-Class-Repository\src\PHP\OS\SetGIDFailed.php  16      0
 ...ts\Alternative-Class-Repository\src\PHP\OS\SetUIDFailed.php  16      0
-...Projects\Alternative-Class-Repository\src\PHP\OS\Signal.php  246     0
+...Projects\Alternative-Class-Repository\src\PHP\OS\Signal.php  244     0
 ...cts\Alternative-Class-Repository\src\PHP\OS\__package__.php  10      1
-...s\Alternative-Class-Repository\src\PHP\Util\ArrayObject.php  471     1
+...s\Alternative-Class-Repository\src\PHP\Util\ArrayObject.php  500     0
 ...ts\Alternative-Class-Repository\src\PHP\Util\Collection.php  29      0
 ...sProjects\Alternative-Class-Repository\src\PHP\Util\Map.php  29      0
 ...ojects\Alternative-Class-Repository\src\PHP\Util\Random.php  88      0
 ...s\Alternative-Class-Repository\src\PHP\Util\__package__.php  10      1
 ...nsProjects\Alternative-Class-Repository\src\__package__.php  8       6
 --------------------------------------------------------------------------------
-A TOTAL OF 5122 ERROR(S) AND 50 WARNING(S) WERE FOUND IN 46 FILE(S)
+A TOTAL OF 5155 ERROR(S) AND 49 WARNING(S) WERE FOUND IN 46 FILE(S)
 --------------------------------------------------------------------------------
 
 Time: 2 seconds, Memory: 11.75Mb

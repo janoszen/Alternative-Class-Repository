@@ -165,7 +165,7 @@ Protected Attributes</h2></td></tr>
 <p>Return the chroot() directory. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00173">173</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00174">174</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                             {
                 <span class="keywordflow">return</span> $this-&gt;chroot;
         }
@@ -189,7 +189,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the GID the application is supposed to run under. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00151">151</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00152">152</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                          {
                 <span class="keywordflow">return</span> $this-&gt;gid;
         }
@@ -213,7 +213,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the UID the application is supposed to run under. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>int </dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00125">125</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00126">126</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                          {
                 <span class="keywordflow">return</span> $this-&gt;uid;
         }
@@ -237,7 +237,7 @@ Protected Attributes</h2></td></tr>
 <p>Returns the specified CWD. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00099">99</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00100">100</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                 {
                 <span class="keywordflow">return</span> $this-&gt;workingDir;
         }
@@ -268,7 +268,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00182">182</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00183">183</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                        {
         }
 </pre></div>
@@ -315,7 +315,7 @@ Protected Attributes</h2></td></tr>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd>Error handling is needed here. </dd></dl>
 </p>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00191">191</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00192">192</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
                 <a class="code" href="class_p_h_p_1_1_o_s_1_1_signal.html#ab37b2cc3db508fa4a4ed6f50b89af80d" title="Blocks a specific set of signals.">Signal::block</a>(<span class="keyword">new</span> \PHP\Util\Collection(array(Signal::SIGUSR2,
                         Signal::SIGCLD, Signal::SIGINT, Signal::SIGTERM)));
@@ -462,7 +462,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00161">161</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00162">162</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                 {
                 <span class="keywordflow">if</span> (!$chroot-&gt;isDirectory()) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($chroot-&gt;getPath(), <span class="stringliteral">&#39;existing directory&#39;</span>);
@@ -504,7 +504,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00136">136</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00137">137</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                              {
                 <span class="keywordflow">if</span> (!\is_int($gid)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($gid, <span class="stringliteral">&#39;integer&#39;</span>);
@@ -549,7 +549,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00110">110</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00111">111</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                              {
                 <span class="keywordflow">if</span> (!\is_int($uid)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($uid, <span class="stringliteral">&#39;integer&#39;</span>);
@@ -594,7 +594,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00087">87</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
+<p>Definition at line <a class="el" href="_daemon_context_8php_source.html#l00088">88</a> of file <a class="el" href="_daemon_context_8php_source.html">DaemonContext.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                         {
                 <span class="keywordflow">if</span> (!$workingDir-&gt;isDirectory()) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($workingDir-&gt;getPath(), <span class="stringliteral">&#39;existing directory&#39;</span>);
@@ -660,7 +660,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:38:22 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 18:28:35 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

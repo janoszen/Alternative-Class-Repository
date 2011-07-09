@@ -64,41 +64,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00002"></a>00002 
 <a name="l00003"></a>00003 <span class="keyword">namespace </span>PHP\Util;
 <a name="l00004"></a>00004 
-<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\TypeError&#39;</span>);
-<a name="l00006"></a>00006 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\ValueError&#39;</span>);
-<a name="l00007"></a>00007 
-<a name="l00015"></a><a class="code" href="class_p_h_p_1_1_util_1_1_random.html">00015</a> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_util_1_1_random.html" title="Utility for generating random numbers.">Random</a> {
-<a name="l00024"></a><a class="code" href="class_p_h_p_1_1_util_1_1_random.html#af6e644bfc0321ac480a39785f904bc2c">00024</a>         <span class="keyword">static</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_random.html#af6e644bfc0321ac480a39785f904bc2c" title="Generate a pseudo-random number between $min and $max.">pseudoNumber</a>($min = 0, $max = 1) {
-<a name="l00025"></a>00025                 <span class="keywordflow">if</span> (!\is_numeric($min)) {
-<a name="l00026"></a>00026                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($min, <span class="stringliteral">&#39;number&#39;</span>);
-<a name="l00027"></a>00027                 }
-<a name="l00028"></a>00028                 <span class="keywordflow">if</span> (!\is_numeric($max)) {
-<a name="l00029"></a>00029                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($max, <span class="stringliteral">&#39;number&#39;</span>);
-<a name="l00030"></a>00030                 }
-<a name="l00031"></a>00031                 <span class="keywordflow">if</span> (\function_exists(<span class="stringliteral">&#39;mt_rand&#39;</span>)) {
-<a name="l00032"></a>00032                         $value = \mt_rand();
-<a name="l00033"></a>00033                         $maxvalue = \mt_getrandmax();
-<a name="l00034"></a>00034                 } <span class="keywordflow">else</span> {
-<a name="l00035"></a>00035                         $value = \rand();
-<a name="l00036"></a>00036                         $maxvalue = \getrandmax();
-<a name="l00037"></a>00037                 }
-<a name="l00038"></a>00038                 <span class="keywordflow">return</span> $min + $value * (($max - $min) / $maxvalue);
-<a name="l00039"></a>00039         }
-<a name="l00040"></a>00040 
-<a name="l00050"></a><a class="code" href="class_p_h_p_1_1_util_1_1_random.html#acbe4d736cec2ec02e0e954931578d8ed">00050</a>         <span class="keyword">static</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_random.html#acbe4d736cec2ec02e0e954931578d8ed" title="Generate a pseudo-random string in the given length.">pseudoString</a>($length = 8) {
-<a name="l00051"></a>00051                 <span class="keywordflow">if</span> (!\is_integer($length)) {
-<a name="l00052"></a>00052                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($length, <span class="stringliteral">&#39;integer&#39;</span>);
-<a name="l00053"></a>00053                 }
-<a name="l00054"></a>00054                 <span class="keywordflow">if</span> ($length&lt;1) {
-<a name="l00055"></a>00055                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($length, <span class="stringliteral">&#39;number larger than 0&#39;</span>);
-<a name="l00056"></a>00056                 }
-<a name="l00057"></a>00057                 $string = <span class="stringliteral">&#39;&#39;</span>;
-<a name="l00058"></a>00058                 <span class="keywordflow">while</span> (\strlen($string) &lt; $length) {
-<a name="l00059"></a>00059                         $string .= \uniqid(<span class="stringliteral">&#39;&#39;</span>, <span class="keyword">true</span>);
-<a name="l00060"></a>00060                 }
-<a name="l00061"></a>00061                 <span class="keywordflow">return</span> \substr($string, 0, $length);
-<a name="l00062"></a>00062         }
-<a name="l00063"></a>00063 }
+<a name="l00005"></a>00005 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\Object&#39;</span>);
+<a name="l00006"></a>00006 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\TypeError&#39;</span>);
+<a name="l00007"></a>00007 \<a class="code" href="class_class_loader.html#a11a21558711c77762d67877c003f102f" title="Import class or classes from namespace.">ClassLoader::import</a>(<span class="stringliteral">&#39;PHP\Lang\ValueError&#39;</span>);
+<a name="l00008"></a>00008 
+<a name="l00016"></a><a class="code" href="class_p_h_p_1_1_util_1_1_random.html">00016</a> <span class="keyword">class </span><a class="code" href="class_p_h_p_1_1_util_1_1_random.html" title="Utility for generating random numbers.">Random</a> <span class="keyword">extends</span> \PHP\Lang\Object {
+<a name="l00025"></a><a class="code" href="class_p_h_p_1_1_util_1_1_random.html#af6e644bfc0321ac480a39785f904bc2c">00025</a>         <span class="keyword">static</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_random.html#af6e644bfc0321ac480a39785f904bc2c" title="Generate a pseudo-random number between $min and $max.">pseudoNumber</a>($min = 0, $max = 1) {
+<a name="l00026"></a>00026                 <span class="keywordflow">if</span> (!\is_numeric($min)) {
+<a name="l00027"></a>00027                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($min, <span class="stringliteral">&#39;number&#39;</span>);
+<a name="l00028"></a>00028                 }
+<a name="l00029"></a>00029                 <span class="keywordflow">if</span> (!\is_numeric($max)) {
+<a name="l00030"></a>00030                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($max, <span class="stringliteral">&#39;number&#39;</span>);
+<a name="l00031"></a>00031                 }
+<a name="l00032"></a>00032                 <span class="keywordflow">if</span> (\function_exists(<span class="stringliteral">&#39;mt_rand&#39;</span>)) {
+<a name="l00033"></a>00033                         $value = \mt_rand();
+<a name="l00034"></a>00034                         $maxvalue = \mt_getrandmax();
+<a name="l00035"></a>00035                 } <span class="keywordflow">else</span> {
+<a name="l00036"></a>00036                         $value = \rand();
+<a name="l00037"></a>00037                         $maxvalue = \getrandmax();
+<a name="l00038"></a>00038                 }
+<a name="l00039"></a>00039                 <span class="keywordflow">return</span> $min + $value * (($max - $min) / $maxvalue);
+<a name="l00040"></a>00040         }
+<a name="l00041"></a>00041 
+<a name="l00051"></a><a class="code" href="class_p_h_p_1_1_util_1_1_random.html#acf48920bd3bc7cb13943e1ef25a701bf">00051</a>         <span class="keyword">static</span> function <a class="code" href="class_p_h_p_1_1_util_1_1_random.html#acf48920bd3bc7cb13943e1ef25a701bf" title="Generate a pseudo-random string in the given length.">pseudoString</a>($length = 23) {
+<a name="l00052"></a>00052                 <span class="keywordflow">if</span> (!\is_integer($length)) {
+<a name="l00053"></a>00053                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\TypeError($length, <span class="stringliteral">&#39;integer&#39;</span>);
+<a name="l00054"></a>00054                 }
+<a name="l00055"></a>00055                 <span class="keywordflow">if</span> ($length&lt;1) {
+<a name="l00056"></a>00056                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($length, <span class="stringliteral">&#39;number larger than 0&#39;</span>);
+<a name="l00057"></a>00057                 }
+<a name="l00058"></a>00058                 $string = <span class="stringliteral">&#39;&#39;</span>;
+<a name="l00059"></a>00059                 <span class="keywordflow">while</span> (\strlen($string) &lt; $length) {
+<a name="l00060"></a>00060                         $string .= \uniqid(<span class="stringliteral">&#39;&#39;</span>, <span class="keyword">true</span>);
+<a name="l00061"></a>00061                 }
+<a name="l00062"></a>00062                 <span class="keywordflow">return</span> \substr($string, 0, $length);
+<a name="l00063"></a>00063         }
+<a name="l00064"></a>00064 }
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -115,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:38:21 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 18:28:34 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

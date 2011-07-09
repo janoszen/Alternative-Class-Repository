@@ -82,7 +82,8 @@ Inheritance diagram for PHP.Util.Map:</div>
  <div class="center">
   <img src="class_p_h_p_1_1_util_1_1_map.png" usemap="#PHP.Util.Map_map" alt=""/>
   <map id="PHP.Util.Map_map" name="PHP.Util.Map_map">
-<area href="class_p_h_p_1_1_util_1_1_array_object.html" title="This class implements a common array handling for  and ." alt="PHP.Util.ArrayObject" shape="rect" coords="0,0,132,24"/>
+<area href="class_p_h_p_1_1_util_1_1_array_object.html" title="This class implements a common array handling for  and ." alt="PHP.Util.ArrayObject" shape="rect" coords="0,56,132,80"/>
+<area href="class_p_h_p_1_1_lang_1_1_object.html" title="Generic ancestor class for all in-system classes except Exceptions." alt="PHP.Lang.Object" shape="rect" coords="0,0,132,24"/>
 </map>
  </div></div>
 
@@ -133,7 +134,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_map_8php_source.html#l00025">25</a> of file <a class="el" href="_map_8php_source.html">Map.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                   {
-                <span class="keywordflow">if</span> (!is_string($offset)) {
+                <span class="keywordflow">if</span> (!\is_string($offset)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\ValueError($offset, <span class="stringliteral">&quot;string&quot;</span>);
                 }
         }
@@ -158,7 +159,7 @@ Protected Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:38:23 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 18:28:36 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

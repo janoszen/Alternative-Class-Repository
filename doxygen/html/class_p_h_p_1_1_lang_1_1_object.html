@@ -82,14 +82,15 @@ Inheritance diagram for PHP.Lang.Object:</div>
  <div class="center">
   <img src="class_p_h_p_1_1_lang_1_1_object.png" usemap="#PHP.Lang.Object_map" alt=""/>
   <map id="PHP.Lang.Object_map" name="PHP.Lang.Object_map">
-<area href="class_p_h_p_1_1_lang_1_1_math.html" title="This class contains the standard mathematical functions." alt="PHP.Lang.Math" shape="rect" coords="0,56,191,80"/>
-<area href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html" title="This class is an abstract for the IPv4 and IPv6 address classes created as INET4Address and INET6Addr..." alt="PHP.Net.INETAddress" shape="rect" coords="201,56,392,80"/>
-<area href="class_p_h_p_1_1_o_s_1_1_daemon_context.html" title="This is a daemonizing toolkit for classes, that implement PHP." alt="PHP.OS.DaemonContext" shape="rect" coords="402,56,593,80"/>
-<area href="class_p_h_p_1_1_o_s_1_1_process.html" title="This class contains all process-related functionality." alt="PHP.OS.Process" shape="rect" coords="603,56,794,80"/>
-<area href="class_p_h_p_1_1_o_s_1_1_process_exit_information.html" title="This class contains all relevant information, that can be collected, if a process exits..." alt="PHP.OS.ProcessExitInformation" shape="rect" coords="804,56,995,80"/>
-<area href="class_p_h_p_1_1_o_s_1_1_signal.html" title="This class contains constants and functions related to signal handling." alt="PHP.OS.Signal" shape="rect" coords="1005,56,1196,80"/>
-<area href="class_p_h_p_1_1_net_1_1_i_n_e_t4_address.html" title="This class represents IPv4 addresses." alt="PHP.Net.INET4Address" shape="rect" coords="100,112,291,136"/>
-<area href="class_p_h_p_1_1_net_1_1_i_n_e_t6_address.html" title="This class represents IPv6 addresses." alt="PHP.Net.INET6Address" shape="rect" coords="301,112,492,136"/>
+<area href="class_p_h_p_1_1_i_o_1_1_file.html" title="This class represents a file and contains the utilities for file manipulation." alt="PHP.IO.File" shape="rect" coords="201,56,392,80"/>
+<area href="class_p_h_p_1_1_lang_1_1_math.html" title="This class contains the standard mathematical functions." alt="PHP.Lang.Math" shape="rect" coords="201,112,392,136"/>
+<area href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html" title="This class is an abstract for the IPv4 and IPv6 address classes created as INET4Address and INET6Addr..." alt="PHP.Net.INETAddress" shape="rect" coords="201,168,392,192"/>
+<area href="class_p_h_p_1_1_o_s_1_1_daemon_context.html" title="This is a daemonizing toolkit for classes, that implement PHP." alt="PHP.OS.DaemonContext" shape="rect" coords="201,224,392,248"/>
+<area href="class_p_h_p_1_1_o_s_1_1_process.html" title="This class contains all process-related functionality." alt="PHP.OS.Process" shape="rect" coords="201,280,392,304"/>
+<area href="class_p_h_p_1_1_o_s_1_1_process_exit_information.html" title="This class contains all relevant information, that can be collected, if a process exits..." alt="PHP.OS.ProcessExitInformation" shape="rect" coords="201,336,392,360"/>
+<area href="class_p_h_p_1_1_o_s_1_1_signal.html" title="This class contains constants and functions related to signal handling." alt="PHP.OS.Signal" shape="rect" coords="201,392,392,416"/>
+<area href="class_p_h_p_1_1_util_1_1_array_object.html" title="This class implements a common array handling for  and ." alt="PHP.Util.ArrayObject" shape="rect" coords="201,448,392,472"/>
+<area href="class_p_h_p_1_1_util_1_1_random.html" title="Utility for generating random numbers." alt="PHP.Util.Random" shape="rect" coords="201,504,392,528"/>
 </map>
  </div></div>
 
@@ -117,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Generic ancestor class for all in-system classes except Exceptions. </p>
 <dl class="author"><dt><b>Author:</b></dt><dd>Janos Pasztor &lt;<a href="mailto:pasztor.janos@dotroll.com">pasztor.janos@dotroll.com</a>&gt;  DotRoll Ltd (C) All Rights Reserved </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00013">13</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00014">14</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 </div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="ab1f81e8214377c6448a599f07b3babe2"></a><!-- doxytag: member="PHP::Lang::Object::__clone" ref="ab1f81e8214377c6448a599f07b3babe2" args="()" -->
 <div class="memitem">
@@ -136,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <p>Clone helper function to generate a new hashCode. </p>
 <p>All subclasses must call parent.__clone. </p>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00031">31</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00032">32</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                  {
                 $this-&gt;generateHashCode();
         }
@@ -160,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <p>Alias for <a class="el" href="class_p_h_p_1_1_lang_1_1_object.html#a68e4b40b5ee0307c8d650c189e1adb11" title="This function returns the string representation of this class.">Object.toString()</a> </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00079">79</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00080">80</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                           {
                 <span class="keywordflow">return</span> $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a68e4b40b5ee0307c8d650c189e1adb11" title="This function returns the string representation of this class.">toString</a>();
         }
@@ -192,7 +193,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00051">51</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00052">52</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
                 <span class="keywordflow">if</span> ($this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a277719aefddce4229db4dd6d10edcae2" title="Returns a globally unique ID for this class instance.">hashCode</a>() == $obj-&gt;hashCode()) {
                         <span class="keywordflow">return</span> <span class="keyword">true</span>;
@@ -220,7 +221,7 @@ Public Member Functions</h2></td></tr>
 <p>Get the name of this class. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00063">63</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00064">64</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                         {
                 <span class="keywordflow">return</span> \get_class($this);
         }
@@ -245,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <p>Unline Java, this is a string. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00071">71</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00072">72</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                         {
                 <span class="keywordflow">return</span> $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a277719aefddce4229db4dd6d10edcae2" title="Returns a globally unique ID for this class instance.">hashCode</a>;
         }
@@ -272,7 +273,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html#aa75d9feb9185e1ad1be257f21548f02f">PHP.Net.INETAddress</a>.</p>
 
-<p>Definition at line <a class="el" href="_object_8php_source.html#l00087">87</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
+<p>Definition at line <a class="el" href="_object_8php_source.html#l00088">88</a> of file <a class="el" href="_object_8php_source.html">Object.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                   {
                 <span class="keywordflow">return</span> $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a9ce6fab04dcb52e3a38e55709f4c690b" title="Get the name of this class.">getClass</a>() . <span class="charliteral">&#39;@&#39;</span> . $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a277719aefddce4229db4dd6d10edcae2" title="Returns a globally unique ID for this class instance.">hashCode</a>();
         }
@@ -297,7 +298,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:38:21 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 18:28:34 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

@@ -153,6 +153,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00018">18</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                   {
+                <a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#ab37510422969120027b080570bd5ae1e" title="Generates a hashcode.">parent::__construct</a>();
                 $this-&gt;<a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html#ad13ba9c04f47cf13a2a740b2b3d4b2af" title="Set the raw address.">setAddress</a>($address);
         }
 </pre></div>
@@ -192,7 +193,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="interface_p_h_p_1_1_lang_1_1_comparable.html#af730e9322eff0a859567cadc4f81e427">PHP.Lang.Comparable</a>.</p>
 
-<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00129">129</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
+<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00130">130</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                 {
                 <span class="keywordflow">if</span> ($address-&gt;getClass() != $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a9ce6fab04dcb52e3a38e55709f4c690b" title="Get the name of this class.">getClass</a>()) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> INETAddressTypeError($address, $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a9ce6fab04dcb52e3a38e55709f4c690b" title="Get the name of this class.">getClass</a>());
@@ -226,7 +227,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00112">112</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
+<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00113">113</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                     {
                 <span class="keywordflow">if</span> ($address-&gt;getClass() != $this-&gt;<a class="code" href="class_p_h_p_1_1_lang_1_1_object.html#a9ce6fab04dcb52e3a38e55709f4c690b" title="Get the name of this class.">getClass</a>()) {
                         <span class="keywordflow">return</span> <span class="keyword">false</span>;
@@ -339,7 +340,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00053">53</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
+<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00054">54</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                    {
                 <span class="keywordflow">return</span> $range-&gt;containsAddress($this);
         }
@@ -371,7 +372,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>boolean </dd></dl>
 
-<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00063">63</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
+<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00064">64</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
                 $contained = <span class="keyword">false</span>;
                 <span class="keywordflow">foreach</span> ($ranges as &amp;$range) {
@@ -506,7 +507,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_p_h_p_1_1_lang_1_1_object.html#a68e4b40b5ee0307c8d650c189e1adb11">PHP.Lang.Object</a>.</p>
 
-<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00103">103</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
+<p>Definition at line <a class="el" href="_i_n_e_t_address_8php_source.html#l00104">104</a> of file <a class="el" href="_i_n_e_t_address_8php_source.html">INETAddress.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                   {
                 <span class="keywordflow">return</span> $this-&gt;<a class="code" href="class_p_h_p_1_1_net_1_1_i_n_e_t_address.html#a04725e11333a9f193273f0b2c8999a28" title="Get normalized string representation of address.">getAddress</a>();
         }
@@ -531,7 +532,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 17:38:22 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 9 2011 18:28:35 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
