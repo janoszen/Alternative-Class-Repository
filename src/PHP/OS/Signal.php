@@ -4,6 +4,8 @@ declare(ticks=1);
 
 namespace PHP\OS;
 
+\ClassLoader::import('\PHP\Lang\Object');
+
 /**
  * This class contains constants and functions related to signal handling.
  *
@@ -11,7 +13,7 @@ namespace PHP\OS;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class Signal {
+class Signal extends \PHP\Lang\Object {
 	const PROCALL = -1;
 	const SIGHUP = \SIGHUP;
 	const SIGINT = \SIGINT;

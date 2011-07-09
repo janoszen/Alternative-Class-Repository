@@ -2,6 +2,7 @@
 
 namespace PHP\Lang;
 
+\ClassLoader::import('PHP\Lang\Object');
 \ClassLoader::import('PHP\Lang\TypeError');
 \ClassLoader::import('PHP\Lang\ValueError');
 \ClassLoader::import('PHP\Util\Random');
@@ -13,7 +14,7 @@ namespace PHP\Lang;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class Math {
+class Math extends Object {
 
 	/**
 	 * The number PI

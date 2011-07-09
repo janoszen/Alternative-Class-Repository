@@ -2,6 +2,8 @@
 
 namespace PHP\OS;
 
+\ClassLoader::import('\PHP\Lang\Object');
+
 /**
  * This class contains all relevant information, that can be collected, if a
  * process exits.
@@ -10,7 +12,7 @@ namespace PHP\OS;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class ProcessExitInformation {
+class ProcessExitInformation extends \PHP\Lang\Object {
 	/**
 	 * The PID of the child, that exited.
 	 * @var int

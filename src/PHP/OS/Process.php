@@ -2,6 +2,7 @@
 
 namespace PHP\OS;
 
+\ClassLoader::import('PHP\Lang\Object');
 \ClassLoader::import('PHP\OS\*');
 \ClassLoader::import('PHP\Util\Collection');
 
@@ -12,7 +13,7 @@ namespace PHP\OS;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class Process {
+class Process extends \PHP\Lang\Object {
 	/**
 	 * A Collection of listeners for fork events.
 	 * @var \PHP\Util\Collection

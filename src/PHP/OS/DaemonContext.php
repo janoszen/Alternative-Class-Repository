@@ -14,7 +14,7 @@ namespace PHP\OS;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class DaemonContext {
+class DaemonContext extends \PHP\Lang\Object {
 	/**
 	 * The current working directory. This directory is chdir()-ed into AFTER
 	 * the chroot() has occured.
