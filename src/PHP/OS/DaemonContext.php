@@ -71,6 +71,7 @@ class DaemonContext extends \PHP\Lang\Object {
 	const STARTUP_INTERRUPTED = 2;
 
 	function __construct() {
+		parent::__construct();
 		$this->workingDir = new \PHP\IO\File('/');
 		$this->uid = \posix_getuid();
 		$this->gid = \posix_getgid();

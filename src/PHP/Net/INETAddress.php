@@ -16,6 +16,7 @@ abstract class INETAddress extends \PHP\Lang\Object implements \PHP\Lang\Compara
 	 * @param string $address
 	 */
 	public function __construct($address = '') {
+		parent::__construct();
 		$this->setAddress($address);
 	}
 	

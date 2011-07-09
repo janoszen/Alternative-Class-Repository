@@ -2,6 +2,7 @@
 
 namespace PHP\Util;
 
+\ClassLoader::import('PHP\Lang\Object');
 \ClassLoader::import('PHP\Lang\TypeError');
 \ClassLoader::import('PHP\Lang\ValueError');
 
@@ -12,7 +13,7 @@ namespace PHP\Util;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class Random {
+class Random extends \PHP\Lang\Object {
 	/**
 	 * Generate a pseudo-random number between $min and $max. If possible,
 	 * this function will use mt_rand() for random number generation. Otherwise
@@ -42,12 +43,12 @@ class Random {
 	 * Generate a pseudo-random string in the given length. This string is NOT
 	 * suitable for cryptographic purposes! Use the \PHPx\Crypto library for
 	 * that!
-	 * @param integer $length default 8
+	 * @param integer $length default 23
 	 * @return string
 	 * @throws \PHP\Lang\TypeError if length is not an integer
 	 * @throws \PHP\Lang\ValueError if length is smaller than 1
 	 */
-	static function pseudoString($length = 8) {
+	static function pseudoString($length = 23) {
 		if (!\is_integer($length)) {
 			throw new \PHP\Lang\TypeError($length, 'integer');
 		}

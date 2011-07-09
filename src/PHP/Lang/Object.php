@@ -4,6 +4,7 @@ namespace PHP\Lang;
 
 \ClassLoader::import('\PHP\Lang\TypeError');
 \ClassLoader::import('\PHP\Lang\Math');
+\ClassLoader::import('\PHP\Util\Random');
 
 /**
  * Generic ancestor class for all in-system classes except Exceptions.
@@ -40,7 +41,7 @@ abstract class Object {
 	 * we use this code for object comparison, this may result in nasty bugs.
 	 */
 	private final function generateHashCode() {
-		$this->hashCode = \uniqid('', true);
+		$this->hashCode = \PHP\Util\Random::pseudoString();
 	}
 
 	/**

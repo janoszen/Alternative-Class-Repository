@@ -23,7 +23,7 @@ class Map extends ArrayObject {
 	 * @throws \PHP\Lang\ValueError if $offset is not a string.
 	 */
 	final protected function keyCheck($offset) {
-		if (!is_string($offset)) {
+		if (!\is_string($offset)) {
 			throw new \PHP\Lang\ValueError($offset, "string");
 		}
 	}

@@ -2,6 +2,7 @@
 
 namespace PHP\IO;
 
+\ClassLoader::import('PHP\Lang\Object');
 \ClassLoader::import('PHP\IO\*');
 
 /**
@@ -12,7 +13,7 @@ namespace PHP\IO;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-class File {
+class File extends \PHP\Lang\Object {
 	/**
 	 * Directory separator on platform
 	 *
@@ -40,6 +41,7 @@ class File {
 	 * @param string $path 
 	 */
 	public function __construct($path) {
+		parent::__construct();
 		$this->pathname = $path;
 	}
 

@@ -62,16 +62,15 @@ class Signal extends \PHP\Lang\Object {
 	 * @throws \PHP\Lang\ValueError if one of the signals is not blockable
 	 * @return \PHP\OS\Signal
 	 */
-	protected static function validateSignals(\PHP\Util\Collection $signals) {
+	public static function validateSignals(\PHP\Util\Collection $signals) {
 		foreach ($signals as $signal) {
-			if (!is_int($signal)) {
+			if (!\is_int($signal)) {
 				throw new \PHP\Lang\TypeError($signal, "integer");
 			}
 			if (!self::isBlockable($signal)) {
 				throw new \PHP\Lang\ValueError($signal, "blockable signal identifier");
 			}
 		}
-		return $this;
 	}
 
 	/**
@@ -80,8 +79,8 @@ class Signal extends \PHP\Lang\Object {
 	 * @throws \PHP\Lang\TypeError if the given variable is not an integer
 	 * @return bool
 	 */
-	protected static function isBlockable($signal) {
-		if (!is_int($signal)) {
+	public static function isBlockable($signal) {
+		if (!\is_int($signal)) {
 			throw new \PHP\Lang\TypeError($signal, "integer");
 		}
 		if ($signal != self::SIGKILL && $signal != self::SIGSTOP) {

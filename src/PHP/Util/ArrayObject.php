@@ -2,6 +2,8 @@
 
 namespace PHP\Util;
 
+\ClassLoader::import('\PHP\Lang\Object');
+
 /**
  * This class implements a common array handling for \PHP\Util\Collection and
  * \PHP\Util\Map. No other classes should implement this, because it will most
@@ -12,7 +14,8 @@ namespace PHP\Util;
  * @copyright Janos Pasztor (c) 2011
  * @license http://creativecommons.org/licenses/BSD/
  */
-abstract class ArrayObject implements \Iterator, \ArrayAccess, \Countable, \Serializable {
+abstract class ArrayObject extends \PHP\Lang\Object
+	implements \Iterator, \ArrayAccess, \Countable, \Serializable {
 	/**
 	 * Stores the collection elements
 	 * @var array
@@ -37,6 +40,21 @@ abstract class ArrayObject implements \Iterator, \ArrayAccess, \Countable, \Seri
 	 */
 	protected function typeCheck($element) {
 
+	}
+	
+	/**
+	 * Create a new data object
+	 * @param type $data 
+	 */
+	public function __construct($data = null) {
+		parent::__construct();
+		if (\is_array($data)) {
+			foreach ($data as $key => $value) {
+				$this->offsetSet($key, $value);
+			}
+		} else if (!\is_null($data)) {
+			$this->offsetSet(null, $data);
+		}
 	}
 
 	/**

@@ -23,7 +23,7 @@ class Collection extends ArrayObject {
 	 * @throws \PHP\Lang\ValueError if $offset is not an integer.
 	 */
 	final protected function keyCheck($offset) {
-		if (!is_int($offset)) {
+		if (!\is_int($offset)) {
 			throw new \PHP\Lang\ValueError($offset, "integer");
 		}
 	}
