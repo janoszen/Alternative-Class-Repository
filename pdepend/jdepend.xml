@@ -13,11 +13,11 @@
         <D>0.25</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoader.php">ClassLoader</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoaderException.php">ClassLoaderException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/ClassLoader.php">ClassLoader</Class>
+        <Class sourceFile="/home/janoszen/acr/src/ClassLoaderException.php">ClassLoaderException</Class>
       </ConcreteClasses>
       <AbstractClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\ClassLoaderCallbackInterface.php">ClassLoaderCallbackInterface</Class>
+        <Class sourceFile="/home/janoszen/acr/src/ClassLoaderCallbackInterface.php">ClassLoaderCallbackInterface</Class>
       </AbstractClasses>
       <DependsUpon>
         <Package></Package>
@@ -27,8 +27,8 @@
     </Package>
     <Package name="PHP\IO">
       <Stats>
-        <TotalClasses>3</TotalClasses>
-        <ConcreteClasses>3</ConcreteClasses>
+        <TotalClasses>5</TotalClasses>
+        <ConcreteClasses>5</ConcreteClasses>
         <AbstractClasses>0</AbstractClasses>
         <Ca>1</Ca>
         <Ce>1</Ce>
@@ -37,9 +37,11 @@
         <D>0.5</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\File.php">File</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\FileNotFoundException.php">FileNotFoundException</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\IO\IOException.php">IOException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/IO/File.php">File</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/IO/FileNotFoundException.php">FileNotFoundException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/IO/IOException.php">IOException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/IO/InputStream.php">InputStream</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/IO/OutputStream.php">OutputStream</Class>
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon>
@@ -61,17 +63,17 @@
         <D>0.46666666666667</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Exception.php">Exception</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\IndexOutOfBoundsException.php">IndexOutOfBoundsException</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Math.php">Math</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\NotImplementedException.php">NotImplementedException</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\NullPointerException.php">NullPointerException</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\TypeError.php">TypeError</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\ValueError.php">ValueError</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/Exception.php">Exception</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/IndexOutOfBoundsException.php">IndexOutOfBoundsException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/Math.php">Math</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/NotImplementedException.php">NotImplementedException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/NullPointerException.php">NullPointerException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/TypeError.php">TypeError</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/ValueError.php">ValueError</Class>
       </ConcreteClasses>
       <AbstractClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Comparable.php">Comparable</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Lang\Object.php">Object</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/Comparable.php">Comparable</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Lang/Object.php">Object</Class>
       </AbstractClasses>
       <DependsUpon>
         <Package></Package>
@@ -96,17 +98,17 @@
         <D>0.22222222222222</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET4Address.php">INET4Address</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INET6Address.php">INET6Address</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressFormatError.php">INETAddressFormatError</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddressTypeError.php">INETAddressTypeError</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETInvalidMask.php">INETInvalidMask</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETRange.php">INETRange</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETUnknownHost.php">INETUnknownHost</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INET4Address.php">INET4Address</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INET6Address.php">INET6Address</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETAddressFormatError.php">INETAddressFormatError</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETAddressTypeError.php">INETAddressTypeError</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETInvalidMask.php">INETInvalidMask</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETRange.php">INETRange</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETUnknownHost.php">INETUnknownHost</Class>
       </ConcreteClasses>
       <AbstractClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETAddress.php">INETAddress</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Net\INETException.php">INETException</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETAddress.php">INETAddress</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Net/INETException.php">INETException</Class>
       </AbstractClasses>
       <DependsUpon>
         <Package>PHP\Lang</Package>
@@ -125,20 +127,20 @@
         <D>0.25</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\ChrootFailed.php">ChrootFailed</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\DaemonContext.php">DaemonContext</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\Exception.php">Exception</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\ForkFailed.php">ForkFailed</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\Process.php">Process</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\ProcessExitInformation.php">ProcessExitInformation</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\SetGIDFailed.php">SetGIDFailed</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\SetUIDFailed.php">SetUIDFailed</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\Signal.php">Signal</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/ChrootFailed.php">ChrootFailed</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/DaemonContext.php">DaemonContext</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/Exception.php">Exception</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/ForkFailed.php">ForkFailed</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/Process.php">Process</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/ProcessExitInformation.php">ProcessExitInformation</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/SetGIDFailed.php">SetGIDFailed</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/SetUIDFailed.php">SetUIDFailed</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/Signal.php">Signal</Class>
       </ConcreteClasses>
       <AbstractClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\ChrootListener.php">ChrootListener</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\Daemon.php">Daemon</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\OS\ForkListener.php">ForkListener</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/ChrootListener.php">ChrootListener</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/Daemon.php">Daemon</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/OS/ForkListener.php">ForkListener</Class>
       </AbstractClasses>
       <DependsUpon>
         <Package>PHP\IO</Package>
@@ -159,12 +161,12 @@
         <D>0.3</D>
       </Stats>
       <ConcreteClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Util\Collection.php">Collection</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Util\Map.php">Map</Class>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Util\Random.php">Random</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Util/Collection.php">Collection</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Util/Map.php">Map</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Util/Random.php">Random</Class>
       </ConcreteClasses>
       <AbstractClasses>
-        <Class sourceFile="C:\Users\janoszen\Documents\NetBeansProjects\Alternative-Class-Repository\src\PHP\Util\ArrayObject.php">ArrayObject</Class>
+        <Class sourceFile="/home/janoszen/acr/src/PHP/Util/ArrayObject.php">ArrayObject</Class>
       </AbstractClasses>
       <DependsUpon>
         <Package></Package>
