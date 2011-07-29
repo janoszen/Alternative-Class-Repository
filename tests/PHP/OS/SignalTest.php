@@ -24,7 +24,7 @@ class SignalTest extends \PHPUnit_Framework_TestCase {
 			try {
 				Signal::validateSignals(new \PHP\Util\Collection(array(-1)));
 				$this->fail('-1 is an invalid signal and should not be blockable');
-			} catch (\PHP\Lang\TypeError $e) { }
+			} catch (\PHP\Lang\ValueError $e) { }
 		}
 	}
 }

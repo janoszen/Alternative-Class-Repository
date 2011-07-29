@@ -83,7 +83,9 @@ class Signal extends \PHP\Lang\Object {
 		if (!\is_int($signal)) {
 			throw new \PHP\Lang\TypeError($signal, "integer");
 		}
-		if ($signal != self::SIGKILL && $signal != self::SIGSTOP) {
+		if ($signal < 1 || $signal > 31) {
+			return false;
+		} elseif ($signal != self::SIGKILL && $signal != self::SIGSTOP) {
 			return true;
 		} else {
 			return false;
