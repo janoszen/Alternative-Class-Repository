@@ -27,7 +27,7 @@
             <h2>Class Coverage Distribution</h2>
             <canvas id="classCoverageDistribution" width="475" height="200"></canvas>
             <script>
-            var ccd = new RGraph.Bar('classCoverageDistribution', [5,0,0,3,1,0,0,2,2,1,1,8]);
+            var ccd = new RGraph.Bar('classCoverageDistribution', [4,0,0,2,1,0,0,2,0,0,0,14]);
             ccd.Set('chart.background.barcolor1', 'white');
             ccd.Set('chart.background.barcolor2', 'white');
             ccd.Set('chart.colors', ['blue']);
@@ -44,7 +44,7 @@
             <h2>Class Complexity</h2>
             <canvas id="classComplexity" width="475" height="200"></canvas>
             <script>
-            var cc = new RGraph.Scatter('classComplexity', [[62.790697674419,28,"blue","File"],[0,1,"blue","FileNotFoundException"],[0,3,"blue","InputStream"],[100,8,"blue","Exception"],[100,2,"blue","IndexOutOfBoundsException"],[0,40,"blue","Math"],[100,2,"blue","NotImplementedException"],[100,9,"blue","Object"],[100,3,"blue","TypeError"],[100,2,"blue","ValueError"],[22.80701754386,28,"blue","INET4Address"],[100,36,"blue","INET6Address"],[95.454545454545,19,"blue","INETAddress"],[75,2,"blue","INETAddressFormatError"],[100,1,"blue","INETAddressTypeError"],[75,2,"blue","INETInvalidMask"],[88.888888888889,4,"blue","INETRange"],[0,2,"blue","INETUnknownHost"],[26.666666666667,17,"blue","Signal"],[24.691358024691,42,"blue","ArrayObject"],[66.666666666667,2,"blue","Collection"],[0,2,"blue","Map"],[35,8,"blue","Random"]]);
+            var cc = new RGraph.Scatter('classComplexity', [[62.790697674419,28,"blue","File"],[0,1,"blue","FileNotFoundException"],[0,8,"blue","InputStream"],[100,8,"blue","Exception"],[100,2,"blue","IndexOutOfBoundsException"],[0,40,"blue","Math"],[100,2,"blue","NotImplementedException"],[100,9,"blue","Object"],[100,3,"blue","TypeError"],[100,2,"blue","ValueError"],[100,28,"blue","INET4Address"],[100,36,"blue","INET6Address"],[100,19,"blue","INETAddress"],[100,2,"blue","INETAddressFormatError"],[100,1,"blue","INETAddressTypeError"],[100,2,"blue","INETInvalidMask"],[100,4,"blue","INETRange"],[100,2,"blue","INETUnknownHost"],[26.666666666667,17,"blue","Signal"],[24.691358024691,42,"blue","ArrayObject"],[66.666666666667,2,"blue","Collection"],[0,2,"blue","Map"],[35,8,"blue","Random"]]);
             cc.Set('chart.xmax', 100);
             cc.Set('chart.background.barcolor1', 'white');
             cc.Set('chart.background.barcolor2', 'white');
@@ -62,13 +62,11 @@
             <ul>
               <li><a href="src_PHP_Lang_Math.php.html#17">Math</a> (1640)</li>
               <li><a href="src_PHP_Util_ArrayObject.php.html#17">ArrayObject</a> (795)</li>
-              <li><a href="src_PHP_Net_INET4Address.php.html#10">INET4Address</a> (388)</li>
               <li><a href="src_PHP_OS_Signal.php.html#16">Signal</a> (130)</li>
+              <li><a href="src_PHP_IO_InputStream.php.html#7">InputStream</a> (72)</li>
               <li><a href="src_PHP_IO_File.php.html#16">File</a> (68)</li>
               <li><a href="src_PHP_Util_Random.php.html#16">Random</a> (25)</li>
-              <li><a href="src_PHP_Net_INETAddress.php.html#13">INETAddress</a> (19)</li>
               <li><a href="src_PHP_Util_Map.php.html#17">Map</a> (6)</li>
-              <li><a href="src_PHP_Net_INETRange.php.html#10">INETRange</a> (4)</li>
               <li><a href="src_PHP_Util_Collection.php.html#17">Collection</a> (2)</li>
 
             </ul>
@@ -77,16 +75,16 @@
           <td valign="top">
             <h2>Least Tested Methods</h2>
             <ul>
-              <li><a href="src_PHP_OS_Signal.php.html#54">Signal::send</a> (0%)</li>
-              <li><a href="src_PHP_Net_INETUnknownHost.php.html#32">INETUnknownHost::getAddress</a> (0%)</li>
-              <li><a href="src_PHP_Net_INETUnknownHost.php.html#23">INETUnknownHost::__construct</a> (0%)</li>
-              <li><a href="src_PHP_OS_Signal.php.html#100">Signal::block</a> (0%)</li>
+              <li><a href="src_PHP_OS_Signal.php.html#122">Signal::replaceBlockMask</a> (0%)</li>
               <li><a href="src_PHP_OS_Signal.php.html#111">Signal::unblock</a> (0%)</li>
               <li><a href="src_PHP_OS_Signal.php.html#135">Signal::wait</a> (0%)</li>
-              <li><a href="src_PHP_OS_Signal.php.html#122">Signal::replaceBlockMask</a> (0%)</li>
-              <li><a href="src_PHP_Net_INETInvalidMask.php.html#31">INETInvalidMask::getMask</a> (0%)</li>
-              <li><a href="src_PHP_Net_INETAddressFormatError.php.html#31">INETAddressFormatError::getAddress</a> (0%)</li>
-              <li><a href="src_PHP_Net_INET4Address.php.html#124">INET4Address::getMulticastRange</a> (0%)</li>
+              <li><a href="src_PHP_Util_ArrayObject.php.html#66">ArrayObject::count</a> (0%)</li>
+              <li><a href="src_PHP_Util_ArrayObject.php.html#99">ArrayObject::offsetGet</a> (0%)</li>
+              <li><a href="src_PHP_Util_ArrayObject.php.html#80">ArrayObject::offsetExists</a> (0%)</li>
+              <li><a href="src_PHP_OS_Signal.php.html#100">Signal::block</a> (0%)</li>
+              <li><a href="src_PHP_OS_Signal.php.html#54">Signal::send</a> (0%)</li>
+              <li><a href="src_PHP_Lang_Math.php.html#223">Math::random</a> (0%)</li>
+              <li><a href="src_PHP_Lang_Math.php.html#208">Math::pow</a> (0%)</li>
 
             </ul>
           </td>
@@ -98,7 +96,7 @@
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr><td class="ruler"><img src="glass.png" width="3" height="3" alt=""></td></tr>
-      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5-1ubuntu7.2</a> and PHPUnit 3.5.5 at Fri Jul 29 23:23:28 CEST 2011.</td></tr>
+      <tr><td class="versionInfo">Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.0.4</a> using <a href="http://www.php.net/" target="_top">PHP 5.3.5-1ubuntu7.2</a> and PHPUnit 3.5.5 at Sun Jul 31 22:20:54 CEST 2011.</td></tr>
     </table>
 
     <br/>

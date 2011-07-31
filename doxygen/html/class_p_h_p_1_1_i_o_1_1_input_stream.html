@@ -91,8 +91,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes available for reading.  <a href="#ac17370da7c2e59d0e0690c5c84a59bce"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a564d07b19dc6f5b2888243b13e1191c2">close</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes this input stream associated with the stream.  <a href="#a564d07b19dc6f5b2888243b13e1191c2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9cf8fec95dec412bfcd1d8ce22f25f5"></a><!-- doxytag: member="PHP::IO::InputStream::mark" ref="ac9cf8fec95dec412bfcd1d8ce22f25f5" args="($readlimit)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>mark</b> ($readlimit)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#ac9cf8fec95dec412bfcd1d8ce22f25f5">mark</a> ($readlimit)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks a position with read limit in the stream to jump back to, if <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c" title="Returns, if mark is supported with this stream.">markSupported()</a> returns true.  <a href="#ac9cf8fec95dec412bfcd1d8ce22f25f5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c">markSupported</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns, if mark is supported with this stream.  <a href="#a3817c96ed2639399c4e025da4c1f228c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a7fad8203469a26bc8150d975fa6a5ed5">read</a> (&amp;$bytes=null, $skip=0, $length=1024)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the maximum of $length bytes from stream into $bytes skipping $skip number of bytes from the current position.  <a href="#a7fad8203469a26bc8150d975fa6a5ed5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a34e49be8f5af820e2c3645199a7a01f6">reset</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the stream position to the position <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#ac9cf8fec95dec412bfcd1d8ce22f25f5" title="Marks a position with read limit in the stream to jump back to, if markSupported() returns true...">mark()</a> was last called, if <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c" title="Returns, if mark is supported with this stream.">markSupported()</a> returns true.  <a href="#a34e49be8f5af820e2c3645199a7a01f6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a840881d644f60dc1374d49e81b91a62c">skip</a> ($bytes=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Skip over and discard $bytes bytes from the stream.  <a href="#a840881d644f60dc1374d49e81b91a62c"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <div class="textblock">
@@ -159,6 +167,171 @@ Public Member Functions</h2></td></tr>
 </pre></div>
 </div>
 </div>
+<a class="anchor" id="ac9cf8fec95dec412bfcd1d8ce22f25f5"></a><!-- doxytag: member="PHP::IO::InputStream::mark" ref="ac9cf8fec95dec412bfcd1d8ce22f25f5" args="($readlimit)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHP.IO.InputStream.mark </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>readlimit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Marks a position with read limit in the stream to jump back to, if <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c" title="Returns, if mark is supported with this stream.">markSupported()</a> returns true. </p>
+<dl><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">\PHP\Lang\NotImplementedException</td><td>if <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c" title="Returns, if mark is supported with this stream.">markSupported()</a> does not return true. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$readlimit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_input_stream_8php_source.html#l00036">36</a> of file <a class="el" href="_input_stream_8php_source.html">InputStream.php</a>.</p>
+<div class="fragment"><pre class="fragment">                                         {
+                <span class="keywordflow">if</span> (!$this-&gt;<a class="code" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c" title="Returns, if mark is supported with this stream.">markSupported</a>()) {
+                        <span class="keywordflow">throw</span> <span class="keyword">new</span> \PHP\Lang\NotImplementedException(<span class="stringliteral">&#39;mark&#39;</span>);
+                }
+        }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a3817c96ed2639399c4e025da4c1f228c"></a><!-- doxytag: member="PHP::IO::InputStream::markSupported" ref="a3817c96ed2639399c4e025da4c1f228c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHP.IO.InputStream.markSupported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns, if mark is supported with this stream. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>bool </dd></dl>
+
+<p>Definition at line <a class="el" href="_input_stream_8php_source.html#l00046">46</a> of file <a class="el" href="_input_stream_8php_source.html">InputStream.php</a>.</p>
+<div class="fragment"><pre class="fragment">                                        {
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7fad8203469a26bc8150d975fa6a5ed5"></a><!-- doxytag: member="PHP::IO::InputStream::read" ref="a7fad8203469a26bc8150d975fa6a5ed5" args="(&amp;$bytes=null, $skip=0, $length=1024)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHP.IO.InputStream.read </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&#160;</td>
+          <td class="paramname"><em>bytes</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>skip</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>length</em> = <code>1024</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read the maximum of $length bytes from stream into $bytes skipping $skip number of bytes from the current position. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$bytes</td><td>by-reference string to put read bytes into. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$skip</td><td>default 0 bytes to skip from current position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$length</td><td>maximum number of bytes to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>int number of bytes read </dd></dl>
+
+<p>Definition at line <a class="el" href="_input_stream_8php_source.html#l00058">58</a> of file <a class="el" href="_input_stream_8php_source.html">InputStream.php</a>.</p>
+<div class="fragment"><pre class="fragment">                                                                        {
+                <span class="keywordflow">return</span> 0;
+        }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a34e49be8f5af820e2c3645199a7a01f6"></a><!-- doxytag: member="PHP::IO::InputStream::reset" ref="a34e49be8f5af820e2c3645199a7a01f6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHP.IO.InputStream.reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reset the stream position to the position <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#ac9cf8fec95dec412bfcd1d8ce22f25f5" title="Marks a position with read limit in the stream to jump back to, if markSupported() returns true...">mark()</a> was last called, if <a class="el" href="class_p_h_p_1_1_i_o_1_1_input_stream.html#a3817c96ed2639399c4e025da4c1f228c" title="Returns, if mark is supported with this stream.">markSupported()</a> returns true. </p>
+<p>If not, this function does nothing. </p>
+
+<p>Definition at line <a class="el" href="_input_stream_8php_source.html#l00066">66</a> of file <a class="el" href="_input_stream_8php_source.html">InputStream.php</a>.</p>
+<div class="fragment"><pre class="fragment">                                {
+                
+        }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a840881d644f60dc1374d49e81b91a62c"></a><!-- doxytag: member="PHP::IO::InputStream::skip" ref="a840881d644f60dc1374d49e81b91a62c" args="($bytes=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHP.IO.InputStream.skip </td>
+          <td>(</td>
+          <td class="paramtype">$&#160;</td>
+          <td class="paramname"><em>bytes</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Skip over and discard $bytes bytes from the stream. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$bytes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_input_stream_8php_source.html#l00074">74</a> of file <a class="el" href="_input_stream_8php_source.html">InputStream.php</a>.</p>
+<div class="fragment"><pre class="fragment">                                         {
+                
+        }
+</pre></div>
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/PHP/IO/<a class="el" href="_input_stream_8php_source.html">InputStream.php</a></li>
 </ul>
@@ -177,7 +350,7 @@ Public Member Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Fri Jul 29 2011 23:23:36 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Jul 31 2011 22:21:03 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
 </body>
