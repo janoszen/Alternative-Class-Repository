@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2011-07-31T22:24:47" pdepend="0.10.5" ahh="1.6" andc="0.81578947368421" calls="314" ccn="394" ccn2="413" cloc="1609" clsa="3" clsc="33" eloc="1676" fanout="55" leafs="26" lloc="1105" loc="3663" maxDIT="4" ncloc="2054" noc="36" nof="0" noi="6" nom="197" nop="6" roots="3">
+<metrics generated="2011-07-31T22:27:01" pdepend="0.10.5" ahh="1.6" andc="0.81578947368421" calls="314" ccn="394" ccn2="413" cloc="1609" clsa="3" clsc="33" eloc="1676" fanout="55" leafs="26" lloc="1105" loc="3663" maxDIT="4" ncloc="2054" noc="36" nof="0" noi="6" nom="197" nop="6" roots="3">
   <files>
     <file name="/home/janoszen/acr/src/ClassLoader.php" cloc="111" eloc="138" lloc="89" loc="268" ncloc="157"/>
     <file name="/home/janoszen/acr/src/ClassLoaderException.php" cloc="7" eloc="3" lloc="0" loc="12" ncloc="5"/>

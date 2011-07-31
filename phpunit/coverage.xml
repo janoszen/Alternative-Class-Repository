@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1312143881">
-  <project timestamp="1312143881">
+<coverage generated="1312144014">
+  <project timestamp="1312144014">
     <file name="/home/janoszen/acr/src/ClassLoader.php">
       <class name="ClassLoader" namespace="global">
         <metrics methods="11" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="88" coveredstatements="77" elements="99" coveredelements="84"/>
