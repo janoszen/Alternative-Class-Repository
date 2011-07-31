@@ -1,7 +1,7 @@
 <?php
 
 $classroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "src";
-$testroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "tests";
+$testroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "testclasses";
 
 require($classroot . \DIRECTORY_SEPARATOR . 'ClassLoader.php');
 \ClassLoader::setClassPath(

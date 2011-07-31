@@ -53,7 +53,7 @@ class INETRangeTest extends \PHPUnit_Framework_TestCase {
 	 */
 	public function testAddressIPv4Compability() {
 		$range = new INETRange(new INET4Address('192.168.2.0'), 24);
-		$this->setExpectedException('INETAddressTypeError');
+		$this->setExpectedException('PHP\Net\INETAddressTypeError');
 		$range->containsAddress(new INET6Address('fe80::'));
 		$this->fail('Checking an IPv6 address in an IPv4 range didn\'t result in an error');
 	}
@@ -63,7 +63,7 @@ class INETRangeTest extends \PHPUnit_Framework_TestCase {
 	 */
 	public function testAddressIPv6Compability() {
 		$range = new INETRange(new INET6Address('fe80::'), 10);
-		$this->setExpectedException('INETAddressTypeError');
+		$this->setExpectedException('PHP\Net\INETAddressTypeError');
 		$range->containsAddress(new INET4Address('192.168.2.0'));
 		$this->fail('Checking an IPv4 address in an IPv6 range didn\'t result in an error');
 	}

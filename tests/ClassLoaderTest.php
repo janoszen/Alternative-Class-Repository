@@ -75,6 +75,7 @@ class ClassLoaderTest extends \PHPUnit_Framework_TestCase {
 	 * @depends testLoadAndCreateInstance
 	 */
 	public function testCreateInstance() {
+		\ClassLoader::import('ClassLoaderInstanceTestClass');
 		$instance = \ClassLoader::createInstance('ClassLoaderInstanceTestClass');
 		$this->assertTrue($instance instanceof \ClassLoaderInstanceTestClass,
 				'$instance is not an instance of ClassLoaderInstanceTestClass');
