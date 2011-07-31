@@ -48,7 +48,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function abs($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \abs($number);
@@ -61,7 +61,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function acos($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \acos($number);
@@ -74,7 +74,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function asin($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \asin($number);
@@ -87,7 +87,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function atan($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \atan($number);
@@ -101,7 +101,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function ceil($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \ceil($number);
@@ -115,7 +115,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function cos($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \cos($number);
@@ -128,7 +128,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function exp($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \exp($number);
@@ -141,7 +141,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function floor($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \floor($number);
@@ -155,10 +155,10 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number or $base is not a number
 	 */
 	public static function log($number, $base = Math::E) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
-		if (!\is_numeric($base)) {
+		if (!\is_int($base) && !is_float($base)) {
 			throw new TypeError($base, "number");
 		}
 		return \base($number, $base);
@@ -172,10 +172,10 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number1 or $number2 is not a number
 	 */
 	public static function max($number1, $number2) {
-		if (!\is_numeric($number1)) {
+		if (!\is_int($number1) && !is_float($number1)) {
 			throw new TypeError($number1, "number");
 		}
-		if (!\is_numeric($number2)) {
+		if (!\is_int($number2) && !is_float($number2)) {
 			throw new TypeError($number2, "number");
 		}
 		return \max($number1, $number2);
@@ -189,10 +189,10 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number1 or $number2 is not a number
 	 */
 	public static function min($number1, $number2) {
-		if (!\is_numeric($number1)) {
+		if (!\is_int($number1) && !is_float($number1)) {
 			throw new TypeError($number1, "number");
 		}
-		if (!\is_numeric($number2)) {
+		if (!\is_int($number2) && !is_float($number2)) {
 			throw new TypeError($number2, "number");
 		}
 		return \min($number1, $number2);
@@ -206,10 +206,10 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $base or $exp is not a number
 	 */
 	public static function pow($base, $exp) {
-		if (!\is_numeric($base)) {
+		if (!\is_int($base) && !is_float($base)) {
 			throw new TypeError($base, "number");
 		}
-		if (!\is_numeric($exp)) {
+		if (!\is_int($exp) && !is_float($exp)) {
 			throw new TypeError($exp, "number");
 		}
 		return \pow($base, $exp);
@@ -232,10 +232,10 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function round($number, $decimals = 0) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
-		if (!\is_int($decimals)) {
+		if (!\is_int($decimals) && !is_float($decimals)) {
 			throw new TypeError($decimals, "number");
 		}
 		if ($decimals < 0) {
@@ -251,7 +251,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function sin($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \sin($number);
@@ -265,7 +265,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\ValueError if $number is negative
 	 */
 	public static function sqrt($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		if ($number < 0) {
@@ -281,7 +281,7 @@ class Math extends Object {
 	 * @throws \PHP\Lang\TypeError if $number is not a number
 	 */
 	public static function tan($number) {
-		if (!\is_numeric($number)) {
+		if (!\is_int($number) && !is_float($number)) {
 			throw new TypeError($number, "number");
 		}
 		return \tan($number);
