@@ -1,6 +1,7 @@
 
 /home/janoszen/acr/src/PHP/IO/File.php:16	This class has too many methods, consider refactoring it.
 /home/janoszen/acr/src/PHP/Lang/Math.php:17	This class has too many methods, consider refactoring it.
+/home/janoszen/acr/src/PHP/Lang/Math.php:17	The class Math has an overall complexity of 61 which is very high. The configured complexity threshold is 50.
 /home/janoszen/acr/src/PHP/OS/DaemonContext.php:192	The method runAsDaemon() has a Cyclomatic Complexity of 32.
 /home/janoszen/acr/src/PHP/OS/DaemonContext.php:192	The method runAsDaemon() has an NPath complexity of 12294.
 /home/janoszen/acr/src/PHP/OS/DaemonContext.php:192	Avoid really long methods.

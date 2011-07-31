@@ -1,98 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="/home/janoszen/acr/tests/" tests="63" assertions="135" failures="0" errors="0" time="0.596160">
-    <testsuite name="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" tests="5" assertions="7" failures="0" errors="0" time="0.042722">
-      <testcase name="testLoadEverything" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="30" assertions="2" time="0.017171"/>
-      <testcase name="testWildcardImport" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="48" assertions="1" time="0.006113"/>
-      <testcase name="testClassLoaderCallbackInterface" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="57" assertions="2" time="0.006719"/>
-      <testcase name="testLoadAndCreateInstance" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="67" assertions="1" time="0.007245"/>
-      <testcase name="testCreateInstance" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="77" assertions="1" time="0.005474"/>
+  <testsuite name="/home/janoszen/acr/tests/" tests="67" assertions="151" failures="0" errors="0" time="0.630799">
+    <testsuite name="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" tests="5" assertions="7" failures="0" errors="0" time="0.041994">
+      <testcase name="testLoadEverything" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="30" assertions="2" time="0.016465"/>
+      <testcase name="testWildcardImport" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="48" assertions="1" time="0.006342"/>
+      <testcase name="testClassLoaderCallbackInterface" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="57" assertions="2" time="0.007390"/>
+      <testcase name="testLoadAndCreateInstance" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="67" assertions="1" time="0.006009"/>
+      <testcase name="testCreateInstance" class="ClassLoaderTest" file="/home/janoszen/acr/tests/ClassLoaderTest.php" line="77" assertions="1" time="0.005788"/>
     </testsuite>
-    <testsuite name="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" namespace="PHP\IO" fullPackage="PHP.IO" tests="7" assertions="8" failures="0" errors="0" time="0.043847">
-      <testcase name="testGetPathSeparator" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="14" assertions="1" time="0.005122"/>
-      <testcase name="testCreateNewFile" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="21" assertions="1" time="0.006085"/>
-      <testcase name="testCanRead" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="32" assertions="1" time="0.005252"/>
-      <testcase name="testCanWrite" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="40" assertions="1" time="0.005277"/>
-      <testcase name="testGetAbsoluteFile" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="48" assertions="1" time="0.008084"/>
-      <testcase name="testGetAbsolutePath" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="57" assertions="1" time="0.007274"/>
-      <testcase name="testIsDirectory" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="106" assertions="2" time="0.006753"/>
+    <testsuite name="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" namespace="PHP\IO" fullPackage="PHP.IO" tests="7" assertions="8" failures="0" errors="0" time="0.043915">
+      <testcase name="testGetPathSeparator" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="14" assertions="1" time="0.004736"/>
+      <testcase name="testCreateNewFile" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="21" assertions="1" time="0.006723"/>
+      <testcase name="testCanRead" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="32" assertions="1" time="0.005368"/>
+      <testcase name="testCanWrite" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="40" assertions="1" time="0.005337"/>
+      <testcase name="testGetAbsoluteFile" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="48" assertions="1" time="0.007902"/>
+      <testcase name="testGetAbsolutePath" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="57" assertions="1" time="0.006277"/>
+      <testcase name="testIsDirectory" class="PHP\IO\FileTest" file="/home/janoszen/acr/tests/PHP/IO/FileTest.php" line="106" assertions="2" time="0.007572"/>
     </testsuite>
-    <testsuite name="PHP\Lang\TypeErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/TypeErrorTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="4" failures="0" errors="0" time="0.013323">
-      <testcase name="testWithClass" class="PHP\Lang\TypeErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/TypeErrorTest.php" line="14" assertions="2" time="0.007161"/>
-      <testcase name="testWithBaseType" class="PHP\Lang\TypeErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/TypeErrorTest.php" line="31" assertions="2" time="0.006162"/>
+    <testsuite name="PHP\Lang\MathTest" file="/home/janoszen/acr/tests/PHP/Lang/MathTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="4" assertions="16" failures="0" errors="0" time="0.032757">
+      <testcase name="testAbs" class="PHP\Lang\MathTest" file="/home/janoszen/acr/tests/PHP/Lang/MathTest.php" line="12" assertions="4" time="0.007508"/>
+      <testcase name="testCosAcos" class="PHP\Lang\MathTest" file="/home/janoszen/acr/tests/PHP/Lang/MathTest.php" line="24" assertions="4" time="0.007819"/>
+      <testcase name="testSinAsin" class="PHP\Lang\MathTest" file="/home/janoszen/acr/tests/PHP/Lang/MathTest.php" line="41" assertions="4" time="0.007695"/>
+      <testcase name="testTanAtan" class="PHP\Lang\MathTest" file="/home/janoszen/acr/tests/PHP/Lang/MathTest.php" line="58" assertions="4" time="0.009735"/>
     </testsuite>
-    <testsuite name="PHP\Lang\NotImplementedExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/NotImplementedExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="2" failures="0" errors="0" time="0.011749">
-      <testcase name="testWithFeature" class="PHP\Lang\NotImplementedExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/NotImplementedExceptionTest.php" line="14" assertions="1" time="0.005767"/>
-      <testcase name="testWithoutFeature" class="PHP\Lang\NotImplementedExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/NotImplementedExceptionTest.php" line="28" assertions="1" time="0.005982"/>
+    <testsuite name="PHP\Lang\TypeErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/TypeErrorTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="4" failures="0" errors="0" time="0.015823">
+      <testcase name="testWithClass" class="PHP\Lang\TypeErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/TypeErrorTest.php" line="14" assertions="2" time="0.007606"/>
+      <testcase name="testWithBaseType" class="PHP\Lang\TypeErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/TypeErrorTest.php" line="31" assertions="2" time="0.008217"/>
     </testsuite>
-    <testsuite name="PHP\Lang\IndexOutOfBoundsExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/IndexOutOfBoundsExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="2" failures="0" errors="0" time="0.011454">
-      <testcase name="testThrowWithOffset" class="PHP\Lang\IndexOutOfBoundsExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/IndexOutOfBoundsExceptionTest.php" line="14" assertions="1" time="0.005704"/>
-      <testcase name="testThrowWithoutOffset" class="PHP\Lang\IndexOutOfBoundsExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/IndexOutOfBoundsExceptionTest.php" line="28" assertions="1" time="0.005750"/>
+    <testsuite name="PHP\Lang\NotImplementedExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/NotImplementedExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="2" failures="0" errors="0" time="0.012860">
+      <testcase name="testWithFeature" class="PHP\Lang\NotImplementedExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/NotImplementedExceptionTest.php" line="14" assertions="1" time="0.006426"/>
+      <testcase name="testWithoutFeature" class="PHP\Lang\NotImplementedExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/NotImplementedExceptionTest.php" line="28" assertions="1" time="0.006434"/>
     </testsuite>
-    <testsuite name="PHP\Lang\ValueErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/ValueErrorTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="1" assertions="2" failures="0" errors="0" time="0.009080">
-      <testcase name="testThrow" class="PHP\Lang\ValueErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/ValueErrorTest.php" line="14" assertions="2" time="0.009080"/>
+    <testsuite name="PHP\Lang\IndexOutOfBoundsExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/IndexOutOfBoundsExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="2" assertions="2" failures="0" errors="0" time="0.011397">
+      <testcase name="testThrowWithOffset" class="PHP\Lang\IndexOutOfBoundsExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/IndexOutOfBoundsExceptionTest.php" line="14" assertions="1" time="0.005831"/>
+      <testcase name="testThrowWithoutOffset" class="PHP\Lang\IndexOutOfBoundsExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/IndexOutOfBoundsExceptionTest.php" line="28" assertions="1" time="0.005566"/>
     </testsuite>
-    <testsuite name="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="3" assertions="9" failures="0" errors="0" time="0.023707">
-      <testcase name="testHashCodeGeneration" class="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" line="14" assertions="3" time="0.009213"/>
-      <testcase name="testEquals" class="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" line="25" assertions="3" time="0.006970"/>
-      <testcase name="testStringConversion" class="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" line="36" assertions="3" time="0.007524"/>
+    <testsuite name="PHP\Lang\ValueErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/ValueErrorTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="1" assertions="2" failures="0" errors="0" time="0.007147">
+      <testcase name="testThrow" class="PHP\Lang\ValueErrorTest" file="/home/janoszen/acr/tests/PHP/Lang/ValueErrorTest.php" line="14" assertions="2" time="0.007147"/>
     </testsuite>
-    <testsuite name="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="4" assertions="10" failures="0" errors="0" time="0.026362">
-      <testcase name="testThrow" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="14" assertions="1" time="0.005376"/>
-      <testcase name="testHashCodeGeneration" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="26" assertions="3" time="0.007218"/>
-      <testcase name="testEquals" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="37" assertions="3" time="0.006549"/>
-      <testcase name="testStringConversion" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="48" assertions="3" time="0.007219"/>
+    <testsuite name="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="3" assertions="9" failures="0" errors="0" time="0.024296">
+      <testcase name="testHashCodeGeneration" class="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" line="14" assertions="3" time="0.009180"/>
+      <testcase name="testEquals" class="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" line="25" assertions="3" time="0.007000"/>
+      <testcase name="testStringConversion" class="PHP\Lang\ObjectTest" file="/home/janoszen/acr/tests/PHP/Lang/ObjectTest.php" line="36" assertions="3" time="0.008116"/>
     </testsuite>
-    <testsuite name="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="14" assertions="40" failures="0" errors="0" time="0.181279">
-      <testcase name="testValidAddress" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="14" assertions="5" time="0.013468"/>
-      <testcase name="testGetAsBinary" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="35" assertions="2" time="0.008110"/>
-      <testcase name="testTypeBinaryMask" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="48" assertions="1" time="0.006307"/>
-      <testcase name="testTooSmallBinaryMask" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="58" assertions="1" time="0.006281"/>
-      <testcase name="testTooLargeBinaryMask" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="68" assertions="1" time="0.006232"/>
-      <testcase name="testInvalidAddress" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="78" assertions="1" time="0.005514"/>
-      <testcase name="testInvalidFormatAddress" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="87" assertions="1" time="0.005932"/>
-      <testcase name="testEquals" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="96" assertions="4" time="0.012991"/>
-      <testcase name="testCompareTo" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="110" assertions="4" time="0.012830"/>
-      <testcase name="testInvalidCompareTo" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="124" assertions="1" time="0.007224"/>
-      <testcase name="testUnicast" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="135" assertions="5" time="0.029149"/>
-      <testcase name="testMulticast" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="151" assertions="3" time="0.009642"/>
-      <testcase name="testLoopback" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="163" assertions="3" time="0.009753"/>
-      <testcase name="testGloballyRoutable" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="189" assertions="8" time="0.047846"/>
+    <testsuite name="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" namespace="PHP\Lang" fullPackage="PHP.Lang" tests="4" assertions="10" failures="0" errors="0" time="0.030125">
+      <testcase name="testThrow" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="14" assertions="1" time="0.005913"/>
+      <testcase name="testHashCodeGeneration" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="26" assertions="3" time="0.009288"/>
+      <testcase name="testEquals" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="37" assertions="3" time="0.006896"/>
+      <testcase name="testStringConversion" class="PHP\Lang\ExceptionTest" file="/home/janoszen/acr/tests/PHP/Lang/ExceptionTest.php" line="48" assertions="3" time="0.008028"/>
     </testsuite>
-    <testsuite name="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="5" assertions="14" failures="0" errors="0" time="0.055152">
-      <testcase name="testValidRangeAssignment" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="14" assertions="0" time="0.007660"/>
-      <testcase name="testIPv4InRange" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="22" assertions="6" time="0.013919"/>
-      <testcase name="testIPv6InRange" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="38" assertions="6" time="0.015726"/>
-      <testcase name="testAddressIPv4Compability" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="54" assertions="1" time="0.008894"/>
-      <testcase name="testAddressIPv6Compability" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="64" assertions="1" time="0.008953"/>
+    <testsuite name="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="14" assertions="40" failures="0" errors="0" time="0.193317">
+      <testcase name="testValidAddress" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="14" assertions="5" time="0.013699"/>
+      <testcase name="testGetAsBinary" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="35" assertions="2" time="0.008620"/>
+      <testcase name="testTypeBinaryMask" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="48" assertions="1" time="0.006744"/>
+      <testcase name="testTooSmallBinaryMask" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="58" assertions="1" time="0.006871"/>
+      <testcase name="testTooLargeBinaryMask" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="68" assertions="1" time="0.006797"/>
+      <testcase name="testInvalidAddress" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="78" assertions="1" time="0.006698"/>
+      <testcase name="testInvalidFormatAddress" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="87" assertions="1" time="0.006678"/>
+      <testcase name="testEquals" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="96" assertions="4" time="0.013536"/>
+      <testcase name="testCompareTo" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="110" assertions="4" time="0.015273"/>
+      <testcase name="testInvalidCompareTo" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="124" assertions="1" time="0.006814"/>
+      <testcase name="testUnicast" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="135" assertions="5" time="0.034386"/>
+      <testcase name="testMulticast" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="151" assertions="3" time="0.009516"/>
+      <testcase name="testLoopback" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="163" assertions="3" time="0.010314"/>
+      <testcase name="testGloballyRoutable" class="PHP\Net\INET6AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET6AddressTest.php" line="189" assertions="8" time="0.047371"/>
     </testsuite>
-    <testsuite name="PHP\Net\INETInvalidMaskTest" file="/home/janoszen/acr/tests/PHP/Net/INETInvalidMaskTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="1" assertions="1" failures="0" errors="0" time="0.007220">
-      <testcase name="testAddress" class="PHP\Net\INETInvalidMaskTest" file="/home/janoszen/acr/tests/PHP/Net/INETInvalidMaskTest.php" line="14" assertions="1" time="0.007220"/>
+    <testsuite name="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="5" assertions="14" failures="0" errors="0" time="0.051755">
+      <testcase name="testValidRangeAssignment" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="14" assertions="0" time="0.007508"/>
+      <testcase name="testIPv4InRange" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="22" assertions="6" time="0.014046"/>
+      <testcase name="testIPv6InRange" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="38" assertions="6" time="0.015516"/>
+      <testcase name="testAddressIPv4Compability" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="54" assertions="1" time="0.007281"/>
+      <testcase name="testAddressIPv6Compability" class="PHP\Net\INETRangeTest" file="/home/janoszen/acr/tests/PHP/Net/INETRangeTest.php" line="64" assertions="1" time="0.007404"/>
     </testsuite>
-    <testsuite name="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="14" assertions="34" failures="0" errors="0" time="0.151266">
-      <testcase name="testValidAddress" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="14" assertions="2" time="0.007746"/>
-      <testcase name="testGetAsBinary" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="25" assertions="2" time="0.007626"/>
-      <testcase name="testTypeBinaryMask" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="36" assertions="1" time="0.007073"/>
-      <testcase name="testTooSmallBinaryMask" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="46" assertions="1" time="0.006616"/>
-      <testcase name="testTooLargeBinaryMask" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="56" assertions="1" time="0.007284"/>
-      <testcase name="testInvalidAddress" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="66" assertions="1" time="0.006777"/>
-      <testcase name="testInvalidFormatAddress" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="75" assertions="1" time="0.007564"/>
-      <testcase name="testEquals" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="84" assertions="4" time="0.010587"/>
-      <testcase name="testCompareTo" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="98" assertions="4" time="0.010614"/>
-      <testcase name="testInvalidCompareTo" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="112" assertions="1" time="0.007356"/>
-      <testcase name="testUnicastOrBroadcast" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="123" assertions="2" time="0.008636"/>
-      <testcase name="testMulticast" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="133" assertions="2" time="0.007486"/>
-      <testcase name="testLoopback" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="143" assertions="3" time="0.011053"/>
-      <testcase name="testGloballyRoutable" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="155" assertions="9" time="0.044848"/>
+    <testsuite name="PHP\Net\INETInvalidMaskTest" file="/home/janoszen/acr/tests/PHP/Net/INETInvalidMaskTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="1" assertions="1" failures="0" errors="0" time="0.005876">
+      <testcase name="testAddress" class="PHP\Net\INETInvalidMaskTest" file="/home/janoszen/acr/tests/PHP/Net/INETInvalidMaskTest.php" line="14" assertions="1" time="0.005876"/>
     </testsuite>
-    <testsuite name="PHP\Net\INETAddressFormatErrorTest" file="/home/janoszen/acr/tests/PHP/Net/INETAddressFormatErrorTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="1" assertions="1" failures="0" errors="0" time="0.005560">
-      <testcase name="testAddress" class="PHP\Net\INETAddressFormatErrorTest" file="/home/janoszen/acr/tests/PHP/Net/INETAddressFormatErrorTest.php" line="14" assertions="1" time="0.005560"/>
+    <testsuite name="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="14" assertions="34" failures="0" errors="0" time="0.140625">
+      <testcase name="testValidAddress" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="14" assertions="2" time="0.007517"/>
+      <testcase name="testGetAsBinary" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="25" assertions="2" time="0.006775"/>
+      <testcase name="testTypeBinaryMask" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="36" assertions="1" time="0.006193"/>
+      <testcase name="testTooSmallBinaryMask" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="46" assertions="1" time="0.006028"/>
+      <testcase name="testTooLargeBinaryMask" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="56" assertions="1" time="0.006745"/>
+      <testcase name="testInvalidAddress" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="66" assertions="1" time="0.005651"/>
+      <testcase name="testInvalidFormatAddress" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="75" assertions="1" time="0.005586"/>
+      <testcase name="testEquals" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="84" assertions="4" time="0.010118"/>
+      <testcase name="testCompareTo" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="98" assertions="4" time="0.011443"/>
+      <testcase name="testInvalidCompareTo" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="112" assertions="1" time="0.006609"/>
+      <testcase name="testUnicastOrBroadcast" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="123" assertions="2" time="0.010080"/>
+      <testcase name="testMulticast" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="133" assertions="2" time="0.007849"/>
+      <testcase name="testLoopback" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="143" assertions="3" time="0.010216"/>
+      <testcase name="testGloballyRoutable" class="PHP\Net\INET4AddressTest" file="/home/janoszen/acr/tests/PHP/Net/INET4AddressTest.php" line="155" assertions="9" time="0.039815"/>
     </testsuite>
-    <testsuite name="PHP\Net\INETUnknownHostTest" file="/home/janoszen/acr/tests/PHP/Net/INETUnknownHostTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="1" assertions="1" failures="0" errors="0" time="0.005808">
-      <testcase name="testAddress" class="PHP\Net\INETUnknownHostTest" file="/home/janoszen/acr/tests/PHP/Net/INETUnknownHostTest.php" line="14" assertions="1" time="0.005808"/>
+    <testsuite name="PHP\Net\INETAddressFormatErrorTest" file="/home/janoszen/acr/tests/PHP/Net/INETAddressFormatErrorTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="1" assertions="1" failures="0" errors="0" time="0.005658">
+      <testcase name="testAddress" class="PHP\Net\INETAddressFormatErrorTest" file="/home/janoszen/acr/tests/PHP/Net/INETAddressFormatErrorTest.php" line="14" assertions="1" time="0.005658"/>
     </testsuite>
-    <testsuite name="PHP\OS\SignalTest" file="/home/janoszen/acr/tests/PHP/OS/SignalTest.php" namespace="PHP\OS" fullPackage="PHP.OS" tests="1" assertions="0" failures="0" errors="0" time="0.007631">
-      <testcase name="testValidateSignals" class="PHP\OS\SignalTest" file="/home/janoszen/acr/tests/PHP/OS/SignalTest.php" line="16" assertions="0" time="0.007631"/>
+    <testsuite name="PHP\Net\INETUnknownHostTest" file="/home/janoszen/acr/tests/PHP/Net/INETUnknownHostTest.php" namespace="PHP\Net" fullPackage="PHP.Net" tests="1" assertions="1" failures="0" errors="0" time="0.005451">
+      <testcase name="testAddress" class="PHP\Net\INETUnknownHostTest" file="/home/janoszen/acr/tests/PHP/Net/INETUnknownHostTest.php" line="14" assertions="1" time="0.005451"/>
+    </testsuite>
+    <testsuite name="PHP\OS\SignalTest" file="/home/janoszen/acr/tests/PHP/OS/SignalTest.php" namespace="PHP\OS" fullPackage="PHP.OS" tests="1" assertions="0" failures="0" errors="0" time="0.007804">
+      <testcase name="testValidateSignals" class="PHP\OS\SignalTest" file="/home/janoszen/acr/tests/PHP/OS/SignalTest.php" line="16" assertions="0" time="0.007804"/>
     </testsuite>
   </testsuite>
 </testsuites>

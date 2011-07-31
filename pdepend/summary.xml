@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metrics generated="2011-07-31T22:27:01" pdepend="0.10.5" ahh="1.6" andc="0.81578947368421" calls="314" ccn="394" ccn2="413" cloc="1609" clsa="3" clsc="33" eloc="1676" fanout="55" leafs="26" lloc="1105" loc="3663" maxDIT="4" ncloc="2054" noc="36" nof="0" noi="6" nom="197" nop="6" roots="3">
+<metrics generated="2011-07-31T23:12:24" pdepend="0.10.5" ahh="1.6" andc="0.81578947368421" calls="329" ccn="394" ccn2="434" cloc="1609" clsa="3" clsc="33" eloc="1676" fanout="55" leafs="26" lloc="1105" loc="3663" maxDIT="4" ncloc="2054" noc="36" nof="0" noi="6" nom="197" nop="6" roots="3">
   <files>
     <file name="/home/janoszen/acr/src/ClassLoader.php" cloc="111" eloc="138" lloc="89" loc="268" ncloc="157"/>
     <file name="/home/janoszen/acr/src/ClassLoaderException.php" cloc="7" eloc="3" lloc="0" loc="12" ncloc="5"/>
@@ -114,25 +114,25 @@
       <file name="/home/janoszen/acr/src/PHP/Lang/IndexOutOfBoundsException.php"/>
       <method name="__construct" ccn="2" ccn2="2" cloc="0" eloc="7" lloc="3" loc="7" ncloc="7" npath="2"/>
     </class>
-    <class name="Math" ca="0" cbo="3" ce="3" cis="17" cloc="124" cr="0.15" csz="17" dit="1" eloc="120" impl="0" lloc="63" loc="273" ncloc="149" noam="17" nocc="0" nom="17" noom="0" npm="17" rcr="0.16159090909091" vars="0" varsi="0" varsnp="0" wmc="40" wmci="48" wmcnp="40">
+    <class name="Math" ca="0" cbo="3" ce="3" cis="17" cloc="124" cr="0.15" csz="17" dit="1" eloc="120" impl="0" lloc="63" loc="273" ncloc="149" noam="17" nocc="0" nom="17" noom="0" npm="17" rcr="0.16159090909091" vars="0" varsi="0" varsnp="0" wmc="61" wmci="69" wmcnp="61">
       <file name="/home/janoszen/acr/src/PHP/Lang/Math.php"/>
-      <method name="abs" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="acos" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="asin" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="atan" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="ceil" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="cos" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="exp" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="floor" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="log" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
-      <method name="max" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
-      <method name="min" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
-      <method name="pow" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
+      <method name="abs" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="acos" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="asin" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="atan" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="ceil" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="cos" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="exp" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="floor" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="log" ccn="3" ccn2="5" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="9"/>
+      <method name="max" ccn="3" ccn2="5" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="9"/>
+      <method name="min" ccn="3" ccn2="5" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="9"/>
+      <method name="pow" ccn="3" ccn2="5" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="9"/>
       <method name="random" ccn="1" ccn2="1" cloc="0" eloc="3" lloc="1" loc="3" ncloc="3" npath="1"/>
-      <method name="round" ccn="4" ccn2="4" cloc="0" eloc="12" lloc="7" loc="12" ncloc="12" npath="8"/>
-      <method name="sin" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
-      <method name="sqrt" ccn="3" ccn2="3" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="4"/>
-      <method name="tan" ccn="2" ccn2="2" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="2"/>
+      <method name="round" ccn="4" ccn2="6" cloc="0" eloc="12" lloc="7" loc="12" ncloc="12" npath="18"/>
+      <method name="sin" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
+      <method name="sqrt" ccn="3" ccn2="4" cloc="0" eloc="9" lloc="5" loc="9" ncloc="9" npath="6"/>
+      <method name="tan" ccn="2" ccn2="3" cloc="0" eloc="6" lloc="3" loc="6" ncloc="6" npath="3"/>
     </class>
     <class name="NotImplementedException" ca="1" cbo="0" ce="0" cis="1" cloc="0" cr="0.15" csz="1" dit="3" eloc="11" impl="0" lloc="6" loc="13" ncloc="13" noam="0" nocc="0" nom="1" noom="1" npm="1" rcr="0.179484375" vars="0" varsi="0" varsnp="0" wmc="2" wmci="8" wmcnp="2">
       <file name="/home/janoszen/acr/src/PHP/Lang/NotImplementedException.php"/>

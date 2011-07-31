@@ -181,7 +181,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00050">50</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a6345405ee21811b0ceb8b9a8dd7d7541" title="Returns the distance from 0 for a given number.">abs</a>($number);
@@ -221,7 +221,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00063">63</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a9db96704d35a356a1bb3259a9a19eda2" title="Returns the arc cosine value of a number.">acos</a>($number);
@@ -261,7 +261,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00076">76</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#aa25de4fa5cb72825d01a26e5e328b202" title="Returns the arc sine value of a number.">asin</a>($number);
@@ -301,7 +301,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00089">89</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a36010d471c3f1eb260979a869f28515f" title="Returns the arc tangent value of a number.">atan</a>($number);
@@ -341,7 +341,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00103">103</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#aec8da1a907e9015f165003f6836e21c3" title="Returns the smallest value that is not less than $number and is equal to an integer.">ceil</a>($number);
@@ -381,7 +381,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00117">117</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a3644065b6283e6a34e172abaf7c9f88a" title="Returns the largest value that is not more than $number and is equal to an integer.">cos</a>($number);
@@ -421,7 +421,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00130">130</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a84ca3ed84430c846750d068852bdba17" title="Returns the exponent of e of a number.">exp</a>($number);
@@ -461,7 +461,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00143">143</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                              {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#abc9aff6dbeaa0edcf2bae5b5e0d69b5e" title="Returns the exponent of e of a number.">floor</a>($number);
@@ -512,10 +512,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00157">157</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                           {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
-                <span class="keywordflow">if</span> (!\is_numeric($base)) {
+                <span class="keywordflow">if</span> (!\is_int($base) &amp;&amp; !is_float($base)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($base, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \base($number, $base);
@@ -566,10 +566,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00174">174</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                       {
-                <span class="keywordflow">if</span> (!\is_numeric($number1)) {
+                <span class="keywordflow">if</span> (!\is_int($number1) &amp;&amp; !is_float($number1)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number1, <span class="stringliteral">&quot;number&quot;</span>);
                 }
-                <span class="keywordflow">if</span> (!\is_numeric($number2)) {
+                <span class="keywordflow">if</span> (!\is_int($number2) &amp;&amp; !is_float($number2)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number2, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a3f2b248717ac085e14a73b8d9886f394" title="Returns the maximum of two values.">max</a>($number1, $number2);
@@ -620,10 +620,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00191">191</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                       {
-                <span class="keywordflow">if</span> (!\is_numeric($number1)) {
+                <span class="keywordflow">if</span> (!\is_int($number1) &amp;&amp; !is_float($number1)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number1, <span class="stringliteral">&quot;number&quot;</span>);
                 }
-                <span class="keywordflow">if</span> (!\is_numeric($number2)) {
+                <span class="keywordflow">if</span> (!\is_int($number2) &amp;&amp; !is_float($number2)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number2, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a4523c4fd8342752ef1b6061ccef605e5" title="Returns the minimum of two values.">min</a>($number1, $number2);
@@ -674,10 +674,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00208">208</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                {
-                <span class="keywordflow">if</span> (!\is_numeric($base)) {
+                <span class="keywordflow">if</span> (!\is_int($base) &amp;&amp; !is_float($base)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($base, <span class="stringliteral">&quot;number&quot;</span>);
                 }
-                <span class="keywordflow">if</span> (!\is_numeric($exp)) {
+                <span class="keywordflow">if</span> (!\is_int($exp) &amp;&amp; !is_float($exp)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($exp, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#afe726952e1a357d5cc02922813fe99b2" title="Returns $base raised to the power of $exp.">pow</a>($base, $exp);
@@ -753,10 +753,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00234">234</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                                             {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
-                <span class="keywordflow">if</span> (!\is_int($decimals)) {
+                <span class="keywordflow">if</span> (!\is_int($decimals) &amp;&amp; !is_float($decimals)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($decimals, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">if</span> ($decimals &lt; 0) {
@@ -799,7 +799,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00253">253</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#aa55ef85187fee6883cc845c623419714" title="Returns the sine value of a number.">sin</a>($number);
@@ -840,7 +840,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00267">267</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                             {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">if</span> ($number &lt; 0) {
@@ -883,7 +883,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 
 <p>Definition at line <a class="el" href="_math_8php_source.html#l00283">283</a> of file <a class="el" href="_math_8php_source.html">Math.php</a>.</p>
 <div class="fragment"><pre class="fragment">                                            {
-                <span class="keywordflow">if</span> (!\is_numeric($number)) {
+                <span class="keywordflow">if</span> (!\is_int($number) &amp;&amp; !is_float($number)) {
                         <span class="keywordflow">throw</span> <span class="keyword">new</span> TypeError($number, <span class="stringliteral">&quot;number&quot;</span>);
                 }
                 <span class="keywordflow">return</span> \<a class="code" href="class_p_h_p_1_1_lang_1_1_math.html#a55fd2015b37c2ffabd97e6ab36e49265" title="Returns the tangent value of a number.">tan</a>($number);
@@ -909,7 +909,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sun Jul 31 2011 22:27:02 for ACR by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Jul 31 2011 23:12:26 for ACR by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
 </body>
