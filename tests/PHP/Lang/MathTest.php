@@ -34,8 +34,8 @@ class MathTest extends \PHPUnit_Framework_TestCase {
 		} catch (\PHP\Lang\TypeError $e) {
 			$this->assertContains('number', $e->getMessage());
 		}
-		$this->assertEquals(3.0, Math::cos(Math::acos(3)), 'cos(acos(3)) is not 3', 0.01);
-		$this->assertEquals(3.0, Math::acos(Math::cos(3)), 'acos(cos(3)) is not 3', 0.01);
+		$this->assertEquals(0.5, Math::cos(Math::acos(0.5)), 'cos(acos(0.5)) is not 0.5', 0.01);
+		$this->assertEquals(0.5, Math::acos(Math::cos(0.5)), 'acos(cos(0.5)) is not 0.5', 0.01);
 	}
 
 	public function testSinAsin() {
