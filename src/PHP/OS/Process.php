@@ -99,7 +99,7 @@ class Process extends \PHP\Lang\Object {
 		try {
 			if (self::$forklisteners) {
 				foreach (self::$forklisteners as $listener) {
-					$listener->afterFork();
+					$listener->beforeFork();
 				}
 			}
 			
