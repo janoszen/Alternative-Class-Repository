@@ -31,7 +31,6 @@ class Process extends \PHP\Lang\Object {
 	 * facilitate reconnect needs of specific classes.
 	 * 
 	 * @param ForkListener $listener
-	 * @return \PHP\OS\Process
 	 */
 	public static function setForkListener(ForkListener $listener) {
 		if (!self::$forklisteners) {
@@ -40,19 +39,16 @@ class Process extends \PHP\Lang\Object {
 		if (!self::$forklisteners->contains($listener)) {
 			self::$forklisteners->add($listener);
 		}
-		return $this;
 	}
 
 	/**
 	 * Remove a ForkListener from the listener collection.
 	 * @param ForkListener $listener
-	 * @return \PHP\OS\Process
 	 */
 	public static function removeForkListener(ForkListener $listener) {
 		if (self::$forklisteners) {
 			self::$forklisteners->remove($listener);
 		}
-		return $this;
 	}
 
 	/**
@@ -74,13 +70,11 @@ class Process extends \PHP\Lang\Object {
 	/**
 	 * Remove a ChrootListener from the listener collection.
 	 * @param ChrootListener $listener
-	 * @return \PHP\OS\Process
 	 */
 	public static function removeChrootListener(ChrootListener $listener) {
 		if (self::$chrootlisteners) {
 			self::$chrootlisteners->remove($listener);
 		}
-		return $this;
 	}
 
 	/**
@@ -249,7 +243,6 @@ class Process extends \PHP\Lang\Object {
 	 * @throws \PHP\Lang\TypeError if the UID is not an integer
 	 * @throws \PHP\Lang\ValueError if the UID is not a positive integer
 	 * @throws \PHP\OS\SetUIDFailed if the setuid call failed
-	 * @return \PHP\OS\Process
 	 */
 	public function setuid($uid) {
 		if (!is_int($uid)) {
@@ -261,7 +254,6 @@ class Process extends \PHP\Lang\Object {
 		if (!\posix_setuid($uid)) {
 			throw new \PHP\OS\SetUIDFailed($uid);
 		}
-		return $this;
 	}
 
 	/**
@@ -270,7 +262,6 @@ class Process extends \PHP\Lang\Object {
 	 * @throws \PHP\Lang\TypeError if the GID is not an integer
 	 * @throws \PHP\Lang\ValueError if the GID is not a positive integer
 	 * @throws \PHP\OS\SetUIDFailed if the setgid call failed
-	 * @return \PHP\OS\Process
 	 */
 	public function setgid($gid) {
 		if (!is_int($gid)) {
@@ -282,6 +273,5 @@ class Process extends \PHP\Lang\Object {
 		if (!\posix_setgid($gid)) {
 			throw new \PHP\OS\SetGIDFailed($gid);
 		}
-		return $this;
 	}
 }
