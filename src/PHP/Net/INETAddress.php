@@ -131,6 +131,13 @@ abstract class INETAddress extends \PHP\Lang\Object implements \PHP\Lang\Compara
 		if ($address->getClass() != $this->getClass()) {
 			throw new INETAddressTypeError($address, $this->getClass());
 		}
-		return \strcmp($address->getAsBinary(), $this->getAsBinary());
+		$result = \strcmp($address->getAsBinary(), $this->getAsBinary());
+                if ($result > 0) {
+                    return 1;
+                } else if ($result < 0) {
+                    return -1;
+                } else {
+                    return 0;
+                }
 	}
 }

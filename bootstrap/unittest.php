@@ -2,7 +2,7 @@
 
 if (!defined('TESTBOOTSTRAPPED')) {
 	$classroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "src";
-	$testroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "testclasses";
+	$testroot = dirname(__DIR__) . \DIRECTORY_SEPARATOR . "mock";
 
 	require($classroot . \DIRECTORY_SEPARATOR . 'ClassLoader.php');
 	\ClassLoader::setClassPath(
